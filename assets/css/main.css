@@ -7906,7 +7906,7 @@
 
 		.items.style3.small > * {
 			padding: 0.65625rem 0.65625rem 0.1rem 0.65625rem ;
-			width: 25%;
+			width: 20%;
 		}
 
 		@media screen and (max-width: 1280px) {
