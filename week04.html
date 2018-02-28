@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Team Mastercard: Weeknotes 4</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+			<section class="wrapper style1 align-left">
+						<div class="inner medium">
+							<header>
+								<h2>Week one in the four week plan</h2>
+							</header>
+							<div class="content">
+
+								<h4>Working with an enormous scope</h4>
+
+								<p>The scope of our prompt is enormous. With such an open prompt, we could envision ourselves exploring many avenues within a limited time. After much deliberation, we came up with a plan: mapping out our big questions individually, and coming together as a team to consolidate, we created a road map for the next four weeks.</p>
+
+								<p>We’ll attempt to tackle four meaty topics:</p>
+
+								<ul>
+									<li>Week 1: Consumer perceptions of sensor-based authentication </li>
+									<li>Week 2: Identity, Privacy and Sharing </li>
+									<li>Week 3: Convenient Payments, False Declines and the Merchant Experience</li>
+									<li>Week 4: Fraud - on the Consumer and Merchant sides</li>
+								</ul>
+
+								<p>This discovery phase will end in the second week of March. For the first week we learned all we could about how consumers felt about different authentication methods and technologies. We went out into the field for the first time and went guerilla with our research. </p>
+
+
+								<h4>Guerilla Research</h4>
+
+								<p>We headed to the Southside mall area and interviewed 15 people. We asked them to tell us how they felt about certain authentication methods (passwords, fingerprinting, FaceID etc.) and to rate the Creepiness and Convenience (based on the framework we developed last week) for each method. </p>
+
+								<p>Here’s a visualization from the technology mapping: </p>
+
+								<div class='tableauPlaceholder' id='viz1519676849322' style='position: relative;margin: 80px 0;'><noscript><a href='#'><img alt='Consumer Perceptions of Authentication Technologies ' src='https://public.tableau.com/static/images/Gu/GuerillaResearchFeb10HeatMap/Sheet2/1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='GuerillaResearchFeb10HeatMap/Sheet2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https://public.tableau.com/static/images/Gu/GuerillaResearchFeb10HeatMap/Sheet2/1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div> <script type='text/javascript'> var divElement = document.getElementById('viz1519676849322'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement); </script>
+
+
+								<p>The guerilla research helped us realize that perceptions are all over the place! Some of the best insights, however, came from what people shared with us as we did this exercise with them.</p>
+
+								<ul>
+									<li>Some people are not bothered by their credit card being compromised. <b>“I just call up my bank, and they just give me my money back.”</b></li>
+									<li>Several middle aged men just confessed that they don’t shop online at all. <b>“Ask my wife, she deals with that.”</b>  </li>
+								</ul>
+
+								<h4>Visioning Session</h4>
+
+								<p>We had a visioning session focused on designing solutions for online shoppers (one of our priority target users) and brainstormed user groups within that umbrella: </p>
+
+								<span class="image fit"><img src="images/w04_users.jpg" alt="whiteboard shots for list of users we picked." /></span>
+
+								<p>We each voted on the user groups we were interested in to come up with this final list:</p>
+
+								<ul>
+									<li>New credit card holders less than 20 years old</li>
+									<li>Mid-age men who fail at online shopping</li>
+									<li>Peer-to-peer online shoppers</li>
+									<li>Frequent international travellers</li>
+									<li>Subscription based shoppers</li>
+								</ul>
+
+								<p>Individually, we spent 2 minutes on each group to come up with ideas that could help the group have a better shopping experience with sensor-based authentication and other types of authentication. What came out were some interesting ideas.</p>
+
+								<span class="image fit"><img src="images/w04_visioning.JPG"/></span>
+
+								<h4>Prototype</h4>
+
+								<p>Our secondary research this week covered biometric authentication, including Apple’s Face ID technology. We found that Face ID has usability issues (<a href="http://www.businessinsider.com/apple-iphone-x-face-id-is-a-problem-2018-2">link</a>), and similar looking family members having access to another family member’s phone. This 10 year old kid can consistently unlock his mom’s phone (<a href="https://www.wired.com/story/10-year-old-face-id-unlocks-mothers-iphone-x/">link</a>)!</p>
+
+								<p>Two factor authentication might be the solution to some of these problems.
+								We created an Android app that uses <a href="https://azure.microsoft.com/en-us/services/cognitive-services/emotion/">Microsoft’s Emotion API</a> to look at a photo of a person and determine what they’re feeling. </p>
+
+								<p>It can tell if a person feels anger, contempt, disgust, fear, happiness, neutral, sadness, or surprise! </p>
+
+								<span class=""><iframe width="560" height="315" src="https://www.youtube.com/embed/s3k48GL4LjI?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></span>
+
+								<p>The prototype was created more to see how far we could go in one week. As of now, the prototype detects emotion off of images of people, and not a live video, but if we see a need for it, we could continue developing on it in the future. </p>
+
+								<h4>How did we came up with the team name?</h4>
+
+								<p>Eager for a team name for too long, we finally ran a brainstorming exercise to come up with one (and the results were nowhere near what anyone expected!)</p>
+
+								<p>We thought of things in several categories:  </p>
+
+								<ul>
+									<li>Cookies: Snickerdoodle, Choco Chip, Sugar</li>
+									<li>Circles: Big, Orb, Earth, Snake eating their own tail</li>
+									<li>Red: Fire, hot, blood, danger, Chinese, communist</li>
+									<li>Orange: Orchard, fanta, citrus, tangerine</li>
+									<li>Rhymes with Master: Blaster, faster, hamster, disaster</li>
+									<li>Rhymes with Card: Bard, hard, lard, shard</li>
+								</ul>
+
+								<p>Looking back, it’s really interesting how we so quickly took to hamsters. Our team name (finally):</p>
+
+								<p><b>HamsterBard!</b></p>
+
+							</div>
+						</div>
+					</section>
+
+
+
+
+
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<!-- <ul class="icons">
+								<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+							</ul> -->
+							<p>&copy; Team Mastercard, CMU.</p>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
