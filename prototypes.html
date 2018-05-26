@@ -1,0 +1,329 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Team Mastercard: Week 1</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+	</head>
+	<body>
+
+	<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/navbar.js"></script>
+
+	<div class="topnav" id="myTopnav">
+		<a href="blog.html">Blog</a>
+	  <a href="team.html">Team</a>
+	  <a href="prototypes.html" class="navactive">Design Prototypes</a>
+	  <a href="index.html" >Why Continuous Authentication</a>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	    <i class="fa fa-bars"></i>
+	  </a>
+	</div>
+
+
+	<div id="mySidenav" class="sidenav" style="width: 250px; margin-top: 5em;">  
+ 		<a href="#introduction" class="sidenav-font" id="side_introduction">Introduction</a>
+	  	<a href="#onboarding" class="sidenav-font" id="side_onboarding">How do we demonstrate how continuous authentication works?</a>
+	  	<a href="#peepfeel" class="sidenav-font" id="side_peepfeel">How do people feel about different types of data being collected?</a>
+	  	<a href="#datacollect" class="sidenav-font" id="side_datacollect">How do people feel about data being collected during checkout?</a>
+	  	<a href="#bckinfo" class="sidenav-font" id="side_bckinfo">How much background info should be shown during the checkout session?</a>
+	  	<a href="#buildtrust" class="sidenav-font" id="side_buildtrust">How can we build trust in a<br>continuous authentication interface?</a>
+	  	<a href="#recovexp" class="sidenav-font" id="side_recovexp">What should the recovery experience<br>be?</a>
+	  	<a href="#summary" class="sidenav-font" id="side_summary">Summary</a>
+</div>
+
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+			<section class="wrapper style1 align-left">
+						<div class="inner medium">
+
+							<br><br>
+
+							<header><h2><b><a href="prototypes.html">Tackling design challenges</a></b></h2></header>
+
+							<br>
+
+							<p id="introduction" >Our early design prototypes quickly pointed to three critical states we need to design for.</p>
+							
+							<p>Onboarding - Merely explaining what Continuous Authentication is a steep task. We need to  allow time for users to develop a new mental model that transitions from the traditional binary authentication to a more gradient like paradigm.</p>
+							
+							<p>Ideal State - Naturally we are designing for an ideal state, that is quicker than today’s authentication methods, and more secure. Many questions around this phase rely on users relationship to their personal data and how they will opt-in to this service.</p>
+
+							<p>Failed State - The last state we need to prototype and solve for is what happens when someone’s authentication is uncertain and the system needs a “step-up” - another factor is asked of the user to authenticate.</p>
+
+							<br>
+
+							<div id="onboarding" class="row center-align-images">
+							  <div class="column" style="width: 40%">
+							    	<img src="images/design_chal_1.png"  style="width: 60%;" alt="" />
+							  </div>
+							  <div class="column" style="width: 60%">
+							    <ul style="float: left; list-style-type: none;">
+									<li style="">How do we demonstrate how continuous authentication works?</li>
+									<li style="margin-top: 1em;">How do people feel about different types of data being collected?</li>
+								</ul>
+							  </div>
+							</div>
+
+							<div class="row center-align-images">
+							  <div class="column" style="width: 40%">
+							    	<img src="images/design_chal_2.png"  style="width: 60%;" alt="" />
+							  </div>
+							  <div class="column" style="width: 60%">
+							    <ul style="float: left; list-style-type: none;">
+									<li style="">How much background info should be shown during the checkout session?</li>
+									<li style="margin-top: 1em;">How do people feel about data being collected during checkout?</li>
+									<li style="margin-top: 1em;">How can we build trust in a continuous authentication interface?</li>
+								</ul>
+							  </div>
+							</div>
+
+							<div class="row center-align-images">
+							  <div class="column" style="width: 40%">
+							    	<img src="images/design_chal_3.png"  style="width: 60%;" alt="" />
+							  </div>
+							  <div class="column" style="width: 60%">
+							    <ul style="float: left; list-style-type: none;">
+									<li style="">What should the recovery experience be?</li>
+								</ul>
+							  </div>
+							</div>
+
+							<br><br><br>
+							<img src="images/graces_amazing_hr.png"  style="width: 100%;" alt="" />
+							<br><br><br>
+
+							<header>
+								<h2 style="text-align: center;">On-boarding</h2>
+								<br>
+							</header>
+
+
+							<header id="peepfeel">
+								<h4><b>Q1: How do people respond to being asked to provide their personal data?</b></h4>
+								<h4><b>A: Fear of detailed data being constantly tracked</b></h4>
+							</header>
+
+							<br><br><br>
+
+							<div class="content">
+
+
+								<div class="row ">
+									  <div class="column" style="width:70%;">
+									    <iframe src="https://marvelapp.com/3730g3d?emb=1&iosapp=false&frameless=false" width="480" height="550" allowTransparency="true" frameborder="0" ></iframe>
+									  </div>
+									  <div class="column" style="width: 30%;">
+									    <img src="images/q1bubble.png"  style="width: 100%;" alt="" />
+									  </div>
+
+									  <p><br>We wanted to demonstrate how continuous authentication works in the context of online shopping by providing a realistic on-boarding experience. We created 2 versions of the customer sign-up web flow in high fidelity. One provides a step-by-step explanation of the kind of data being collected, the other gives little explanation and runs in the background.</p>
+
+									  <p>We found that users often skip the verbal description of the definition, but with the step-by-step process, users can better articulate the definition of continuous authentication. </p>
+								</div>
+
+								<br><br><br>
+
+								<header id="datacollect">
+								<h4><b>Q2: How do people respond to being asked to provide their personal data?</b></h4>
+								<h4><b>A: Fear of detailed data being constantly tracked</b></h4>
+								</header>
+
+								<br>
+
+								<div class="row ">
+									  <div class="column" style="width:30%;">
+									  <img src="images/data_types.png"  style="width: 100%;" alt="" />
+									  </div>
+
+									  <div class="column" style="width:70%;">
+									  <img src="images/avatar_storyboard.png"  style="width: 100%;" alt="" />
+									  </div>
+								</div>
+
+								<br><br>
+
+								<div class="row center-align-images">
+									  <div class="column" style="width:100%;">
+									  <img src="images/avatar_creepyscale.png"  style="width: 100%;" alt="" />
+									  </div>
+								</div>
+
+								<p><br>We listed all possible types of data that continuous authentication might collect and see how users react to each type of data. We also explored three different ways of prompting users to provide data. First is the online on-boarding web flow. Second is an app-based interface that has an Accuracy scale that changes as users provide more data. Third is an avatar game app where an avatar of the user prompts users for sharing data.</p>
+
+								<p>We found that people are generally comfortable providing data that are already being tracked constantly such as location, device and wifi-footprint. However, a large percentage of people are reluctant about providing facial data mostly due to the fear of being tracked without consent. There is more negative reaction towards the use on camera on the laptop than on the phone because the phone isn’t pointing directly to the face in a lot of the times. While providing data, users also felt more comfortable sharing when they understand how those data would help them get authenticated.
+								</p>
+
+								<br><br><br>
+								<img src="images/graces_amazing_hr.png"  style="width: 100%;" alt="" />
+								<br><br><br>
+
+								<header>
+								<h2 style="text-align: center;">Ideal State</h2>
+								<br>
+								</header>
+
+
+								<header id="bckinfo">
+									<h4><b>Q3: How much background information should we show?</b></h4>
+									<h4><b>A: Show all background information during on-boarding, but none for normal checkout.</b></h4>
+								</header>
+
+								<br><br><br>
+
+								<div class="row ">
+									  <div class="column" style="width:70%;">
+									  <iframe src="https://marvelapp.com/16h4bc46?emb=1&iosapp=false&frameless=false" width="960" height="600" allowTransparency="true" frameborder="0"></iframe>
+									    
+									  </div>
+								</div>
+
+								<br><br><br>
+
+								<div >
+								<img src="images/avatar_storyboard2.png"  style="width: 100%;" alt="" />
+								</div>
+
+								<br><br><br>
+
+								<div >
+								<img src="images/q3quotes.png"  style="width: 100%;" alt="" />
+								</div>
+
+								<br><br><br>
+
+								<p>We tested two prototypes: one is the avatar game, where data is collected in the background while people interact with a fun little avatar of themselves. The other is a checkout authentication pop-up that shows the type of data being collected and verified at the moment.</p>
+								<p>We found that while people want to know exactly what data they are giving up during on-boarding. They don’t want to think about payment or authentication while they pay. Showing data being collected every time only reminds them how potential invasive the technology could be and costs trust in the technology.</p>
+
+								<br><br><br>
+
+								<header id="buildtrust">
+									<h4><b>Q4: How can we build trust on a continuous authentication interface?</b></h4>
+									<h4><b>A: People don’t trust small merchants with their information.</b></h4>
+								</header>
+
+								<br><br><br>
+
+								<div class="row ">
+									  <div class="column" style="width:70%;">
+									  <iframe src="https://marvelapp.com/3731c07?emb=1&iosapp=false&frameless=false" width="960" height="600" allowTransparency="true" frameborder="0"></iframe>
+									    
+									  </div>
+								</div>
+
+								<br><br><br>
+
+								<div >
+								<img src="images/q4quotes.png"  style="width: 100%;" alt="" />
+								</div>
+
+								<br><br><br>
+
+								<p>We wanted to how comfortable people are with video capture in a physical space.  We created a prototype for a small business context using an iPad-based POS like Square where the customer is immediately greeted with a live video capture of their face.</p>
+								<p>Users were skeptical about providing facial data for checkout, and were confused if had not gone through on-boarding first. Most users expressed negative feelings toward video recording from merchants device, but feel way more comfortable when the video is recorded on their device.</p>
+
+								<br><br><br>
+
+								<header>
+									<h4><b>Q5: How do people feel about data being collected during checkout?</b></h4>
+									<h4><b>A: Skepticism, and data gathering without opting in is weird.</b></h4>
+								</header>
+
+								<br><br><br>
+
+								<!-- AROON: INSERT LEMONADE VIDEO HERE -->
+
+								<div >
+								<img src="images/q5quotes.png"  style="width: 100%;" alt="" />
+								</div>
+
+								<br><br><br>
+
+								<br><br><br>
+							<img src="images/graces_amazing_hr.png"  style="width: 100%;" alt="" />
+							<br><br><br>
+
+							<header id="recovexp">
+								<h2 style="text-align: center;">Failed State</h2>
+								<br>
+							</header>
+
+							<br><br><br>
+
+							<header>
+								<h4><b>Q6: What should the recovery experience be?</b></h4>
+								<h4><b>A: Falling back to an existing authentication method is a good mental model</b></h4>
+							</header>
+
+							<br><br><br>
+
+							<div class="row ">
+								<div >
+								<img src="images/q6prototype.png"  style="width: 100%;" alt="" />
+								</div>
+							</div>
+
+							<br><br><br>
+
+							<div >
+							<img src="images/q6quotes.png"  style="width: 100%;" alt="" />
+							</div>
+
+							<br><br><br>
+
+							</div>
+
+
+							<p>We wanted to test ways to recover when continuous authentication fails. Our prototype used the existing method –– 2-factor-authentication with SMS.</p>
+							<p>Most all of the users felt comfortable with using 2FA SMS. This confirmed some assumptions we had around 2FA becoming more and more commonplace and a known mental model for people.</p>
+
+							<br><br><br>
+
+							<header id="summary">
+								<h2>Summary</h2>
+								<br>
+							</header>
+
+							<br><br><br>
+
+							<p>Up to this presentation of findings at the end of spring semester, we have focused on the consumer first, honing in on these first design sprints on <b>customer perceptions around creepiness</b> as well as the hard part of onboarding this new technology.</p>
+
+							<p>As we push into the summer we will continue to answer some of the questions we have on the Consumer Experience while shifting towards <b>Merchant Adoption and how it works inside stores</b>. This will include <b>Technology challenges</b> and <b>Business Strategy concerns</b>.</p>
+
+
+						</div>
+					</section>
+
+
+
+
+
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<p>&copy; Team Mastercard, CMU.</p>
+						</div>
+					</footer>
+
+			</div>
+
+
+
+	</body>
+</html>

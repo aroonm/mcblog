@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <!--
 	Story by HTML5 UP
-	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
@@ -12,7 +11,45 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 	</head>
+
+	<style type="text/css">
+
+	/*.center-align-images {
+		display: block;
+		margin-left: auto;
+    	margin-right: auto;
+    	width: 80%;
+	}
+
+	* {
+    	box-sizing: border-box;
+	}
+
+	
+	.column {
+	    float: left;
+	    width: 33.33%;
+	    padding: 10px;
+	    height: 300px; 
+	}
+
+	
+	.row:after {
+	    content: "";
+	    display: table;
+	    clear: both;
+	}*/
+    
+	</style>
 	<body>
+
+	<div class="topnav" id="myTopnav">
+		<a href="blog.html">Blog</a>
+  		<a href="team.html">Team</a>
+  		<a href="prototypes.html">Design Prototypes</a>
+  		<a href="#" class="navactive">Why Continuous Authentication</a>
+  		<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+	</div>
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
@@ -23,7 +60,7 @@
 							<h1><b>Team Mastercard</b></h1>
 							<p class="major">The future of authentication in digital payments</p>
 							<ul class="actions vertical">
-								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
+								<li><a href="#first" class="button big wide smooth-scroll-middle">Read More</a></li>
 							</ul>
 						</div>
 						<div class="image ">
@@ -31,427 +68,137 @@
 						</div>
 					</section>
 
-				<!-- One -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
-							<h2>Weeknotes 1 - Hello!</h2>
-							<p>As this is our first blog post, we wanted to describe our first steps approaching the prompt and our initial thoughts on the project. We discussed our hopes and dreams for the Capstone process and our project with Mastercard around the future of authentication and digital payments.</p>
-							<ul class="actions vertical">
-								<li><a href="week01.html" class="button">Read More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/w01_team_rubric.JPG" alt="Team Rubric" />
-						</div>
-					</section>
+					<section  class="spotlight style1 orient-center content-align-left image-position-right  onload-image-fade-in onload-content-fade-right" style="height: 100%; overflow: hidden;">
+						<div class="content" >
+							<header id="first"><h2 onclick="toggleDisplay('our-task-content');"><b>Our task</b></h2></header>
+							<p class="major" id="our-task-content" style="display: block;">Explore an ecosystem of payment authentication experiences.</p>
 
+							<br><br><br>
 
-				<!-- Two -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="image">
-							<img src="images/w02_noodle_tower.jpg" alt="Noodle Tower" />
-						</div>
-						<div class="content">
-							<h2>Weeknotes 2 - Kickoff</h2>
-							<p>How do we plan a Kick-off meeting around such a general topic? Can we design some co-design questions to help get as much out of the client as possible and narrow us down on to a specific path?</p>
-							<ul class="actions vertical">
-								<li><a href="week02.html" class="button">Read More</a></li>
-							</ul>
-						</div>
-					</section>
+							<header><h2><b>Current challenges in payemnt</b></h2></header>
+							<br><br>
+							<img src="images/ecosystem.png" style="width:60%;" class="center-align-images" style="" alt="" />
 
-				<!-- Three -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
-							<h2>Weeknotes 3 - Post-Kickoff - Go!</h2>
-							<p>After kickoff, we had to start drilling into our research plan and what methods may cater best to each research question or hypothesis. This provided to be too difficult with such a wide ranging topic, so we broke down ...</p>
-							<ul class="actions vertical">
-								<li><a href="week03.html" class="button">Read More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/w03_researchenvironment_and_spectrums.jpg" alt="Research Environments" />
-						</div>
-					</section>
+							<p><br><br>In the large space of digital payments we narrowed down to consumers and merchants. During our discovery phase, we explored a wide range of topics related to authentication in digital payments. Some topics we explored laterally in this space:<br><br>
+							<span>- Payments in a social context;</span> <br>
+							<span>- Merchant inertia, and getting merchants to adopt new technology;</span> <br>
+							<span>- Using multiple identities in different contexts;</span> <br>
+							<span>- How consumers feel about new authentication methods,</span><br><br>
+							<span>And a new authentication paradigm that ties these all together called Continuous Authentication</p>
+							<br><br><br>
 
+							<header><h2><b>Solve these challenges with <br>Continuous Authentication</b></h2></header>
+							<br><br>
+							<img src="images/contauth1.png" style="width: 60%;" class="center-align-images"  alt="" />
 
-				<!-- Four -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Weeknotes 4 - Week one in the four week plan</h2>
-							<p>The scope of our prompt is enormous. With such an open prompt, we could envision ourselves exploring many avenues within a limited time. After much deliberation, we came up with a plan: mapping out our big questions ...</p>
-							<ul class="actions vertical">
-								<li><a href="week04.html" class="button">Read More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/w04_visioning.JPG" alt="" />
-						</div>
-					</section>
+							<br><br><br>
 
+							<!-- <h3><b>Continuous Authentication?</b></h3>
+							<br>
+							<h3><b>&emsp;&emsp;A system that verifies</b></h2>
+							<h3><b>&emsp;&emsp;<span style="color:#FF9301;">who</span> you are,</b></h3>
+							<h3><b>&emsp;&emsp;<span style="color:#FF9301;">whenever</span> you need it,</b></h3>
+							<h3><b>&emsp;&emsp;<span style="color:#FF9301;">without</span> you thinking about it.</b></h3> -->
 
-				<!-- Five -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
-							<h2>Weeknotes 5 - Identity, Privacy, and Sharing</h2>
-							<p>This week we shift to the theme of identity, privacy and sharing...</p>
-							<ul class="actions vertical">
-								<li><a href="week05.html" class="button">Read More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/w05_burning_candle_small.JPG" alt="Burning the candle at both ends" />
-						</div>
-					</section>
+							<br><br><br>
 
-					<!-- Six and Seven -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
-							<h2>Weeknotes 6 and 7 - Week three in the four week plan</h2>
-							<p>This week we finally began conducting interviews. Interviews are invaluable because we get to hear about goals, problems and opinions in the users’ own words.</p>
-							<ul class="actions vertical">
-								<li><a href="week06.html" class="button">Read More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/w07_affinity_pink.JPG" alt="Building the Affinity" />
-						</div>
-					</section>
+							<header><h2><b>A new system with <br>Continuous Authentication</b></h2></header>
 
-				<!-- Eight -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Weeknotes 8 - The Team Goes to Austin, TX for SXSW</h2>
-							<p>Every year, for 10 days in the middle of March, over 400,000 people descend upon Austin, Texas to attend the thousands of varied events, talks, and festivals that combine to form South by Southwest (SXSW). Here's what we got out of it...</p>
-							<ul class="actions vertical">
-								<li><a href="week08.html" class="button">Read More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/w08_MCatSXSW_banner.jpg" alt="" />
-						</div>
-					</section>
+							<img src="images/after_mc.png" style="width: 80%;" class="center-align-images" alt="" />
 
-					<!-- Nine -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
-							<h2>Weeknotes 9 - End of Discovery Phase</h2>
-							<p>This post outlines the full discovery phase and follows closely our presentation with the client on March 23rd.</p>
-							<ul class="actions vertical">
-								<li><a href="week09.html" class="button">Read More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/InsightMatrix.png" alt="Building the Affinity" />
-						</div>
-					</section>
+							<br>
 
-					<!-- Ten and Eleven -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
-							<h2>Weeknotes 10 and 11 - Start Sprinting</h2>
-							<p>After our End of Discovery Presentation, we had lots of client feedback and suggestions for where to go next. This week marked the start of our first Design Sprint of the semester. We are trying to follow the Google Ventures Sprint methodology, but stretching the sprint over two weeks instead of one.</p>
-							<ul class="actions vertical">
-								<li><a href="week10.html" class="button">Read More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/w10_crazy8s.jpg" alt="Design Sprint - Crazy 8s" />
-						</div>
-					</section>
+							<p>Continuous Authentication is an idea that has been bouncing around the digital payments space for the past few years but will little implementation to show for it. With Continuous Authentication we can eliminate a lot of the waiting and touchpoints in this diagram above, showing checkout sequences in both physical stores and online shops. Continuous Authentication removes the hassle of juggling multiple cards and passwords, as well as reducing false declines.</p>
 
-					<!--<section class="wrapper style1 align-center">
-						<div class="inner">
-							<h2>Another Future Weeknotes</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
-						</div>
+							<br><br><br>
 
-							<div class="gallery style2 medium lightbox onscroll-fade-in">
-								<article>
-									<a href="images/gallery/fulls/01.jpg" class="image">
-										<img src="images/gallery/thumbs/01.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ipsum Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/02.jpg" class="image">
-										<img src="images/gallery/thumbs/02.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Feugiat Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/03.jpg" class="image">
-										<img src="images/gallery/thumbs/03.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Magna Amet</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/04.jpg" class="image">
-										<img src="images/gallery/thumbs/04.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Sed Tempus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/05.jpg" class="image">
-										<img src="images/gallery/thumbs/05.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ultrices Magna</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/06.jpg" class="image">
-										<img src="images/gallery/thumbs/06.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Sed Tempus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/07.jpg" class="image">
-										<img src="images/gallery/thumbs/07.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ipsum Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/08.jpg" class="image">
-										<img src="images/gallery/thumbs/08.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Magna Risus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/09.jpg" class="image">
-										<img src="images/gallery/thumbs/09.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Tempus Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/10.jpg" class="image">
-										<img src="images/gallery/thumbs/10.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Sed Etiam</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/11.jpg" class="image">
-										<img src="images/gallery/thumbs/11.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Magna Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/12.jpg" class="image">
-										<img src="images/gallery/thumbs/12.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ipsum Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-							</div>
+							<!-- <header><h2><b>Research through design</b></h2></header>
 
-					</section>-->
+							
 
-				<!-- Six -->
-					<section class="wrapper style1 align-left">
-						<div class="inner">
-							<h2>About the Team</h2>
-							<p>Our team of five assembled for the 9 month MHCI Capstone project. We are all graduating in August 2018 from CMU's Master of Human-Computer Interaction program.</p>
-							<div class="items style3 small onscroll-fade-in">
-								<section class="align-center">
-									<span class="icon style1 major"></span>
-									<h3><a href="https://www.gracesiqiguo.com">Grace Guo</a></h3>
-
-									<div class="image ">
-										<a href="https://www.gracesiqiguo.com">
-											<img src="images/bios/grace_bio_pic.png" style="width:100px; height:100px;" alt="" />
-										</a>
-									</div>
-
-									<ul class="icons">
-										<!-- <li><a href="#" class="icon style1 fa-twitter"><span class="label">Twitter</span></a></li> -->
-										<!-- <li><a href="#" class="icon style1 fa-facebook"><span class="label">Facebook</span></a></li> -->
-										<!-- <li><a href="#" class="icon style1 fa-instagram"><span class="label">Instagram</span></a></li> -->
-										<li><a href="https://www.linkedin.com/in/gracesiqiguo" class="icon style1 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-										<!-- <li><a href="#" class="icon style1 fa-envelope"><span class="label">Email</span></a></li> -->
-									</ul>
-
-                                    <p class="align-left"><span ><a href="https://www.gracesiqiguo.com" style="color:#47D3E5; text-decoration: none; cursor: pointer;">Grace</a></span> holds a degree of B.S. in Business Administration from the University of Southern California, with a minor in Animation. She brings one year of experience in developing virtual reality applications and designing for three-dimensional spaces.
-                                    <br><br><b>Post MHCI:</b><br>
-                                    UX Designer</p>
-								</section>
-
-								<section  class="align-center">
-									<span class="icon style1 major"></span>
-									<h3><a href="http://zohaibkhan.me">Zohaib Khan</a></h3>
-									<div class="image ">
-										<img src="images/bios/zohaib_bio_pic.png" style="width:100px; height:100px;" alt="" />
-									</div>
-
-									<ul class="icons">
-										<!-- <li><a href="#" class="icon style1 fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon style1 fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon style1 fa-instagram"><span class="label">Instagram</span></a></li> -->
-                    <li><a href="https://medium.com/@zohaibrkhan" class="icon style1 fa-medium"><span class="label">Medium</span></a></li>
-										<li><a href="https://www.linkedin.com/in/zohaibrkhan/" class="icon style1 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-										<li><a href="mailto:zuk@andrew.cmu.edu?Subject=Hello" class="icon style1 fa-envelope"><span class="label">Email</span></a></li>
-									</ul>
-
-
-
-									<p class="align-left">Born in California, raised in Pakistan, and having worked in Toronto, Canada, <span ><a href="http://zohaibkhan.me" style="color:#47D3E5; text-decoration: none; cursor: pointer;">Zohaib</a></span> has a lot of experience navigating unfamiliar territory.
-                                    Zohaib is now attempting to figure out how to navigate the world of interaction design, with several years of work experience in process improvement and project management consulting.
-                                    He holds a BBA from the Schulich School of Business, York University, specializing in Finance and Marketing.
-                                    <br><br><b>Post MHCI:</b><br>
-                                    Product Manager, UX Designer</p>
-								</section>
-								<section  class="align-center">
-									<span class="icon style1 major"></span>
-									<h3><a href="http://scottleinweber.com">Scott Leinweber</a></h3>
-									<div class="image ">
-										<img src="images/bios/scott_bio_pic.png" style="width:100px; height:100px;" alt="" />
-									</div>
-
-
-									<ul class="icons">
-										<li><a href="https://www.linkedin.com/in/sleinweber/" class="icon style1 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-										<li><a href="mailto:sleinweb@andrew.cmu.edu?Subject=Hello" class="icon style1 fa-envelope"><span class="label">Email</span></a></li>
-									</ul>
-
-									<p class="align-left"><span ><a href="http://scottleinweber.com" style="color:#47D3E5; text-decoration: none; cursor: pointer;">Scott</a></span> is a creative technologist exploring the digital-physical dialog of craftsmanship today.
-                                    Scott was a visiting Fulbright researcher at CITA, Danish Royal Academy during 2015-2016, and investigated how computational tools are changing traditional Danish design culture. Since 2011 he has lived in NYC consulting on computational design and digital fabrication. He holds a B.Arch from Cal Poly SLO.
-                                    <br><br><b>Post MHCI:</b><br>
-                                    3D Interaction Designer, UX Designer</p>
-								</section>
-								<section  class="align-center">
-									<span class="icon style1 major"></span>
-									<h3><a href="http://aroonmathai.com">Aroon Mathai</a></h3>
-
-									<div class="image ">
-										<a href="http://aroonmathai.com">
-											<img src="images/bios/aroon_bio_pic.png" style="width:100px; height:100px;" alt="" />
-										</a>
-									</div>
-
-									<ul class="icons">
-									<li><a href="https://medium.com/@aroonmathai" class="icon style1 fa-medium"><span class="label">Medium</span></a></li>
-									<li><a href="https://instagram.com/aroonmathai" class="icon style1 fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="https://www.linkedin.com/in/aroonmathai/" class="icon style1 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="mailto:aroonmathai@cmu.edu?Subject=Hello" class="icon style1 fa-envelope"><span class="label">EMail</span></a></li>
-							</ul>
-                                    <p class="align-left"><span ><a href="http://aroonmathai.com" style="color:#47D3E5; text-decoration: none; cursor: pointer;">Aroon</a></span> has a background in Computer Science and Engineering and was working as a Software Developer for Zynga, where he worked on games like Mafia Wars, FarmVille and Draw Something played by millions of people across the world. Aroon wants to integrate his interests in Technology and Design to create beautiful, accessible products.
-                                    <br><br><b>Post MHCI:</b><br>
-                                    Product Manager, UX Designer</p>
-        						</section>
-								<section  class="align-center">
-									<span class="icon style1 major"></span>
-									<h3>Xueting Zhang</h3>
-
-									<div class="image ">
-										<img src="images/bios/nika_bio_pic.png" style="width:100px; height:100px;" alt="" />
-									</div>
-
-									<ul class="icons">
-										<li><a href="https://www.linkedin.com/in/xuetingnikazhang/" class="icon style1 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-										<li><a href="mailto:xuetingz@andrew.cmu.edu?Subject=Hello" class="icon style1 fa-envelope"><span class="label">Email</span></a></li>
-									</ul>
-
-									<p class="align-left"><span ><a href="http://aroonmathai" style="color:#47D3E5; text-decoration: none; cursor: pointer;">Nika</a></span> holds a B.S degree in industrial design from Georgia Institute of technology. Her interest is designing for technology to be ubiquitous yet blended in daily life. Before starting the MHCI program, she worked as a contract product designer at a startup company designing an AI based mobile app testing platform.
-                                    <br><br><b>Post MHCI:</b><br>
-                                    Product Designer</p>
-								</section>
-
-							</div>
-						</div>
-					</section>
-
-				<!-- Seven -->
-					<section class="wrapper style1 align-center">
-						<div class="inner medium">
-							<h2>Get in touch</h2>
-							<form method="post" action="MAILTO:aroonmathai@andrew.cmu.edu?subject=Hi Team Mastercard!" enctype="text/plain">
-								<div class="field half first">
-									<label for="name">Name</label>
-									<input type="text" name="name" id="name" value="" />
-								</div>
-								<div class="field half">
-									<label for="email">Email</label>
-									<input type="email" name="email" id="email" value="" />
-								</div>
-								<div class="field">
-									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="6"></textarea>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+							<div class="row center-align-images">
+							  <div class="column" >
+							    <ul style="float: left; list-style-type: none;">
+									<li>Interview</li>
+									<li style="margin-top: 1em;">Think Aloud</li>
+									<li style="margin-top: 1em;">Speed Dating</li>
+									<li style="margin-top: 1em;">AB Testing</li>
+									<li style="margin-top: 1em;">Guerrilla Research</li>
 								</ul>
-							</form>
+							  </div>
+							  <div class="column" >
+							    <img src="images/usersnumber.png"  style="width: 160%;" alt="" />
+							  </div>
+							</div>
+
+							<br><br><br> -->
+
+							<!-- <header><h2><b><a href="prototypes.html">Tackling design challenges</a></b></h2></header>
+
+							<div class="row center-align-images">
+							  <div class="column" style="width: 40%">
+							    	<img src="images/design_chal_1.png"  style="width: 60%;" alt="" />
+							  </div>
+							  <div class="column" style="width: 60%">
+							    <ul style="float: left; list-style-type: none;">
+									<li style="">How do we demonstrate how continuous authentication works?</li>
+									<li style="margin-top: 1em;">How do people feel about different types of data being collected?</li>
+								</ul>
+							  </div>
+							</div>
+
+							<div class="row center-align-images">
+							  <div class="column" style="width: 40%">
+							    	<img src="images/design_chal_2.png"  style="width: 60%;" alt="" />
+							  </div>
+							  <div class="column" style="width: 60%">
+							    <ul style="float: left; list-style-type: none;">
+									<li style="">How much background info should be shown during the checkout session?</li>
+									<li style="margin-top: 1em;">How do people feel about data being collected during checkout?</li>
+									<li style="margin-top: 1em;">How can we build trust in a continuous authentication interface?</li>
+								</ul>
+							  </div>
+							</div>
+
+							<div class="row center-align-images">
+							  <div class="column" style="width: 40%">
+							    	<img src="images/design_chal_3.png"  style="width: 60%;" alt="" />
+							  </div>
+							  <div class="column" style="width: 60%">
+							    <ul style="float: left; list-style-type: none;">
+									<li style="">What should the recovery experience be?</li>
+								</ul>
+							  </div>
+							</div> -->
+
+
+
+							<header ><h2><b>Proof of Concept: A Face<br>Recognition Demo</b></h2></header>
+							<br><br>
+							<video width="100%" controls class="center-align-images" >
+							  <source src="images/avatar_demo.mp4" type="video/mp4">
+							  <source src="images/avatar_demo.ogg" type="video/ogg">
+							  Your browser does not support HTML5 video.
+							</video>
+
+							
+
+
+						
+
+						
+
+
+						<!-- <div class="image " style="background-color: white;">
+							<img src="" alt="" />
+						</div> -->
 
 						</div>
 					</section>
+
+
+
+			
 
 				<!-- Footer -->
 					<footer class="wrapper style1 align-center">
@@ -469,13 +216,18 @@
 
 			</div>
 
+			
+
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script src="assets/js/navbar.js"></script>
+			<script src="assets/js/jquery.min.js"></script>s
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
 
 	</body>
 </html>

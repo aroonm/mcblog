@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <!--
 	Story by HTML5 UP
-	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
@@ -12,82 +11,54 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 	</head>
+
+	<style type="text/css">
+
+	.center-align-images {
+		display: block;
+		margin-left: auto;
+    	margin-right: auto;
+    	width: 80%;
+	}
+
+	* {
+    	box-sizing: border-box;
+	}
+
+	/* Create three equal columns that floats next to each other */
+	.column {
+	    float: left;
+	    width: 33.33%;
+	    padding: 10px;
+	    height: 300px; /* Aroon TODO: Should be removed. */
+	}
+
+	/* Clear floats after the columns */
+	.row:after {
+	    content: "";
+	    display: table;
+	    clear: both;
+	}
+    
+	</style>
 	<body>
+
+	<div class="topnav" id="myTopnav">
+	<a href="blog.html">Blog</a>
+  <a href="team.html" class="navactive">Team</a>
+  <a href="prototypes.html">Design Prototypes</a>
+  <a href="index.html" >Why Continuous Authentication</a>
+  <a href="index.html" >Why Continuous Authentication</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
 
-				<!-- MC Splash -->
-					<section class="banner style5 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-						<div class="content" style="width: 60rem;">
-							<h1><b>Team Mastercard</b></h1>
-							<p class="major">The future of authentication in digital payments</p>
-							<ul class="actions vertical">
-								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
-							</ul>
-						</div>
-						<div class="image ">
-							<img src="images/banner1.png" alt="" />
-						</div>
-					</section>
-
-					<section class="banner style5 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-						<div class="content" >
-							<h1><b>Our task</b></h1>
-							<p class="major">Explore an ecosystem of payment authentication experiences.</p>
-
-							<br><br><br>
-
-							<h1><b>Current challenges in payemnt</b></h1>
-
-							<br><br><br>
-
-							<h1><b>How do we solve these challenges?</b></h1>
-
-							<br><br><br>
-
-							<h1><b>What is Continuous Authentication?</b></h1>
-							<br>
-							<h3><b>&emsp;&emsp;A system that verifies</b></h2>
-							<h3><b>&emsp;&emsp;<span style="color:#FF9301;">who</span> you are,</b></h3>
-							<h3><b>&emsp;&emsp;<span style="color:#FF9301;">whenever</span> you need it,</b></h3>
-							<h3><b>&emsp;&emsp;<span style="color:#FF9301;">without</span> you thinking about it.</b></h3>
-
-							<br><br><br>
-
-							<h1><b>A new system with <br>Continuous Authentication</b></h1>
-
-							<img src="images/after_mc.png" style="width:100%" alt="" />
-
-							<br>
-
-							<p>With Continuous Authentication we can eliminate a lot of the waiting and touchpoints here. With Continuous Authentication, we can remove the hassle of juggling multiple cards and passwords, as well as reducing false declines.</p>
-
-							<br><br><br>
-
-							<h1><b>Design challenges</b></h1>
-
-							<br><br><br>
-
-							<h1><b>Research through design</b></h1>
-
-							
-
-
-						</div>
-
-						
-
-
-						<div class="image " style="background-color: white;">
-							<img src="" alt="" />
-						</div>
-					</section>
-
-
-					
-
-
+				
+					<br><br>
 
 
 					<section class="wrapper style1 align-left">
@@ -182,10 +153,12 @@
         						</section>
 								<section  class="align-center">
 									<span class="icon style1 major"></span>
-									<h3>Xueting Zhang</h3>
+									<h3><a href="https://xzhang395.github.io/portfolio/index.html">Xueting Zhang</a></h3>
 
 									<div class="image ">
-										<img src="images/bios/nika_bio_pic.png" style="width:100px; height:100px;" alt="" />
+										<a href="https://xzhang395.github.io/portfolio/index.html">
+											<img src="images/bios/nika_bio_pic.png" style="width:100px; height:100px;" alt="" />
+										</a>
 									</div>
 
 									<ul class="icons">
@@ -193,7 +166,7 @@
 										<li><a href="mailto:xuetingz@andrew.cmu.edu?Subject=Hello" class="icon style1 fa-envelope"><span class="label">Email</span></a></li>
 									</ul>
 
-									<p class="align-left"><span ><a href="http://aroonmathai" style="color:#47D3E5; text-decoration: none; cursor: pointer;">Nika</a></span> holds a B.S degree in industrial design from Georgia Institute of technology. Her interest is designing for technology to be ubiquitous yet blended in daily life. Before starting the MHCI program, she worked as a contract product designer at a startup company designing an AI based mobile app testing platform.
+									<p class="align-left"><span ><a href="https://xzhang395.github.io/portfolio/index.html" style="color:#47D3E5; text-decoration: none; cursor: pointer;">Nika</a></span> holds a B.S degree in industrial design from Georgia Institute of technology. Her interest is designing for technology to be ubiquitous yet blended in daily life. Before starting the MHCI program, she worked as a contract product designer at a startup company designing an AI based mobile app testing platform.
                                     <br><br><b>Post MHCI:</b><br>
                                     Product Designer</p>
 								</section>
@@ -220,13 +193,18 @@
 
 			</div>
 
+			
+
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/navbar.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+			<script src="assets/js/jquery.min.js"></script>s
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
 
 	</body>
 </html>
