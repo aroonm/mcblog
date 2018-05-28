@@ -8437,14 +8437,21 @@
   font-size: 17px;
 }
 
+.navactive {
+	color: #F79F1A; 
+}
+
+.navactive:hover {
+	color: white; 
+}
+
 .topnav a:hover {
+	color: white;
   background-color: #F79F1A; /* Mastercard color */
   color: white;
 }
 
-.navactive {
-	color: #F79F1A; 
-}
+
 
 .topnav .icon {
   display: none;
@@ -8555,9 +8562,13 @@ body a {
 	color: #F79F1A;
 }
 
-.topnav a {
+.topnav a, li a, h3 a, .force-black {
 	color: #000000;
 }
+
+
+
+
 
 
 
