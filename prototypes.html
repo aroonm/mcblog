@@ -23,6 +23,7 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/navbar.js"></script>
+	<script src="assets/js/sidebar.js"></script>
 
 	<div class="topnav" id="myTopnav">
 		<a href="blog.html">Blog</a>
@@ -37,12 +38,12 @@
 
 	<div id="mySidenav" class="sidenav" style="width: 250px; margin-top: 5em;">  
  		<a href="#introduction" class="sidenav-font" id="side_introduction">Introduction</a>
-	  	<a href="#onboarding" class="sidenav-font" id="side_onboarding">How do we demonstrate how continuous authentication works?</a>
-	  	<a href="#peepfeel" class="sidenav-font" id="side_peepfeel">How do people feel about different types of data being collected?</a>
-	  	<a href="#datacollect" class="sidenav-font" id="side_datacollect">How do people feel about data being collected during checkout?</a>
-	  	<a href="#bckinfo" class="sidenav-font" id="side_bckinfo">How much background info should be shown during the checkout session?</a>
-	  	<a href="#buildtrust" class="sidenav-font" id="side_buildtrust">How can we build trust in a<br>continuous authentication interface?</a>
-	  	<a href="#recovexp" class="sidenav-font" id="side_recovexp">What should the recovery experience<br>be?</a>
+	  	<a href="#q1" class="sidenav-font" id="side_q1">How do we demonstrate how continuous authentication works?</a>
+	  	<a href="#q2" class="sidenav-font" id="side_q2">How do people feel about different types of data being collected?</a>
+	  	<a href="#q3" class="sidenav-font" id="side_q3">How much background info should be shown during the checkout session?</a>
+	  	<a href="#q4" class="sidenav-font" id="side_q4">How do people feel about data being collected during checkout?</a>
+	  	<a href="#q5" class="sidenav-font" id="side_q5">How can we build trust in a<br>continuous authentication interface?</a>
+	  	<a href="#q6" class="sidenav-font" id="side_q6">What should the recovery experience<br>be?</a>
 	  	<a href="#summary" class="sidenav-font" id="side_summary">Summary</a>
 </div>
 
@@ -69,40 +70,8 @@
 
 							<br>
 
-							<div id="onboarding" class="row center-align-images">
-							  <div class="column" style="width: 40%">
-							    	<img src="images/design_chal_1.png"  style="width: 60%;" alt="" />
-							  </div>
-							  <div class="column" style="width: 60%">
-							    <ul style="float: left; list-style-type: none;">
-									<li style="">How do we demonstrate how continuous authentication works?</li>
-									<li style="margin-top: 1em;">How do people feel about different types of data being collected?</li>
-								</ul>
-							  </div>
-							</div>
-
 							<div class="row center-align-images">
-							  <div class="column" style="width: 40%">
-							    	<img src="images/design_chal_2.png"  style="width: 60%;" alt="" />
-							  </div>
-							  <div class="column" style="width: 60%">
-							    <ul style="float: left; list-style-type: none;">
-									<li style="">How much background info should be shown during the checkout session?</li>
-									<li style="margin-top: 1em;">How do people feel about data being collected during checkout?</li>
-									<li style="margin-top: 1em;">How can we build trust in a continuous authentication interface?</li>
-								</ul>
-							  </div>
-							</div>
-
-							<div class="row center-align-images">
-							  <div class="column" style="width: 40%">
-							    	<img src="images/design_chal_3.png"  style="width: 60%;" alt="" />
-							  </div>
-							  <div class="column" style="width: 60%">
-							    <ul style="float: left; list-style-type: none;">
-									<li style="">What should the recovery experience be?</li>
-								</ul>
-							  </div>
+								<img src="images/DesignQuestions.png"  style="width: 100%;" alt="" />
 							</div>
 
 							<br><br><br>
@@ -115,9 +84,9 @@
 							</header>
 
 
-							<header id="peepfeel">
-								<h4><b>Q1: How do people respond to being asked to provide their personal data?</b></h4>
-								<h4><b>A: Fear of detailed data being constantly tracked</b></h4>
+							<header id="q1">
+								<h4><b>Q1: How do we demonstrate how continuous authentication works?</b></h4>
+								<h4><b>A: Show context of use and data collection in action</b></h4>
 							</header>
 
 							<br><br><br>
@@ -140,7 +109,7 @@
 
 								<br><br><br>
 
-								<header id="datacollect">
+								<header id="q2">
 								<h4><b>Q2: How do people respond to being asked to provide their personal data?</b></h4>
 								<h4><b>A: Fear of detailed data being constantly tracked</b></h4>
 								</header>
@@ -180,7 +149,7 @@
 								</header>
 
 
-								<header id="bckinfo">
+								<header id="q3">
 									<h4><b>Q3: How much background information should we show?</b></h4>
 									<h4><b>A: Show all background information during on-boarding, but none for normal checkout.</b></h4>
 								</header>
@@ -213,24 +182,37 @@
 
 								<br><br><br>
 
-								<header id="buildtrust">
-									<h4><b>Q4: How can we build trust on a continuous authentication interface?</b></h4>
-									<h4><b>A: People don’t trust small merchants with their information.</b></h4>
+								<header id="q4">
+									<h4><b>Q4: How do people feel about data being collected during checkout?</b></h4>
+									<h4><b>A: Skepticism, and data gathering without opting in is weird.</b></h4>
 								</header>
 
 								<br><br><br>
 
 								<div class="row ">
-									  <div class="column" style="width:70%;">
-									  <iframe src="https://marvelapp.com/3731c07?emb=1&iosapp=false&frameless=false" width="960" height="600" allowTransparency="true" frameborder="0"></iframe>
-									    
+									  <div class="column" style="width:48%;">
+									    <video width="100%" controls  >
+									  	<source src="images/w13_Ipad_video_sucess_video.mov" type="video/mp4">
+									  	<source src="images/w13_Ipad_video_sucess_video.ogg" type="video/ogg">
+									  	Your browser does not support HTML5 video.
+										</video>
+									  </div>
+
+									  <div class="column" style="width:4%;"></div>
+
+									  <div class="column" style="width: 48%;">
+									    <video width="100%" controls  >
+									  	<source src="images/phone_Ipad.mp4" type="video/mp4">
+									  	<source src="images/avatar_demo.ogg" type="video/ogg">
+									  	Your browser does not support HTML5 video.
+										</video>
 									  </div>
 								</div>
 
 								<br><br><br>
 
 								<div >
-								<img src="images/q4quotes.png"  style="width: 100%;" alt="" />
+								<img src="images/q5quotes.png"  style="width: 100%;" alt="" />
 								</div>
 
 								<br><br><br>
@@ -240,17 +222,21 @@
 
 								<br><br><br>
 
-								<header>
-									<h4><b>Q5: How do people feel about data being collected during checkout?</b></h4>
-									<h4><b>A: Skepticism, and data gathering without opting in is weird.</b></h4>
+								<header id="q5">
+									<h4><b>Q5: How can we build trust on a continuous authentication interface?</b></h4>
+									<h4><b>A: People don’t trust small merchants with their information.</b></h4>
 								</header>
 
-								<br><br><br>
-
-								<!-- AROON: INSERT LEMONADE VIDEO HERE -->
+								<br><br><br> 
 
 								<div >
-								<img src="images/q5quotes.png"  style="width: 100%;" alt="" />
+								<img src="images/Q4Prototype.png"  style="width: 100%;" alt="" />
+								</div>
+
+								<br><br><br> 
+
+								<div >
+								<img src="images/q4quotes.png"  style="width: 100%;" alt="" />
 								</div>
 
 								<br><br><br>
@@ -266,18 +252,18 @@
 
 							<br><br><br>
 
-							<header>
+							<header id="q6">
 								<h4><b>Q6: What should the recovery experience be?</b></h4>
 								<h4><b>A: Falling back to an existing authentication method is a good mental model</b></h4>
 							</header>
 
 							<br><br><br>
 
-							<div class="row ">
-								<div >
-								<img src="images/q6prototype.png"  style="width: 100%;" alt="" />
-								</div>
-							</div>
+							<video width="80%" controls  class="center-align-images">
+						  	<source src="images/w13_Ipad_video_fail_video.mov" type="video/mp4">
+						  	<source src="images/w13_Ipad_video_fail_video.mov.ogg" type="video/ogg">
+						  	Your browser does not support HTML5 video.
+							</video>
 
 							<br><br><br>
 
