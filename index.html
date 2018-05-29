@@ -104,7 +104,15 @@
 
 							<header><h2><b>A new system with <br>Continuous Authentication</b></h2></header>
 
+							<div id="before_mc" style="display: block;">
+							<img src="images/before_mc.png" style="width: 80%;" class="center-align-images" alt="" />
+							</div>
+
+							<div id="after_mc" style="display: none;">
 							<img src="images/after_mc.png" style="width: 80%;" class="center-align-images" alt="" />
+							</div>
+
+							<a style="text-align: center; cursor: pointer;" onclick="transitionToNewState()" class="center-align-images" id="click-text">With Continuous Authentication &rarr;</a>
 
 							<br>
 
@@ -186,7 +194,7 @@
 							<br><br>
 
 							<ul class="actions vertical align-center">
-								<li><a href="prototypes.html" class="button big wide smooth-scroll-middle">Design Prototypes</a></li>
+								<li><a href="prototypes.html" class="button big wide smooth-scroll-middle">Design Prototypes &rarr;</a></li>
 							</ul>
 							<!-- <br><br><br>
 							<a href="prototypes.html">Continue reading: Design Prototypes</a> -->
@@ -233,6 +241,33 @@
 			
 
 		<!-- Scripts -->
+
+			<script type="text/javascript">
+
+				function transitionToNewState() {
+
+					before = document.getElementById('before_mc');
+					after = document.getElementById('after_mc');
+
+					clickText = document.getElementById('click-text');
+
+					before_visibilityStatus = before.style.display;
+					after_visibilityStatus = after.style.display;
+
+					if(before_visibilityStatus === "block") {
+						before.style.display = "none";
+						after.style.display = "block";
+						clickText.innerHTML = "Without Continuous Authentication &rarr;";
+					}
+					else if(after_visibilityStatus === "block") {
+						before.style.display = "block";
+						after.style.display = "none";
+						clickText.innerHTML = "With Continuous Authentication &rarr;";
+					}
+				}
+
+			</script>
+
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 			<script src="assets/js/navbar.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
