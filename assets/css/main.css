@@ -8434,7 +8434,8 @@
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
+  font-weight: 300;
 }
 
 .navactive {
@@ -8555,7 +8556,7 @@
 }
 
 p b {
-	color: #F79F1A;
+	/*color: #F79F1A;*/
 }
 
 body a {
@@ -8565,6 +8566,25 @@ body a {
 .topnav a, li a, h3 a, .force-black {
 	color: #000000;
 }
+
+video, .prototype-shadow {
+  -moz-box-shadow:    3px 3px 5px 3px #e8e7e7;
+  -webkit-box-shadow: 3px 3px 5px 3px #e8e7e7;
+  box-shadow:         3px 3px 5px 3px #e8e7e7;
+}
+
+
+blockquote cite {
+color: #999999;
+font-size: 14px;
+display: block;
+margin-top: 5px;
+}
+ 
+blockquote cite:before {
+content: "\2014 \2009";
+}
+
 
 
 
