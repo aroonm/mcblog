@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Team Mastercard: Weeknotes 13</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+	</head>
+	<body>
+
+	<div class="topnav" id="myTopnav">
+		<a href="blog.html"><span class="navactive">Blog</span></a>
+	  <a href="team.html">Team</a>
+	  <a href="prototypes.html">Design Prototypes</a>
+	  <a href="index.html" >Why Continuous Authentication</a>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	    <i class="fa fa-bars"></i>
+	  </a>
+	</div>
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+			<section class="wrapper style1 align-left">
+						<div class="inner medium">
+							<header>
+								<h2>Week13 - Lemonade Stand</h2>
+							</header>
+							<div class="content">
+
+
+<p>For our last sprint of the spring semester, we wanted to branch out of the avatar and online UI spaces into the physical realm. This final prototype tackled a question that has been niggling us since the first month:</p>
+
+<header><h4><b>How do people actually feel about their face being recorded in a physical store?</b></h4></header>
+
+<p>Since the digital avatar and web store examples were more digitally focused, we wanted to interrogate the physical store and consumers level of comfort while having their face “scanned” or video recorded during check out in person. We knew we couldn’t get authentic reactions from people just by showing them a storyboard, so we had to approximate the payment experience. </p>
+
+<p>We created a Lemonade Stand that people could walk up to and act out paying.  What is more brick-and-mortar than a lemonade stand?</p>
+
+
+<span class="image fit" style="margin-bottom: 0px;"><img src="images/w13_Lemonade.JPG" alt="" /></span>
+<br><br>
+<p>The prototype we developed used a tablet POS system as the format, and we developed UI elements continuing with our fictitious ‘Mastercard Instant Checkout’ branding to elicit trust. While we provided free lemonade, we asked ‘shoppers’ to go through the payment process on the tablet. Once they selected “One glass of lemonade” from the menu there were three variations that we tested that users experienced:</p>
+
+
+
+<header><h4><b>Testing 3 different authentication flows</b></h4></header>
+<b>Live video feed - Successful authentication</b>
+<p>1. Users see their face being recorded through live video on the merchant POS (an iPad tablet), and a confirmation animation plays letting the customer know that the payment was successful.</p>
+
+<video  controls  class="center-align-images" style="width: 80%;">
+	<source src="images/w13_Ipad_video_sucess_video.mov" type="video/mp4">
+	<source src="images/w13_Ipad_video_sucess_video.ogg" type="video/ogg">
+	Your browser does not support HTML5 video.
+</video>
+
+
+<br><br>
+<b>Live video feed - Failed authentication with phone push notification</b>
+<p>2. Users see the same video recording but experience the failed state, where the trust score shows up low (~70%). We would then hand them a phone (they pretended it was their phone) that got a notification with a 4 digit passcode they had to enter on the merchant POS.</p>
+
+<video  controls  class="center-align-images" style="width: 80%;">
+	<source src="images/w13_Ipad_video_fail_video.mov" type="video/mp4">
+	<source src="images/w13_Ipad_video_fail_video.ogg" type="video/ogg">
+	Your browser does not support HTML5 video.
+</video>
+
+
+<br><br>
+<b>Video recording on the customer’s phone</b>
+<p>3. Users received a notification on the phone we provided to enable facial capture. The front camera would turn on, and the user would see a similar animation to Option 1, confirming the user’s authenticity. The hypothesis with this method is that people may be more comfortable.</p>
+
+<video  controls  class="center-align-images" style="width: 100%;">
+	<source src="images/phone_ipad.mp4" type="video/mp4">
+	<source src="images/phone_ipad.ogg" type="video/ogg">
+	Your browser does not support HTML5 video.
+</video>
+
+<br><br>
+<p>We tested these prototypes both during 90 minute user interviews, as well as on the street, where we conducted guerrilla research with dozens of people (with the incentive of free lemonade).</p>
+
+<b>Some takeaways</b>
+
+<p>Both methods provided some great findings from this prototype. Most people (8/13) has negative reactions to being video’d without their consent at the point of sale. Version 3, where it was recorded on their own phone, did assuage these discomforts. Many people seemed resigned and willing to provide their facial data to authenticate themselves if it becomes the new paradigm (“if I see other people doing it, I’ll do it too”). Overall, it seems like video recording could work for customers that opt-in, and feel added value in the form of ease or time-savings from the get-go.</p>
+
+<video  controls  class="center-align-images" style="width: 100%;">
+	<source src="images/w13_onstreet_video.mp4" type="video/mp4">
+	<source src="images/w13_onstreet_video.ogg" type="video/ogg">
+	Your browser does not support HTML5 video.
+</video>
+<br><br>
+
+							</div>
+
+
+						</div>
+					</section>
+
+
+
+
+
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<p>&copy; Team Mastercard, CMU.</p>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
