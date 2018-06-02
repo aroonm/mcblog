@@ -14,40 +14,49 @@
 
 	<style type="text/css">
 
-	/*.center-align-images {
-		display: block;
-		margin-left: auto;
-    	margin-right: auto;
-    	width: 80%;
-	}
+.container {
+  overflow: hidden;
+}
 
-	* {
-    	box-sizing: border-box;
-	}
+.sliding-background {
+	background: linear-gradient(
+                     rgba(0,0,0, .5), 
+                     rgba(0,0,0, .5)),
+                     url("images/scrolling-banner.jpg") repeat-x;
+  /*background: url("images/scrolling-banner.jpg") repeat-x;*/
+  height: 900px; /*1440 × 900*   10401 × 900 */
+  width: 31203px;
+  animation: slide 200s linear infinite;
+  overflow-y: hidden
+  
+}
 
-	
-	.column {
-	    float: left;
-	    width: 33.33%;
-	    padding: 10px;
-	    height: 300px; 
-	}
+@keyframes slide{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-10401px, 0, 0);
+  }
+}
 
-	
-	.row:after {
-	    content: "";
-	    display: table;
-	    clear: both;
-	}*/
     
 	</style>
 	<body>
 
 	<div class="topnav" id="myTopnav">
-		<a href="blog.html">Blog</a>
-  		<a href="team.html">Team</a>
-  		<a href="prototypes.html">Design Prototypes</a>
-  		<a href="#"><span class="navactive">Why Continuous Authentication</span></a>
+
+		<a href="blog.html" class="hoveractive">Blog</a>
+  		<a href="team.html" class="hoveractive">Team</a>
+  		<a href="prototypes.html" class="hoveractive">Design Prototypes</a>
+  		<a href="index.html" class="hoveractive"><span class="navactive">Why Continuous Authentication</span></a>
+  		<a href="https://www.mastercard.us/en-us.html" class="dont-activate" style="float: left; left: 0px; margin-top: -5px; position: absolute;">
+			<img style="width:70px;";  src="images/mclogo-nav.png">
+
+		</a>
+		<a href="https://www.hcii.cmu.edu/" class="dont-activate" style=" float: left; left: 60px; margin-top: -5px; position: absolute;">
+			<img style="width:70px;" src="images/hcilogo-nav.png">
+		</a>
   		<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
 	</div>
 
@@ -57,14 +66,19 @@
 				<!-- MC Splash -->
 					<section class="banner style5 orient-left content-align-left image-position-right fullscreen ">
 						<div class="content" style="width: 60rem;">
-							<h1><b>Team Mastercard</b></h1>
-							<p class="major">The future of authentication in digital payments</p>
+							<h1 ><b style="font-weight: 600;" class="mc">Team HamsterBard</b></h1>
+							<p class="major " style="color:white;">CMU MHCI capstone project sponsored by Mastercard</p>
+							<p class="major"  style="color:white; margin-top: -20px;"><b style="color: white;">Year of 2018</b></p>
 							<ul class="actions vertical">
-								<li><a href="#first" class="button big wide smooth-scroll-middle">Read More</a></li>
+								<li><a href="#first" class="button big wide smooth-scroll-middle mc" style="    box-shadow: inset 0 0 0 1px #f79f1a;
+    color: #f79f1a !important; background-color: #0000002b;">Read More</a></li>
 							</ul>
 						</div>
-						<div class="image ">
-							<img src="images/banner1.png" alt="" />
+						
+						<div class="image" style="opacity: 0.8; overflow: hidden;">
+							<div class="container">
+  								<div class="sliding-background"></div>
+							</div>
 						</div>
 					</section>
 
@@ -241,6 +255,8 @@
 			
 
 		<!-- Scripts -->
+
+		
 
 			<script type="text/javascript">
 

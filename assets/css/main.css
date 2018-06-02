@@ -8424,7 +8424,7 @@
   top: 0;
   width: 100%;
   z-index: 999999;
-  background-color: white;
+  background-color: #ffffffbf;
 }
 
 .topnav a {
@@ -8446,7 +8446,7 @@
 	color: white; 
 }
 
-.topnav a:hover {
+.topnav .hoveractive:hover {
 	color: white;
   background-color: #F79F1A; /* Mastercard color */
   color: white;
@@ -8536,7 +8536,7 @@
 }
 
 .sidenav .sidenav-font {
-	font-size: 12px;
+	font-size: 15px;
 }
 
 
@@ -8557,6 +8557,10 @@
 
 p b {
 	/*color: #F79F1A;*/
+}
+
+.mc {
+	color: #F79F1A;
 }
 
 body a {
