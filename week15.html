@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Team Mastercard: Weeknotes 15</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+	</head>
+	<body>
+
+	<div class="topnav" id="myTopnav">
+		<a href="blog.html"><span class="navactive">Blog</span></a>
+	  <a href="team.html">Team</a>
+	  <a href="prototypes.html">Design Prototypes</a>
+	  <a href="index.html" >Why Continuous Authentication</a>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	    <i class="fa fa-bars"></i>
+	  </a>
+	</div>
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+			<section class="wrapper style1 align-left">
+						<div class="inner medium">
+							<header>
+								<h2>Week15 - Sprint 5, Fear and Loathing in Physical Retail</h2>
+							</header>
+							<div class="content">
+
+<header><h4><b>Spinning our wheels</b></h4></header>
+
+
+<p>The past two weeks we focused on the toughest and most constrained design space we've had yet. Last week we dialed into merchants and what they need. Explored various types of merchants we saw just how wide of an array a Point of Sale provider has to accommodate, and how varied small businesses are.</p>
+
+<p>We did discuss a lot about what business value Mastercard can bring to merchants, how POS systems fit into the equation, the crushing realities of the physical space, and revisiting and reframing what our scope actually is. Eventually we realized we can't satisfy it all, and we just had to start making things. Do one small thing, do it well.
+</p>
+
+<header><h4><b>Narrow, narrow, narrow</b></h4></header>
+
+
+<p>We started out with grocery stores and fast food / coffee shops. We decided to focus down to just coffee shops for the prototype, since Starbucks has been a major observation site and testing ground for us.</p>
+
+<p>Our chief constraint was that we don't want businesses to have to buy new hardware. It's easy to design a technology solution that tracks people and what they're buying - if you just add loads of cameras and sensors to the place. However, we identified this is the main reason Google Hands Free and Paypal have failed in the physical store: The capital costs of buying sensing gear for a POS system is too steep. Merchants just want something that works and is cheap.
+So this pushed us to have all the computing on the customers device.</p>
+
+<header><h4><b>5 Prototypes</b></h4></header>
+
+<p>We know the onboarding experience will be critical no matter what, and since we were trying to offload the computation to the customers device, we prototyped the onboarding experience (on a customers phone) and the ideal purchase flow (at the merchant's counter/POS) for five different authentication.</p>
+
+
+<ol>
+	<li>Verbal - customer adds a customer name and orders using this name, "Hi, I'm Dan Smith."</li>
+	<li>Video Raw - Much like the lemonade stand prototype, there's a raw video capture using facial recognition.</li>
+	<li>Video Animoji - Facial recognition here as well but the customer doesn't see raw video and instead sees a live animoji of themselves</li>
+	<li>Pincode - A basic 4-6 digit pin code the customer determines beforehand</li>
+	<li>Phone touch - An NFC reader much like Apple Pay currently</li>
+</ol>
+
+<header><h4><b>Contextual Inquiry Research</b></h4></header>
+
+<p>While simultaneously developing the prototypes for each of these methods, two of us also went out on the town to 15 various coffee shops, from corporate chains to local indie shops, to observe and map the sequence of events, chart number of card transactions vs. cash, see app usage, and interview some folks. This ended up being a very productive morning of a quick contextual inquiry. </p>
+
+<p><b>Some interesting takeaways:</b></p>
+
+<ul>
+<li>The sequence after ordering of pay and receive is highly variable based on if the order is simple enough. Drip coffee - they serve it to you and then ask you to pay. Double shot Latte - they'll take your money, and then you wait for them to make it. </li>
+<li>Cash vs. Card - Shadyside had much more cash usage, while Pitt and CMU had much more card.</li>
+<li>Starbucks app usage for rewards points is 49%, which seems extreme.</li>
+<li>Every barista we talked with said they recognized regulars, and had their orders memorized. Some will even start making the drink while seeing the customer walk across the street.</li>
+</ul>
+
+
+
+<span class="image fit" style="margin-bottom: 0px;"><img src="images/map1.jpg" alt="" /></span>
+<br><br>
+<span class="image fit" style="margin-bottom: 0px;"><img src="images/map2.jpg" alt="" /></span>
+<br><br>
+
+<header><h4><b>Testing</b></h4></header>
+
+<p>We tested with 5 participants from college to middle age. Here are the results of some basic questions we surveyed afterwards.</p>
+
+<span class="image fit" style="margin-bottom: 0px;"><img src="images/w20_dataviz.png" alt="" /></span>
+<br><br>
+
+<header><h4><b>Conclusions</b></h4></header>
+
+<p>Some initial conclusions from this sprint and prototype testing:</p>
+
+<p><b>Customization</b> - Even among our small sample, all 5 prototypes were selected a preferred by different participants. This reinforces earlier ideas that no one method is ideal, and a variety of methods should be available to the user to select.</p>
+
+
+<p><b>Multiple users per card, Multiple cards per user</b> - A participant this round surfaced an issue we discussed in the spring of how does CA work for multiple users on the same card? Since it is very biometrically tied to an individual, would it be possible for a couple to share a card? Could it work on a corporate card with multiple users?</p>
+
+<p><b>Physical Cards work very well</b> - In the end, we've reified how convenient and solid physical cards are in a physical store. They actually work great. We've been using them for 70 years. Everyone knows how they work. They don't have to be charged. In short, they're great. If we think phone payments are a nice new step, it will be for some value add beyond convenience.</p>
+
+<p><b>Back to Customer Side</b> - While we imagined doing more for merchants this summer, we decided that POS systems are out of our scope, and physical brick-and-mortar stores are less important for us. We will tack back to customer experience, and likely develop the digital space more. In the end, we decided the merchant focus should only be one sprint.</p>
+
+<p><b>Communicating CA</b> - The key takeaway from this week is the realization that it is very difficult to communicate what CA is and how it works. Most participants still didn't understand that the system must continuously track you, and it's through this that the authentication works. This will kick off out next sprint - How can we communicate CA most effectively?</p>
+
+
+
+
+
+
+							</div>
+
+
+						</div>
+					</section>
+
+
+
+
+
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<p>&copy; Team Mastercard, CMU.</p>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
