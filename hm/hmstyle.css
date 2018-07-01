@@ -106,7 +106,7 @@ label {
     background-color: rgba(0,0,0,0.7);
     width: 100%;
 height: 100%;
-z-index: 1999999;
+z-index: 10000000000000;
 }
 
 .step-up-window{
@@ -124,6 +124,25 @@ padding: 30px;
     
 }
 
+.step-up-window-email{
+    text-align: center;
+    position: fixed;
+    width: 600px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid #dadada;
+    left: 50%;
+    top:50%;
+margin-left: -300px; /* Half of the width */
+margin-top: -150px; /* Half of the width */
+padding: 30px;
+    
+}
+
+canvas{
+    margin-top: 50px;
+}
+
 .swipe-pattern-img {
     text-align: center;
     width: 350px;
@@ -136,6 +155,13 @@ font-size: 22px;
 font-weight: 900;
 margin-bottom: 5px;
 }
+
+.step-up-window-email h2{
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 5px;
+    margin-bottom: 30px;
+    }
 .step-up-window h3{
     font-size: 18px;
     font-weight: 400;
@@ -158,8 +184,7 @@ margin-bottom: 5px;
         top:50%;
     margin-left: -200px; /* Half of the width */
     margin-top: -325px; /* Half of the width */
-    padding: 30px;
-        
+    padding: 30px;  
     }
     .row {
         flex-direction: column-reverse;
