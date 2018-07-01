@@ -16,6 +16,12 @@ i {
     margin-right: 5px;
 }
 
+.hmlogo {
+    width: 100%;
+    text-align: center;
+    margin-top:20px;
+}
+
 .filledtext {
     margin-bottom: 20px;
 }
@@ -88,6 +94,7 @@ input[type="checkbox"] {
     -webkit-appearance: checkbox;
     opacity: 100;
     margin-right: 2px;
+    margin-top: .3rem;
 }
 
 label {
@@ -121,7 +128,7 @@ z-index: 10000000000000;
 margin-left: -400px; /* Half of the width */
 margin-top: -300px; /* Half of the width */
 padding: 30px;
-    
+
 }
 
 .step-up-window-email{
@@ -136,7 +143,7 @@ padding: 30px;
 margin-left: -300px; /* Half of the width */
 margin-top: -150px; /* Half of the width */
 padding: 30px;
-    
+
 }
 
 canvas{
@@ -184,7 +191,7 @@ margin-bottom: 5px;
         top:50%;
     margin-left: -200px; /* Half of the width */
     margin-top: -325px; /* Half of the width */
-    padding: 30px;  
+    padding: 30px;
     }
     .row {
         flex-direction: column-reverse;
