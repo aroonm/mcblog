@@ -27,7 +27,7 @@
 
 		<section class="wrapper style1 align-left">
 			<div class="inner medium">
-				<form action="HM_Confirmation.html" onsubmit="return validateForm()">
+				<form action="HM_Confirmation.html">
 					<div class="row">
 						<div class="col-75">
 
@@ -70,7 +70,7 @@
 									</div>
 								</div>
 								<label for="email"> Email</label>
-								<input type="text" id="email" name="email" placeholder="name@example.com" required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+								<input type="text" id="email" name="email" placeholder="name@example.com" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$">
 							</div>
 
 							<div class="container">
@@ -108,7 +108,7 @@
 									</div>
 									<div class="col-50">
 										<label for="ccnum">Card Number</label>
-										<input type="text" id="ccnum" name="cardnumber" placeholder="1111222233334444" required pattern="^\d{16}$">
+										<input type="text" id="ccnum" name="cardnumber" placeholder="1111222233334444" required>
 									</div>
 								</div>
 								<div class="row">
@@ -169,7 +169,7 @@
 					<br>
 					<p>With 'Complete Purchase' you accept H&M's Terms of Use.</p>
 					<p>H&M will process your personal data to manage your order, in accordance with H&M's Privacy Notice.</p>
-					<input type="submit" value="Complete Purchase" class="btn" style="margin: 20px 20px 0px 0px"> <b>Total: $28.98</b>
+					<input type="submit" value="Complete Purchase" class="btn" onclick="validateForm();" style="margin: 20px 20px 0px 0px"> <b>Total: $28.98</b>
 				</form>
 
 			</div>
@@ -191,6 +191,7 @@
 	<script src="assets/js/skel.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script type="text/javascript" src="hm/FormValidation.js"></script>
 
 </body>
 </html>
