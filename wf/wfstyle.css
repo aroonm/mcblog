@@ -1,0 +1,228 @@
+h3 {
+    margin: 0px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #026E54;
+}
+
+hr {
+    margin: 20px -20px;
+    border: white;
+}
+
+p {
+    margin: 0;
+}
+
+i {
+    margin-right: 5px;
+}
+
+a {
+    color: #026E54 !important;
+}
+
+body {
+    background:#F5F5F5;
+}
+
+.hmlogo {
+    width:8rem;
+    text-align: left;
+    margin-top:-10px;
+}
+
+.nav {
+    margin: 0 3rem;
+}
+
+.filledtext {
+    margin-bottom: 20px;
+}
+
+.wrapper.style1 > .inner.medium {
+    width: 65rem;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.col-25 {
+    -ms-flex: 1; /* IE10 */
+    flex: 1;
+}
+
+.col-50 {
+    -ms-flex: 1; /* IE10 */
+    flex: 1;
+}
+
+.col-75 {
+    -ms-flex: 2; /* IE10 */
+    flex: 2;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+    padding: 0 16px;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 3px;
+    margin: 30px 0;
+    overflow: hidden;
+    background: white;
+}
+
+.container-ca {
+    padding: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    margin: 30px 0;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.button-ca {
+    color:white !important;
+    background: #FF5F00;
+    border-radius: 0;
+}
+
+#checkout-button{
+    color: #fff !important;
+    font-weight: 700;
+    line-height: 1em;
+    font-style: normal;
+    text-align: center;
+    padding: 15px 11px 11px;
+    cursor: pointer;
+    background: #D0021B;
+    border-radius: 48px;
+}
+
+input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+    opacity: 100;
+    margin-right: 2px;
+    margin-top: .3rem;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+/* step up styles */
+.step-up-container{
+    position: fixed;
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+height: 100%;
+z-index: 10000000000000;
+}
+
+.step-up-window{
+    text-align: center;
+    position: fixed;
+    width: 800px;
+    height: 600px;
+    background-color: white;
+    border: 1px solid #dadada;
+    left: 50%;
+    top:50%;
+margin-left: -400px; /* Half of the width */
+margin-top: -300px; /* Half of the width */
+padding: 30px;
+
+}
+
+.step-up-window-email{
+    text-align: center;
+    position: fixed;
+    width: 600px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid #dadada;
+    left: 50%;
+    top:50%;
+margin-left: -300px; /* Half of the width */
+margin-top: -150px; /* Half of the width */
+padding: 30px;
+
+}
+
+canvas{
+    margin-top: 50px;
+}
+
+.swipe-pattern-img {
+    text-align: center;
+    width: 350px;
+    margin: auto;
+    margin-top:50px;
+}
+
+.step-up-window h2{
+font-size: 22px;
+font-weight: 900;
+margin-bottom: 5px;
+}
+
+.step-up-window-email h2{
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 5px;
+    margin-bottom: 30px;
+    }
+.step-up-window h3{
+    font-size: 18px;
+    font-weight: 400;
+    }
+
+.swipe-pattern-img img{
+    width: 350px;
+    margin: auto;
+}
+
+@media (max-width: 800px) {
+    .step-up-window{
+        text-align: center;
+        position: fixed;
+        width: 400px;
+        height: 650px;
+        background-color: white;
+        border: 1px solid #dadada;
+        left: 50%;
+        top:50%;
+    margin-left: -200px; /* Half of the width */
+    margin-top: -325px; /* Half of the width */
+    padding: 30px;
+    }
+    .row {
+        flex-direction: column-reverse;
+    }
+    .col-25 {
+        margin-bottom: 20px;
+    }
+}
