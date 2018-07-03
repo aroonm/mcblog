@@ -288,128 +288,104 @@ a {
     .hmlogo img{
         /*width:11rem;*/
     }
-/*    .detail{
-        display: block;
-        margin: 20px;
-            }
-    .detailleft {
-        margin: 20px;
+    .footer-category{
+        width: calc(100% / 2 - 2.5% * 3 / 2);
+        margin-right: 2.5%;
+        float: left;
     }
-    .detailright{
-        margin: 20px;
-        }*/
-        .footer-category{
-            width: calc(100% / 2 - 2.5% * 3 / 2);
-            margin-right: 2.5%;
-            float: left;
-        }
-        .row {
-            flex-direction: column;
-            margin:0 2rem;
-        }
-        .col-25 {
-            margin-bottom: 20px;
-        }
-        .checkout {
-            flex-direction: column;
-            /*margin-top: 20px;*/
-        }
-        .checkout img {
-            width: 50%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-        .nutrition {
-            font-size: 80%;
-        }
+    .row {
+        flex-direction: column;
+        margin:0 2rem;
+    }
+    .col-25 {
+        margin-bottom: 20px;
+    }
+    .checkout {
+        flex-direction: column;
+        /*margin-top: 20px;*/
+    }
+    .checkout img {
+        width: 50%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .nutrition {
+        font-size: 80%;
+    }
 
-        .pop-cart{
-            visibility: hidden;
-            right: 20px;
-            top:20px;
-            position: absolute;
-            width: 300px;
-            height: 450px;
-        }
+    .pop-cart{
+        visibility: hidden;
+        right: 20px;
+        top:20px;
+        position: absolute;
+        width: 300px;
+        height: 450px;
+    }
+}
 
-        /* Small devices (portrait tablets and large phones, 600px and up) */
-        @media only screen and (min-width: 600px) {
-            .cart{
-                float: right;
-                width: 20px !important;
-                margin-right: 20px;
-                margin-top:1rem;
-            }
-            .hmlogo img{
-                width:8rem;
-            }
-/*    .detail{
-display: block;
-margin: 20px;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .cart{
+        float: right;
+        width: 20px !important;
+        margin-right: 20px;
+        margin-top:1rem;
     }
-    .detailleft {
-        margin: 20px;
-    }
-    .detailright{
-        margin: 20px;*/
+    .hmlogo img{
+        width:8rem;
     }
     .footer-category{
         width: calc(100% / 2 - 2.5% * 3 / 2);
         margin-right: 2.5%;
-        float: left;}
+        float: left;
     }
+}
 
-    /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {
-        .hmlogo img{
-            width:8rem;
-        }
-        .cart{
-            float: right;
-            width: 30px !important;
-            margin-right: 40px;
-            margin-top:2rem;
-        }
-/*    .detailleft {
-        width: calc(66vw - 2 * 40px);
-        margin: 20px;
-        text-align: right;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .hmlogo img{
+        width:8rem;
     }
-
-    .detailright {
-        width: calc(66vw - 2 * 40px);
-        margin: 20px;
-        max-width: 370px;
-    }
-    .detail {
-        margin: 40px;
-        display: flex;
-        position: relative;*/
+    .cart{
+        float: right;
+        width: 30px !important;
+        margin-right: 40px;
+        margin-top:2rem;
     }
     .footer-category{
         width: calc(100% / 4 - 2.5% * 3 / 4);
         margin-right: 2.5%;
-        float: left;}
+        float: left;
     }
-
-    /* Large devices (laptops/desktops, 992px and up) */
-    @media only screen and (min-width: 992px) {
-/*    .detail {
-        margin: 100px;
-        display: flex;
-        position: relative;
-        }*/
-
+    .checkout img {
+        width: 50%;
+        height: 50%;
+        margin-bottom: 20px;
     }
-
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {
-/*    .detail {
-        margin: 100px;
-        display: flex;
-        position: relative;
-
-        }*/
-
-
+    .row {
+        margin:0 2rem;
     }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .checkout img {
+        width: 50%;
+        height: 50%;
+    }
+    .row {
+        margin:0 10rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .checkout img {
+        width: 10%;
+        height: 10%;
+        margin-bottom: 0;
+    }
+    .row {
+        margin:0 15rem;
+    }
+}
