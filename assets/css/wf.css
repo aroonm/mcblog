@@ -316,6 +316,7 @@ a {
         }
         .checkout img {
             width: 50%;
+            height: auto;
             margin-bottom: 20px;
         }
         .nutrition {
