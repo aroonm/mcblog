@@ -7,14 +7,14 @@
 <html>
 
 <head>
-	<title>H&M - CAInfo</title>
+	<title>Walmart - CAInfo</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="hm/hmstyle.css" />
+	<link rel="stylesheet" href="wm/wmstyle.css" />
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-	<link rel="stylesheet" type="text/css" href="hm/slick.css" />
-	<link rel="stylesheet" type="text/css" href="hm/slick-theme.css" />
+	<link rel="stylesheet" type="text/css" href="wm/slick.css" />
+	<link rel="stylesheet" type="text/css" href="wm/slick-theme.css" />
 </head>
 
 <body>
@@ -23,27 +23,30 @@
 
 	<!-- <div class="step-up-container">
 		<div class="step-up-window">
-		<img src="hm/img/logo-04.png" width="80px">
-		<h2>Mastercard Instant Checkout noticed some change in your browsing behavior.</h2>
-		<h3>Please swipe through the following images.</h3>
-			<div class="swipe-pattern-img">
-				<div>
-					<img src="hm/img/img1.jpg">
-				</div>
-				<div>
-					<img src="hm/img/img2.jpeg">
-				</div>
-				<div>
-					<img src="hm/img/img3.jpeg">
-				</div>
-				<div>
-					<img src="hm/img/img4.jpeg">
-				</div>
-				<div>
-					<img src="hm/img/img5.jpeg">
-				</div>
-				<div>
-					<img src="hm/img/img6.jpeg">
+			<img src="hm/img/logo-04.png" width="80px">
+			<h2>Mastercard Instant Checkout noticed some change in your browsing behavior.</h2>
+			<h3>Please swipe through the following images.</h3>
+			<div class="countainer-swipe">
+				<img id="confirmation-gif" src="wm/img/check.gif">
+				<div class="swipe-pattern-img">
+					<div>
+						<img src="hm/img/img1.jpg">
+					</div>
+					<div>
+						<img src="hm/img/img2.jpeg">
+					</div>
+					<div>
+						<img src="hm/img/img3.jpeg">
+					</div>
+					<div>
+						<img src="hm/img/img4.jpeg">
+					</div>
+					<div>
+						<img src="hm/img/img5.jpeg">
+					</div>
+					<div>
+						<img src="hm/img/img6.jpeg">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -52,24 +55,28 @@
 	<!-- step-ups: draw a star. uncomment the following for receiving pattern step-up-->
 
 	<!-- <div class="step-up-container">
-		<div class="step-up-window">
+		<div style="height:570px; margin-top: -285px;" class="step-up-window">
 			<img src="hm/img/logo-04.png" width="80px">
 			<h2>Mastercard Instant Checkout noticed some change in your browsing behavior.</h2>
 			<h3>Please draw a start in the square below.</h3>
 			<div id="draw-canvas">
+					<img style="width: 300px; position:absolute; left:50%;" id="confirmation-gif" src="wm/img/check.gif">
 			</div>
+			<button id="conformstep" style="margin: 20px 20px 0px 0px">Done</button>
 		</div>
 	</div> -->
 
 	<!-- step-ups: circle object of interest. uncomment the following for circle object of interest step-up-->
 
 	<!-- <div class="step-up-container">
-		<div class="step-up-window">
+		<div style="height:570px; margin-top: -285px;" class="step-up-window donut">
 			<img src="hm/img/logo-04.png" width="80px">
 			<h2>Mastercard Instant Checkout noticed some change in your browsing behavior.</h2>
 			<h3>Please circle your chosen object:</h3>
 			<div id="draw-canvas">
+					<img style="width: 300px; position:absolute; left:50%;" id="confirmation-gif" src="wm/img/check.gif">
 			</div>
+			<button id="conformstep" style="margin: 20px 20px 0px 0px">Done</button>
 		</div>
 	</div> -->
 
@@ -77,17 +84,31 @@
 
 	<!-- <div class="step-up-container">
 		<div class="step-up-window-email">
-			<img src="hm/img/logo-04.png" width="80px">
-			<h2>Mastercard Instant Checkout noticed some change in your browsing behavior.</h2>
-			<h3>A link has been sent to your email at zo******@gmail.com. <br>Please click the link to proceed. 
-				</h3>
+			<div class="dialog">
+					<img class="email-check" id="confirmation-gif" src="wm/img/check.gif">
+					<div id="tohide">
+				<img  src="hm/img/logo-04.png" width="80px">
+				<h2>Mastercard Instant Checkout noticed some change in your browsing behavior.</h2>
+				<h5>A link has been sent to your email at zo******@gmail.com</h5>
+				<div id="form">
+					<input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+					<input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+					<input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+					<input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+				</div>
+				<button id="conformstep">Verify</button>
+			</div>
+			</div>
 		</div>
 	</div> -->
 
 	<!-- enf of step-ups-->
 
 	<div class="topnav" id="myTopnav">
-		<img style="width: 100%;" src="hm/checkHeader.png">
+		<div style="width: 100%;">
+			<img src="wm/img/Walmart_Star.svg">
+			<h5>Walmart</h5>
+		</div>
 	</div>
 
 	<!-- Wrapper -->
@@ -95,7 +116,7 @@
 
 		<section class="wrapper style1 align-left">
 			<div class="inner medium">
-				<form action="HM_Confirmation.html">
+				<form action="WM_Confirmation.html">
 					<div class="row">
 						<div class="col-75">
 
@@ -209,8 +230,8 @@
 					</div>
 					<p>
 						<i class="fa fa-lock"></i>All data will be encrypted.</p>
-					<input type="submit" value="Complete Purchase" class="btn" style="margin: 20px 20px 0px 0px">
-					<b>Total: $28.98</b>
+					<input type="submit" value="Complete Purchase" id="checkout-button" onclick="validateForm();" style="margin: 20px 20px 0px 0px">
+					<b class="total">Total: $4196.50</b>
 				</form>
 
 			</div>
@@ -243,13 +264,30 @@
 	<script src="assets/js/skel.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-	<script type="text/javascript" src="hm/slick.min.js"></script>
-	<script type="text/javascript" src="hm/p5.min.js"></script>
-	<script type="text/javascript" src="hm/p5.dom.min.js"></script>
-	<script src="hm/sketch.js"></script>
+	<script type="text/javascript" src="wm/slick.min.js"></script>
+	<script type="text/javascript" src="wm/p5.min.js"></script>
+	<script type="text/javascript" src="wm/p5.dom.min.js"></script>
+	<script src="wm/sketch.js"></script>
 
 	<script>
+
 		$(document).ready(function () {
+			$('#confirmation-gif').hide();
+			$("#conformstep").click(function () {
+				$('#conformstep').hide();
+				$('#tohide').css("opacity", "0");
+				$('#confirmation-gif').show();
+				setTimeout(myFunction, 2000);
+			});
+
+			function myFunction() {
+				$('.step-up-container').hide();
+				console.log("hi");
+
+			}
+			// uncomment the next line for step ups
+			$('.step-up-container').show();
+
 			$('.swipe-pattern-img').slick({
 				centerMode: true,
 				centerPadding: '20px',
@@ -257,7 +295,21 @@
 				dots: true,
 				arrows: false
 			});
+			var counter = 0;
+			var confirm = document.getElementById('#confirmation-gif');
+
+			// if swipe 5 times show loading icon and hide pop-up after 2s
+			$('.swipe-pattern-img').on('swipe', function (event, slick, direction) {
+				counter = counter + 1;
+				if (counter >= 5) {
+					$('#confirmation-gif').show();
+					setTimeout(myFunction, 2000);
+
+				}
+			});
+
 		});
+
 	</script>
 
 
