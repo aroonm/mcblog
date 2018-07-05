@@ -92,6 +92,44 @@
 
 	<hr class="hm-divide">
 
+	<!-- Learn more popup -->
+	<div id="mypop-learn">
+		<div class="container-ca pop-learn">
+			<img style="height: 40px" src="hm/MC.png">
+			<hr>
+			<div class="row">
+				<div class="col-75">
+					<div class="exp">
+						<img src="hm/autofill.png">
+						<p>Mastercard Instant Checkout autofills your card and shipping details for easier checkout.</p>
+					</div>
+					<div class="exp">
+						<img src="hm/protect.png">
+						<p>We protect your data by analyzing your online behaviour across devices and in comparison to other shoppers.</p>
+					</div>
+					<div class="exp">
+						<img src="hm/merchant.png">
+						<p>You can use this autofill feature across any merchants that take Mastercard online.</p>
+					</div>
+				</div>
+				<div class="col-25">
+					<div id="anim"></div>
+				</div>
+			</div>
+<!-- 			<hr>
+			<div class="exp">
+				<div class="col-50">
+					<a href="HM_CAInfo.html"><button class="button-ca" style="margin: 20px 0 0;"><i class="fa fa-lock"></i>sign me up and Autofill</button></a>
+					<p>You can always <a href="">opt out</a> or change the <a href="">settings</a>.</p>
+				</div>
+				<div class="col-50">
+					<p><a href="" style="color: #000;">< Go back to normal checkout.</a></p>
+				</div>
+			</div> -->
+		</div>
+	</div>
+	<!-- end of Learn more popup -->
+
 	<!-- Wrapper -->
 	<div id="wrapper" class="divided">
 
@@ -104,8 +142,8 @@
 							<!-- opt out -->
 							<div class="container">
 								<h3>Your information is autofilled with <img style="height: 25px; vertical-align: middle;margin-left: .5rem;" src="hm/MC.png"></h3>
-								<p><a href="" style="color: #000;">< Go back to normal checkout.</a></p>
-								<p style="font-size: .8rem;opacity:0.5;"><a href="">Learn more</a> or change the <a href="">settings</a>.</p>
+								<p><a href="HM_FillInfo.html" style="color: #000;">< Go back to normal checkout.</a></p>
+								<p style="font-size: .8rem;opacity:0.5;"><a onclick="myFunction()" style="cursor: pointer;">Learn More</a> or change the <a href="">settings</a>.</p>
 							</div>
 
 							<div class="container">
@@ -204,65 +242,80 @@
 								<p>
 									<b>Total
 										<span class="price" style="color:black; float: right;">$28.98</b>
-									</span>
-								</p>
+										</span>
+									</p>
+								</div>
 							</div>
 						</div>
+						<p>
+							<i class="fa fa-lock"></i>All data will be encrypted.</p>
+							<br>
+							<p>With 'Complete Purchase' you accept H&M's Terms of Use.</p>
+							<p>H&M will process your personal data to manage your order, in accordance with H&M's Privacy Notice.</p>
+							<input type="submit" value="Complete Purchase" class="btn" style="margin: 20px 20px 0px 0px">
+							<b>Total: $28.98</b>
+						</form>
+
 					</div>
-					<p>
-						<i class="fa fa-lock"></i>All data will be encrypted.</p>
-					<input type="submit" value="Complete Purchase" class="btn" style="margin: 20px 20px 0px 0px">
-					<b>Total: $28.98</b>
-				</form>
+				</section>
+
+
+
+
+
+				<!-- Footer -->
+				<footer class="wrapper style1 align-center">
+					<div class="inner">
+						<p>&copy; Team Mastercard, CMU.</p>
+					</div>
+				</footer>
 
 			</div>
-		</section>
 
+			<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script type="text/javascript" src="hm/slick.min.js"></script>
+			<script type="text/javascript" src="hm/p5.min.js"></script>
+			<script type="text/javascript" src="hm/p5.dom.min.js"></script>
+			<script src="hm/sketch.js"></script>
+			<script type="text/javascript" src="assets/lottie.js"></script>
 
+			<script>
+					// When the user clicks on div, open the popup
+					function myFunction() {
+						var popup = document.getElementById("mypop-learn");
+						popup.classList.toggle("show");
 
+						$(document).mouseup(function(e)
+						{
+							var container = $(".pop-learn");
 
-
-		<!-- Footer -->
-		<footer class="wrapper style1 align-center">
-			<div class="inner">
-				<!-- <ul class="icons">
-								<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-							</ul> -->
-				<p>&copy; Team Mastercard, CMU.</p>
-			</div>
-		</footer>
-
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/skel.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-	<script type="text/javascript" src="hm/slick.min.js"></script>
-	<script type="text/javascript" src="hm/p5.min.js"></script>
-	<script type="text/javascript" src="hm/p5.dom.min.js"></script>
-	<script src="hm/sketch.js"></script>
-
-	<script>
-		$(document).ready(function () {
-			$('.swipe-pattern-img').slick({
-				centerMode: true,
-				centerPadding: '20px',
-				slidesToShow: 1,
-				dots: true,
-				arrows: false
+			    // if the target of the click isn't the container nor a descendant of the container
+			    if (!container.is(e.target) && container.has(e.target).length === 0)
+			    {
+			    	if (popup.classList.contains('show')){
+			    		popup.classList.toggle("show");
+			    	}
+			    }
 			});
-		});
-	</script>
+					}
+
+					var animation = bodymovin.loadAnimation({
+						container: document.getElementById("anim"),
+						renderer: 'svg',
+						loop: true,
+						autoplay: true,
+						path: 'assets/data.json'
+
+					})
+				</script>
 
 
-</body>
+			</body>
 
-</html>
+			</html>
