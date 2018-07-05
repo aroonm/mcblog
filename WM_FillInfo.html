@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Checkout | Walmart USA</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="wm/wmstyle.css" />
+
+</head>
+
+<body>
+
+	<div class="topnav" id="myTopnav">
+		<div style="width: 100%;">
+			<img src="wm/img/Walmart_Star.svg">
+			<h5>Walmart</h5>
+		</div>
+	</div>
+
+	<hr class="hm-divide">
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="divided">
+
+		<section class="wrapper style1 align-left">
+			<div class="inner medium">
+				<form action="WM_Confirmation.html">
+					<div class="row">
+						<div class="col-75">
+
+							<!-- Opt in option 1 -->
+							<!-- 							<div class="container-ca">
+								<img style="height: 40px" src="hm/MC.png">
+								<p>Mastercard Instant Checkout has saved your card and shipping details from past purchases. You can now autofill the information whenever Mastercard is able to verify that your online behavior looks like you. <a href="#">Learn More</a></p>
+								<button class="button-ca" style="margin: 20px 0 0;"><i class="fa fa-lock"></i>sign me up and Autofill</button>
+								<p>You can always <a href="">opt out</a> or change the <a href="">settings</a>.</p>
+							</div> -->
+
+							<!-- Learn more popup -->
+							<!-- <div class="container">
+								<img style="height: 40px" src="hm/MC.png">
+								<hr>
+								<div class="row">
+									<div class="col-50">
+										<div class="row">
+											<img src="hm/autofill.png">
+											<p>Mastercard Instant Checkout autofills your card and shipping details for easier checkout.</p>
+										</div>
+									</div>
+									<div class="col-50">
+										<img src="hm/GIF.png">
+									</div>
+								</div>
+							</div> -->
+
+							<div class="container">
+								<hr>
+								<div class="block">
+									<img src="wm/img/one.png">
+									<h3>My information</h3>
+								</div>
+
+								<div class="row">
+									<div class="col-50">
+										<label for="fname"> First Name</label>
+										<input type="text" id="fname" name="firstname" placeholder="Your First Name" required>
+									</div>
+									<div class="col-50">
+										<label for="lname"> Last Name</label>
+										<input type="text" id="lname" name="lastname" placeholder="Your Last Name" required>
+									</div>
+								</div>
+								<label for="email"> Email</label>
+								<input type="text" id="email" name="email" placeholder="name@example.com" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$">
+							</div>
+
+							<div class="container">
+								<hr>
+								<div class="block">
+									<img src="wm/img/two.png">
+									<h3>Shipping</h3>
+								</div>
+								<label for="adr"> Address</label>
+								<input type="text" id="adr" name="address" placeholder="542 W. 15th Street" required>
+								<label for="city"> City</label>
+								<input type="text" id="city" name="city" placeholder="New York" required>
+
+								<div class="row">
+									<div class="col-50">
+										<label for="state">State</label>
+										<input type="text" id="state" name="state" placeholder="NY" required>
+									</div>
+									<div class="col-50">
+										<label for="zip">Zip</label>
+										<input type="text" id="zip" name="zip" placeholder="10001" required>
+									</div>
+								</div>
+
+								<label>Shipping Method</label>
+								<label>
+									<input type="checkbox" checked="checked" name="shipping" required>Free shipping: 5-7 days
+								</label>
+
+							</div>
+
+							<div class="container">
+								<hr>
+								<div class="block">
+									<img src="wm/img/three.png">
+									<h3>Payment information</h3>
+								</div>
+								<div class="row">
+									<div class="col-50">
+										<label for="cname">Name on Card</label>
+										<input type="text" id="cname" name="cardname" placeholder="Your Name" required>
+									</div>
+									<div class="col-50">
+										<label for="ccnum">Card Number</label>
+										<input type="text" id="ccnum" name="cardnumber" placeholder="1111222233334444" required>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-50">
+										<label for="exp">Expiration Month</label>
+										<input type="text" id="exp" name="exp" placeholder="MM" required pattern="^\d{2}$">
+									</div>
+									<div class="col-50">
+										<label for="exp">Expiration Year</label>
+										<input type="text" id="exp" name="exp" placeholder="YYYY" required pattern="^\d{4}$">
+									</div>
+								</div>
+								<label>
+									<input type="checkbox" checked="checked" name="sameadr" required> Shipping address same as billing
+								</label>
+							</div>
+						</div>
+
+						<div class="col-25">
+
+							<!-- Opt in option 2 -->
+							<!-- 							<div class="container-ca">
+								<img style="height: 40px" src="hm/MC.png"><br>
+								<a href="#">Learn More</a><br>
+								<button class="button-ca" style="margin: 20px 0 0;"><i class="fa fa-lock"></i>Autofill</button>
+							</div> -->
+
+							<div class="container summary">
+								<h3 style="margin-left: 0" >Order Summary</h3>
+								<p>Order Value
+									<span class="price" style="color:black; float: right;">
+										<b>$3,849.00</b>
+									</span>
+								</p>
+								<p>Shipping
+									<span class="price" style="color:black; float: right;">
+										<b>$0.00</b>
+									</span>
+								</p>
+								<p>Estimated Tax
+									<span class="price" style="color:black; float: right;">
+										<b>$346.50</b>
+									</span>
+								</p>
+								<br>
+								<hr>
+								<p>
+									
+									<b>Total
+										<span class="price" style="color:black; float: right; font-size: 30px">$4196.50</b>
+									</span>
+								</p>
+								
+							</div>
+						</div>
+					</div>
+					<p>
+						<i class="fa fa-lock" style="margin: 0px 10px;"></i>All data will be encrypted.</p>
+					<br>
+					<p>With 'Complete Purchase' you accept H&M's Terms of Use.</p>
+					<p>H&M will process your personal data to manage your order, in accordance with H&M's Privacy Notice.</p>
+					<input type="submit" value="Complete Purchase" id="checkout-button" onclick="validateForm();" style="margin: 20px 20px 0px 0px">
+					<b class="total">Total: $4196.50</b>
+				</form>
+
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="wrapper style1 align-center">
+			<div class="inner">
+				<p>&copy; Team Mastercard, CMU.</p>
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script type="text/javascript" src="hm/FormValidation.js"></script>
+
+</body>
+
+</html>
