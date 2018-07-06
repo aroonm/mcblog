@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Team Mastercard: Weeknotes 21</title>
+		<title>Team Mastercard: Weeknotes 23</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -31,14 +31,87 @@
 			<section class="wrapper style1 align-left">
 						<div class="inner medium">
 							<header>
-								<h2>Week 21 - Sprint 6, Explaining the basics of Continuous Authentication, quickly</h2>
+								<h2>Week 23 - Sprint 7, Diary Study Planning</h2>
 							</header>
 							<div class="content">
 
-<header><h4><b>Back to basics</b></h4></header>
+<header><h4><b>Temporal Research of Perceptions</b></h4></header>
 
 
-<p>Last week we had some great results - both qualitative and quantitative insights. <a href="https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/">Nielsen (2000)</a> and Co. says 5 is the ideal number of user tests for quick heuristics to work out the majority of kinks before diminishing returns. However, throughout the project, we’ve found a number of people that still don’t understand the full implications of continuous authentication, even after talking for an hour and a half about it. Our main theory is the “continuous” aspect of it is the hardest to understand. The current common mental model is that authentication is binary, you put in a password or use your fingerprint to log in. You either are logged in, or you’re not. The mental model we want to develop is that authentication is a gradient, you’re always logged in to some degree.</p>
+<p>We just returned from a pivotal trip to our client in New York, where we received fresh feedback from other product managers, designers, and tech people. We showed a number of previous sprint results and prototypes for feedback. One notable realization that is defining this next sprint is the setup of the user testing.</p>
+
+<p>As we’ve identified the difficulties of conveying the temporal aspects of Continuous Authentication, we realized the limitations of user testing in a 60-90 minute format. After discussions and a suggestion from a Mastercard UX researcher in NYC, we frame this next sprint as a development of the customer journey, building a customer journey map, and testing possible avenues through a diary study.</p>
+
+<header><h4><b>Our overarching sprint research question:</b></h4></header>
+
+<h4>What is the customer journey...</h4>
+<ul>for multiple step-ups?</ul>
+<ul>for the first purchase, and Nth purchase?</ul>
+<ul>between onboarding and the first purchase?</ul>
+<ul>as people stop using passwords gradually?</ul>
+<ul>from a web session point-of-view?</ul>
+
+<p>All of these questions forced us to define the sequence flow more concretely and also forced us to decide the difference between having people opt-in (telling them about the service) versus just auto-enrolling them. Our previous work with single UIs is a great starting place, but now we are testing the slight adjustments in the UIs over time.</p>
+
+<p>We started with a large whiteboard session of sketching out what we think a customer journey looks like today. These three lines represent different team members best guesses as to how the customer journey may look like. The middle part of an anticipated “learning” phase for the algorithm became a large topic of discussion and really forced us to think about how much of the system the user wants to see working.</p>
+
+
+<span class="image fit" style="margin-bottom: 0px;"><img src="images/w23_customer_journey_map.jpg" alt="Customer Journey Map" /></span>
+
+
+<p>To probe this journey, the team is embarking on the largest user study to-date, with the most amount of design and tech development, as well as recruiting and testing. We have planned a type of diary study, less to gain daily routines, but to have users interact with the shopping pay point over time and test perceptions as the system shifts to a fully continuous authentication system.</p>
+
+
+<p>We started to plan and develop a study with 6 versions, which we cut down to 4 tracks, with which we hope to get five people for each version.</p>
+
+<table>
+	<tr>
+		<th>Stream Label</th>
+		<th>Opt In or Invisible</th>
+		<th>Differentiation</th>
+	</tr>
+	<tr>
+		<td>A2.</td>
+		<th>Invisible (no opt in)</td>
+		<th>Autofill with No Explanation</td>
+	</tr>
+
+	<tr>
+		<td>B1.</td>
+		<th>Invisible (no opt in)</td>
+		<th>Opt In to Autofill</td>
+	</tr>
+
+	<tr>
+		<td>B2.</td>
+		<th>Invisible (no opt in)</td>
+		<th>Opt Out of Autofill</td>
+	</tr>
+
+	<tr>
+		<td>C1.</td>
+		<th>Opt in via bank app</td>
+		<th>Autofill with timeline</td>
+	</tr>
+</table>
+
+<p>This could be the largest and most aggressive user test we develop this summer. The dialog we get from pre and post interviews, plus the daily user data, will generate key findings for the final deliverables regarding time and communication of role out.</p>
+
+<span class="image fit" style="margin-bottom: 0px;"><img src="images/w23_diary_study_setup.png" alt="Diary Study Setup" /></span>
+
+<p>We will be serving the participants a short 3 question survey after their daily task of buying one item from a random website. There are roughly three phases most participants will go through:</p>
+<ul>1. Buying normally by typing in CC detail</ul>
+<ul>2. Various methods of auto-filling their data and letting them know why or not</ul>
+<ul>3. Various step-up challenges to verify their identity.</ul>
+
+<p>Our main findings will be these daily surveys, plus the pre and post interview comparisons.</p>
+
+<p>By this time we have fallen into a somewhat steady rhythm of roles: Nika oversees the prototype development with Grace helping designing. Aroon will be doing more tech development for this as we will need to manage and push multiple responsive web pages daily to a dozen users. Scott is structuring the study and writing content, and Zohaib is wrangling recruiting and communicating with a large gaggle of participants.</p>
+
+<p>Next week will be a big push.We will be pushing out the big parts of the user test assets and getting the ball rolling on a 20+ person study!</p>
+
+
+<!-- <p>Last week we had some great results - both qualitative and quantitative insights. <a href="https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/">Nielsen (2000)</a> and Co. says 5 is the ideal number of user tests for quick heuristics to work out the majority of kinks before diminishing returns. However, throughout the project, we’ve found a number of people that still don’t understand the full implications of continuous authentication, even after talking for an hour and a half about it. Our main theory is the “continuous” aspect of it is the hardest to understand. The current common mental model is that authentication is binary, you put in a password or use your fingerprint to log in. You either are logged in, or you’re not. The mental model we want to develop is that authentication is a gradient, you’re always logged in to some degree.</p>
 
 <p>So this lead us back to a critical issue and the question leading this sprint. How do you communicate a complex concept like this, to a credit card user who just wants their card to work with minimal thought?</p>
 
@@ -53,8 +126,8 @@
 
 <header><h4><b>Concept Video</b></h4></header>
 
-<p>We thought a video could be a great way for us to concisely script the explanation we give to anyone who asks, “Hey, what are you working on with that capstone project?” We discussed back and forth what the difference is between a concept video and a commercial. We had some very creative ideas - ranging from a story about hikers on Mount Everest, to people walking around with virtual vaults behind their shoulders, taking cues from Harry Potter. In the end we went with a basic conversational piece like you would explain the concept to a friend, due to the need to explain many parts of the concept directly, time and ease of filming. Writing the script to make it feel natural was no small feat! </p>
-
+<p>We thought a video could be a great way for us to concisely script the explanation we give to anyone who asks, “Hey, what are you working on with that capstone project?” We discussed back and forth what the difference is between a concept video and a commercial. We had some very creative ideas - ranging from a story about hikers on Mount Everest, to people walking around with virtual vaults behind their shoulders, taking cues from Harry Potter. In the end we went with a basic conversational piece like you would explain the concept to a friend, due to the need to explain many parts of the concept directly, time and ease of filming. Writing the script to make it feel natural was no small feat! </p> -->
+<!--
 <video  controls  class="center-align-images" style="width: 100%;">
 	<source src="images/Draft_v2.mp4" type="video/mp4">
 	<source src="images/Draft_v2.ogg" type="video/ogg">
@@ -142,7 +215,7 @@
 
 <p>Next week will be super exciting - we are going to the Big Apple! We have the privilege to visit Mastercard’s Digital Payment and Labs group in Union Square. For two days we will be getting feedback on our prototypes, hosting expert interviews to explore business, tech, and design issues, hosting codesign sessions with various teams. </p>
 
-<p>So far it seems like our deliverable for the end of the summer will be an example of onboarding for this continuous authentication service as well as examples of implementation for merchants and banks. This could change very easily but it’s what we’re going with for now. Next time you hear from us, it’ll be from NYC!</p>
+<p>So far it seems like our deliverable for the end of the summer will be an example of onboarding for this continuous authentication service as well as examples of implementation for merchants and banks. This could change very easily but it’s what we’re going with for now. Next time you hear from us, it’ll be from NYC!</p> -->
 
 
 
