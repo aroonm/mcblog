@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Team Mastercard: Weeknotes 26</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+	</head>
+	<body>
+
+	<div class="topnav" id="myTopnav">
+		<a href="blog.html"><span class="navactive">Blog</span></a>
+	  <a href="team.html">Team</a>
+	  <a href="prototypes.html">Design Prototypes</a>
+	  <a href="index.html" >Why Continuous Authentication</a>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	    <i class="fa fa-bars"></i>
+	  </a>
+	</div>
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+			<section class="wrapper style1 align-left">
+						<div class="inner medium">
+							<header>
+								<h2>Weeks 25/26 - Post Diary Study Analysis</h2>
+							</header>
+							<div class="content">
+
+
+			<span class="image fit" style="margin-bottom: 0px;"><img src="images/w24_diary_schedule.png" alt="" /></span>
+
+			<p>These past two week saw our broadest and longest user study to-date. This post covers the wrap up of it, analyzing the results, and nailing down the final presentation and deliverables for July 31st!</p>
+
+			<p>Diary Study - We had 20 study participants over 4 different tracks. Each one visited a new website daily to use a variety of checkout flows. The 8-10 day study wrapped up last week and we had post-interviews over the two weeks. This week we have been analyzing the results, from qualitative to quantitative, and distilling the insights that will go into the UX Guidelines we plan to deliver to the client.</p>
+
+			<p>UX Guidelines - This sprint we also have been developing the categories of the UX Guidelines, and designing the website that will communicate them. It appears roughly half will be informed by the diary study, and the other half will come from the prior 6 months of research. The difficulty with designing the website is it helps to have the content which we’re going to show, but it’s still in progress and not done. We have a site map and mock ups, and will slowly be filling it out as the findings from the diary study come together. </p>
+
+
+			<header>
+				<h4>Full Narrative of the Diary Study</h4>
+			</header>
+
+			<p>All four tracks (A, B, C and D) experienced the first three days using our website checkouts as the “normal” web checkout requiring the customer to enter all their info - name, shipping, billing, and credit card info on a web form, and submitting. We alternated the types of websites, and pre-selected generic objects for participants to checkout - a pillow, a basket, a mug, sandwiches, a camera.</p>
+
+			____________________________________________________________________________
+
+			<h4>Narrative and reasoning of each daily prototype:</h4>
+
+			<h3>Day 1, Bed Bath & Beyond:</h3>
+			https://mysterious-wave-18544.herokuapp.com/BBB.php?uid=01
+
+			<h3>Day 2, Whole Foods:
+			https://mysterious-wave-18544.herokuapp.com/wf.php?uid=01
+
+			<h3>Day 3, Walmart:
+			https://mysterious-wave-18544.herokuapp.com/wm1.php?uid=01
+
+
+			<p>On the fourth day, every track experiences the first “autofill” day (simulating using Continuous Authentication for the first time). This is where it starts to differentiate between tracks.</p>
+
+			<h3>Day 4, H&M:
+
+			<b>Track A - Autofilled, no explanation:</b>
+			<p>These users are never told what is going on. No mention of any change to their authentication flow, them being enrolled in any new program, or changes to the payment process whatsoever.
+			Our hypothesis with them is that, potentially in non-EU markets, this data collection could be feasible, but customers may be sketched out when it autofills without explanation. This rang true and people were weirded out by it autofilling on day 4.
+
+			https://mysterious-wave-18544.herokuapp.com/hm.php?uid=07
+
+			<p>Track B - NOT Autofilled, Opt-in:
+			<p>These users are politely asked if they would like to opt in to a service, Mastercard Instant Checkout, that pre fills in their data. Their data on Day 4 is NOT prefilled (the only track it’s not) and they must opt-in via a pop-up bubble. It is more convenient and secure. In the post interview no one could remember if they opted in or not, and regardless, we autofilled their data anyway. These users did mention the Mastercard branding and checkmarks we added, and “encrypted” text as reassuring.
+
+			https://mysterious-wave-18544.herokuapp.com/hm.php?uid=08
+
+			<p>Track C - Autofilled, opt-out:
+			<p>Track C users were very much like track B expect we assume they want it and opt them in from the start on day 4. Their info is prefilled and they can opt-out if they like. No one chose to opt-out, and this had the highest aggregate comfort score across the entire study.
+
+			<p>https://mysterious-wave-18544.herokuapp.com/hm.php?uid=01
+
+			<p>Track D - Autofilled, with progress bar=100%:
+			<p>Unlike the previous three tracks, track D is fully aware of what Continuous Authentication is, and have been fully educated. For the first few days, their authentication profile was “learning” and there was a green progress bar that showed how complete it was. It became complete on day 3 and the use the autofill feature on day 4. However, we cannot say overall their comprehension of the system was any better than the other tracks, and in some cases worse. They had the most varied comfort, surprisingly, and had some notable misunderstandings of the progress bar.
+
+			<p>https://mysterious-wave-18544.herokuapp.com/hm.php?uid=18
+
+
+			<h3>Day 5, Bed, Bath, and Beyond:</h3>
+
+			<p>Plain Autofilled:
+			<p>For day 5, everyone gets the same checkout with the information autofilled.
+
+			https://mysterious-wave-18544.herokuapp.com/BBB.php?uid=15
+
+
+			<h3>Day 6, Whole Foods:</h3>
+
+			<p>First Step Up:
+			<p>This day they are buying an expensive camera on Walmart.com. Everyone gets some type of step-up, a prompt for further authentication. We tested various types of step ups from a standard email sent code, to more out-there experiments. Most people verbally said these made them feel more secure, like Mastercard was watching out for them, while paradoxically selecting lower numbers on the comfort scale. We think this is because some of the experimental step ups were not very robust on different devices and hard to use.
+
+			<p>https://mysterious-wave-18544.herokuapp.com/wm.php?uid=15
+
+
+
+			<h3>Day 7, Whole Foods:</h3>
+
+			<p>Plain Autofill:
+			<p>Another plain day of autofilling.
+
+			<p>https://mysterious-wave-18544.herokuapp.com/wf.php?uid=02
+
+			<h3>Day 8, H&M:</h3>
+
+			<p>Second Step Up:
+			<p>We tested another type of step up with everyone, albeit on a cheaper item around $25.
+
+			<p>https://mysterious-wave-18544.herokuapp.com/hm2.php?uid=06
+
+
+			____________________________________________________________________________
+
+			<p>Examples of Tested Step Ups
+
+			<p>Email Pincode - This is the most typical step up of the bunch and currently used today, where a pincode or link is sent to the user via text or email.
+
+			<p>https://mysterious-wave-18544.herokuapp.com/wm.php?uid=12
+
+			<p>Circle the Donut - Users with this step up identified “their” donut out of an array of 6 donuts. When prompted with the array, they had to select their predetermined donut. This is playing off a Microsoft interaction called Picture Password.
+
+			<p>https://mysterious-wave-18544.herokuapp.com/wm.php?uid=05
+
+			<p>Draw a Star - Using mouse or touchscreen input as a unique factor, users are prompted to draw a star in a canvas box. <p>Some academic research shows drawing like this could be used as a unique identifying factor.
+
+
+			<p>https://mysterious-wave-18544.herokuapp.com/wm.php?uid=08
+
+			<p>Swipe through Gallery - To test “browsing behaviour” in a step up, this shows a gallery of images and ask users to swipe through them to browse. We realized too late some functional compatibility issues between mobile and desktop without
+
+
+			<p>https://mysterious-wave-18544.herokuapp.com/hm2.php?uid=04
+
+
+			<p>Link to the nightly survey, sent out daily, after participants complete the checkout process:
+
+			https://docs.google.com/forms/d/e/1FAIpQLSceBhi4F2dCNGVDoYTFt3ZZkASaG8F3z9CaRXAQPRUxLjq0Tg/viewform
+
+			<h3>Analysis process
+
+			<p>With 20 participants, pre and post interviews, as well as the daily survey response feedback, we had tons and tons of data to sift through. The post interviews are where most of the meat came from, and we embarked on another large affinity diagram process, across tracks and days.</p>
+
+
+
+			<!-- [affinity video here] -->
+		<span class="image fit" style="margin-bottom: 0px;"><img src="images/w24_diary_schedule.png" alt="" /></span>
+
+
+
+			<p>We also have aggregated graphs of each track and their comfort levels per day. There are definitely some interesting insights here that we’re still analyzing.</p>
+
+
+			<!-- [ 4 graphs here] -->
+		<span class="image fit" style="margin-bottom: 0px;"><img src="images/w24_diary_schedule.png" alt="" /></span>
+
+
+
+			<p>Overall, this was a great last sprint to end on and an educational experience from a research side. We learned tons about asking the right questions at the right time, setting up the right number</p>
+
+
+
+
+		<span class="image fit" style="margin-bottom: 0px;"><img src="images/w24_diary_schedule.png" alt="" /></span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							</div>
+
+
+						</div>
+					</section>
+
+
+
+
+
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<p>&copy; Team Mastercard, CMU.</p>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
