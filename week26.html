@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
 		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
 	</head>
@@ -37,90 +38,81 @@
 
 
 			<span class="image fit" style="margin-bottom: 0px;"><img src="images/w24_diary_schedule.png" alt="" /></span>
-
+			</br>
 			<p>These past two week saw our broadest and longest user study to-date. This post covers the wrap up of it, analyzing the results, and nailing down the final presentation and deliverables for July 31st!</p>
 
-			<p>Diary Study - We had 20 study participants over 4 different tracks. Each one visited a new website daily to use a variety of checkout flows. The 8-10 day study wrapped up last week and we had post-interviews over the two weeks. This week we have been analyzing the results, from qualitative to quantitative, and distilling the insights that will go into the UX Guidelines we plan to deliver to the client.</p>
+			<p><strong>Diary Study</strong> - We had 20 study participants over 4 different tracks. Each one visited a new website daily to use a variety of checkout flows. The 8-10 day study wrapped up last week and we had post-interviews over the two weeks. This week we have been analyzing the results, from qualitative to quantitative, and distilling the insights that will go into the UX Guidelines we plan to deliver to the client.</p>
 
-			<p>UX Guidelines - This sprint we also have been developing the categories of the UX Guidelines, and designing the website that will communicate them. It appears roughly half will be informed by the diary study, and the other half will come from the prior 6 months of research. The difficulty with designing the website is it helps to have the content which we’re going to show, but it’s still in progress and not done. We have a site map and mock ups, and will slowly be filling it out as the findings from the diary study come together. </p>
+			<p><strong>UX Guidelines</strong> - This sprint we also have been developing the categories of the UX Guidelines, and designing the website that will communicate them. It appears roughly half will be informed by the diary study, and the other half will come from the prior 6 months of research. The difficulty with designing the website is it helps to have the content which we’re going to show, but it’s still in progress and not done. We have a site map and mock ups, and will slowly be filling it out as the findings from the diary study come together. </p>
 
 
 			<header>
-				<h4>Full Narrative of the Diary Study</h4>
+				<h2>Diary Study Narrative</h2>
 			</header>
 
 			<p>All four tracks (A, B, C and D) experienced the first three days using our website checkouts as the “normal” web checkout requiring the customer to enter all their info - name, shipping, billing, and credit card info on a web form, and submitting. We alternated the types of websites, and pre-selected generic objects for participants to checkout - a pillow, a basket, a mug, sandwiches, a camera.</p>
 
-			____________________________________________________________________________
 
-			<h4>Narrative and reasoning of each daily prototype:</h4>
+			<h2>Narrative and reasoning of each daily prototype:</h2>
 
-			<h3>Day 1, Bed Bath & Beyond:</h3>
-			<a href="https://mysterious-wave-18544.herokuapp.com/BBB.php?uid=01">Day 1</a>
+			<p>The first three days were simplified checkouts where the user was expected to type in their provided credit card details by hand. This was designed to get users into the vein of the test without trying to test variables right away.</p>
 
-			<h3>Day 2, Whole Foods:
-			<a href="https://mysterious-wave-18544.herokuapp.com/wf.php?uid=01">Day 2</a>
-
-			<h3>Day 3, Walmart:
-			<a href="https://mysterious-wave-18544.herokuapp.com/wm1.php?uid=01">Day 3</a>
+			<h3>Day 1, Bed Bath & Beyond: <a href="https://mysterious-wave-18544.herokuapp.com/BBB.php?uid=01"> &#8594 Live Prototype Here</a></h3>
 
 
-			<p>On the fourth day, every track experiences the first “autofill” day (simulating using Continuous Authentication for the first time). This is where it starts to differentiate between tracks.</p>
+			<h3>Day 2, Whole Foods: <a href="https://mysterious-wave-18544.herokuapp.com/wf.php?uid=01"> &#8594 Live Prototype Here</a></h3>
+
+
+			<h3>Day 3, Walmart: <a href="https://mysterious-wave-18544.herokuapp.com/wm1.php?uid=01"> &#8594 Live Prototype Here</a></h3>
+
+			</br>
+			</br>
 
 			<h3>Day 4, H&M:</h3>
 
-			<b>Track A - Autofilled, no explanation:</b>
+			<p>On the fourth day, every track experiences the first “autofill” day (simulating using Continuous Authentication for the first time). This is where it starts to differentiate between tracks.</p>
+
+			<strong>Day 4 - Track A - Autofilled, no explanation:<a href="https://mysterious-wave-18544.herokuapp.com/hm.php?uid=07"> &#8594 Live Prototype Here</a></strong>
 			<p>These users are never told what is going on. No mention of any change to their authentication flow, them being enrolled in any new program, or changes to the payment process whatsoever.</p>
 			<p>Our hypothesis with them is that, potentially in non-EU markets, this data collection could be feasible, but customers may be sketched out when it autofills without explanation. This rang true and people were weirded out by it autofilling on day 4.</p>
-			<a href="https://mysterious-wave-18544.herokuapp.com/hm.php?uid=07">Day 4 - Track A</a>
 
 
-			<b>Track B - NOT Autofilled, Opt-in:</b>
+			<strong>Day 4 - Track B - NOT Autofilled, Opt-in:<a href="https://mysterious-wave-18544.herokuapp.com/hm.php?uid=08"> &#8594 Live Prototype Here</a></strong>
 			<p>These users are politely asked if they would like to opt in to a service, Mastercard Instant Checkout, that pre fills in their data. Their data on Day 4 is NOT prefilled (the only track it’s not) and they must opt-in via a pop-up bubble. It is more convenient and secure. In the post interview no one could remember if they opted in or not, and regardless, we autofilled their data anyway. These users did mention the Mastercard branding and checkmarks we added, and “encrypted” text as reassuring.<p>
 
-			<a href="https://mysterious-wave-18544.herokuapp.com/hm.php?uid=08">Day 4 - Track B</a>
 
-			<b>Track C - Autofilled, opt-out:</b>
+			<strong>Day 4 - Track C - Autofilled, opt-out:<a href="https://mysterious-wave-18544.herokuapp.com/hm.php?uid=01"> &#8594 Live Prototype Here</a></strong>
 			<p>Track C users were very much like track B expect we assume they want it and opt them in from the start on day 4. Their info is prefilled and they can opt-out if they like. No one chose to opt-out, and this had the highest aggregate comfort score across the entire study.</p>
 
-			<a href="https://mysterious-wave-18544.herokuapp.com/hm.php?uid=01">Day 4 - Track C</a>
 
-			<b>Track D - Autofilled, with progress bar=100%:</b>
-			<p>Unlike the previous three tracks, track D is fully aware of what Continuous Authentication is, and have been fully educated. For the first few days, their authentication profile was “learning” and there was a green progress bar that showed how complete it was. It became complete on day 3 and the use the autofill feature on day 4. However, we cannot say overall their comprehension of the system was any better than the other tracks, and in some cases worse. They had the most varied comfort, surprisingly, and had some notable misunderstandings of the progress bar.
-
-			<a href="https://mysterious-wave-18544.herokuapp.com/hm.php?uid=18">Day 4 - Track D</a>
+			<strong>Day 4 - Track D - Autofilled, with progress bar=100%:<a href="https://mysterious-wave-18544.herokuapp.com/hm.php?uid=18"> &#8594 Live Prototype Here</a></strong>
+			<p>Unlike the previous three tracks, track D is fully aware of what Continuous Authentication is, and have been fully educated. For the first few days, their authentication profile was “learning” and there was a green progress bar that showed how complete it was. It became complete on day 3 and the use the autofill feature on day 4. However, we cannot say overall their comprehension of the system was any better than the other tracks, and in some cases worse. They had the most varied comfort, surprisingly, and had some notable misunderstandings of the progress bar.</p>
 
 
 			<h3>Day 5, Bed, Bath, and Beyond:</h3>
 
-			<b>Plain Autofilled:</b>
+			<strong>Plain Autofilled: <a href="https://mysterious-wave-18544.herokuapp.com/BBB.php?uid=15"> &#8594 Live Prototype Here</a></strong>
 			<p>For day 5, everyone gets the same checkout with the information autofilled.
 
-			<a href="https://mysterious-wave-18544.herokuapp.com/BBB.php?uid=15">Day 5</a>
 
 
 			<h3>Day 6, Whole Foods:</h3>
 
-			<p>First Step Up:</p>
+			<strong>First Step Up: <a href="https://mysterious-wave-18544.herokuapp.com/wm.php?uid=15"> &#8594 Live Prototype Here</a></strong>
 			<p>This day they are buying an expensive camera on Walmart.com. Everyone gets some type of step-up, a prompt for further authentication. We tested various types of step ups from a standard email sent code, to more out-there experiments. Most people verbally said these made them feel more secure, like Mastercard was watching out for them, while paradoxically selecting lower numbers on the comfort scale. We think this is because some of the experimental step ups were not very robust on different devices and hard to use.</p>
-
-			<a href="https://mysterious-wave-18544.herokuapp.com/wm.php?uid=15">Day 6</a>
-
 
 
 			<h3>Day 7, Whole Foods:</h3>
 
-			<p>Plain Autofill:</p>
+			<strong>Plain Autofill: <a href="https://mysterious-wave-18544.herokuapp.com/wf.php?uid=02"> &#8594 Live Prototype Here</a></strong>
 			<p>Another plain day of autofilling.</p>
 
-			<a href="https://mysterious-wave-18544.herokuapp.com/wf.php?uid=02">Day 7</a>
+
 
 			<h3>Day 8, H&M:</h3>
 
-			<p>Second Step Up:</p>
+			<strong>Second Step Up:<a href="https://mysterious-wave-18544.herokuapp.com/hm2.php?uid=06"> &#8594 Live Prototype Here</a></strong>
 			<p>We tested another type of step up with everyone, albeit on a cheaper item around $25.</p>
-
-			<a href="https://mysterious-wave-18544.herokuapp.com/hm2.php?uid=06">Day 8</a>
 
 			<hr>
 			<br>
