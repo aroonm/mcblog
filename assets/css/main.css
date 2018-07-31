@@ -8464,6 +8464,9 @@
     float: right;
     display: block;
   }
+  .bigbigbutton{
+	width: 100%;
+}
   .protothumb{width: 90%;}
   .centerheader p{
 	font-weight: 400;
@@ -8717,6 +8720,12 @@ margin:auto}
 
 .hi{
 	margin-top:150px;
+}
+
+.bigbigbutton{
+	max-width: 50rem !important;
+	height: 6.75em !important;
+	font-size: 20px;
 }
 /**
  * Swiper 3.4.0
