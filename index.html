@@ -132,6 +132,9 @@
     					<h3 id="header-why">Why</h3>
     					<p><b>Consumers</b> - While consumers want to be safe, security is often something that takes a backseat to convenience. Continuous authentication has a two-fold benefit for cardholders, the potential for a quicker checkout, while also more layers of protection against identity theft, and fraud.</p>
 
+              <a href="#" onclick="toggle_visibility('5w_cons');"><b>Consumers</b></a>
+              <div id="5w_cons"><p> While consumers want to be safe, security is often something that takes a backseat to convenience. Continuous authentication has a two-fold benefit for cardholders, the potential for a quicker checkout, while also more layers of protection against identity theft, and fraud.</p></div>
+
 
 
 							<header><h2><b>Current challenges in payment</b></h2></header>
@@ -301,7 +304,21 @@
 
 		<!-- Scripts -->
 
+      <!-- Added by Zohaib... -->
+      <script type="text/javascript">
 
+        function toggle_visibility(id) {
+           var e = document.getElementById(id);
+           if(e.style.display == 'block')
+              e.style.display = 'none';
+           else
+              e.style.display = 'block';
+        }
+
+      </script>
+
+
+      <!-- ...End -->
 
 			<script type="text/javascript">
 
