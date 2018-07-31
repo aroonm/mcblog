@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+	<title>04 Small Merchant Checkout </title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/main_home.css" />
+	<link rel="stylesheet" href="../css/verticaltimeline.css" />
+</head>
+
+<style type="text/css">
+
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+	/* border-radius: 5px 5px 0 0;*/
+}
+
+/* card */
+
+.card {
+	border: 2px solid #ffffff;
+	/*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);  horiz vert blur*/
+	transition: 0.3s;
+	/* border-radius: 5px;*/
+}
+
+
+
+.card:hover {
+	box-shadow: 10px 10px 0px 0 rgba(247,159,26,1);
+	border: 2px solid #000000;
+
+    /*-moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;*/
+}
+
+
+
+
+
+
+
+</style>
+
+<body>
+		<div class="topnav" id="myTopnav">
+
+				<a href="../blog.html" class="hoveractive">Blog</a>
+				<a href="../team.html" class="hoveractive">Team</a>
+				<a href="all-prototypes.html" class="hoveractive">
+					<span class="navactive">Design Prototypes</span>
+				</a>
+				<a href="../index.html" class="hoveractive">Why Continuous Authentication</a>
+				<a href="../index.html" class="dont-activate" style="float: left; left: 0px;  position: absolute;">
+					<img style="width:50px;" ; src="../images/1200px-Mastercard-logo.png">
+		
+				</a>
+				<a href="../index.html" class="dont-activate" style=" float: left; left: 60px; margin-top: -5px; position: absolute;">
+					<img style="width:70px;" src="../images/hcilogo-nav.png">
+				</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
+		
+		
+			<div id="mySidenav" class="sidenav" style="width: 250px; margin-top: 5em;">
+				<a href="#main" class="sidenav-font" id="side_introduction">Concept</a>
+				<a href="#prototypes" class="sidenav-font" id="side_q1">Prototypes</a>
+				<a href="#research" class="sidenav-font" id="side_q2">Research Questions</a>
+				<a href="#methodology" class="sidenav-font" id="side_q3">Methodology</a>
+				<a href="#Findings" class="sidenav-font" id="side_q4">Findings</a>
+			</div>
+
+<!-- Wrapper -->
+<div id="wrapper" style="margin-top: 6em;">
+		<section class="wrapper style1 align-left">
+				<div class="inner medium">
+		<div class="content">
+
+
+	<!-- Main -->
+	<div id="main">
+		<div class="inner" style="margin-top: 1em;">
+
+			<button onclick="topFunction()" id="scroll-to-top" style="">Top&uarr;</button>
+			<a href="all-prototypes.html"><button class="backbutton" class="protobutton">&larr; Back to all prototypes</button></a>
+
+			<h1>Small Merchant Checkout </h1>
+			<div class="table-content"><p><b><!-- Content --></b></p>
+							<ol>
+								<li><a href="prototype4.html#concept">Concept</a></li>
+								<li><a href="prototype4.html#research">Research Questions</a></li>
+								<li><a href="prototype4.html#methodology">Methodology</a></li>
+								<li><a href="prototype4.html#findings">Findings</a></li>
+							</ol>
+						</div>
+
+						<h2 id="concept">Concept</h2>
+
+						<p>We made a series of mid-fidelity prototypes for a small business checkout page for a desktop browser user. The small business, Haptic Labs, sells handmade soft goods and sundries. Their website uses Shopify for checkout and e-commerce.</p>
+
+						<p>Please find our InVision Prototypes here:</p>
+						<!-- <h4>Version 1</h4> -->
+						<a href="https://invis.io/UEGOX3IXAKJ#/">Checkout v1-1</a>
+						<br>
+						<a href="https://invis.io/VFGOXH26EG2#/">Checkout v1-2</a>
+						<br>
+						<a href="https://invis.io/YDGOXKJC9BQ#/">Checkout v1-3</a>
+						<br>
+						<a href="https://invis.io/E2GTAKDB9HS#/290789669_opening_None_Copy_2">Checkout v2-1</a>
+						<br>
+						<a href="https://invis.io/K3GTAMA6U5M#/290790124_opening_None_Copy_5">Checkout v2-2</a>
+						<br>
+						<a href="https://invis.io/JBGTAQ57RS3#/290791079_opening_None_Copy_6">Checkout v2-3</a>
+						<br>
+						<hr id="research">
+						<h2>Research Questions</h2>
+						<ul>
+							<li>How much background should be shown during checkout session?</li>
+							<li>How can we build trust in a Continuous Authentication interface?</li>
+						</ul>
+						<hr id="methodology">
+						<h2>Methodology</h2>
+						<h4>Number of Users: 9</h4>
+						<p>To test these prototypes, we conducted a 60 minute interview and Think Aloud, where we asked users to first go through different onboarding scenarios before we asked them to shop online on a small merchant website (Haptic Lab).</p>
+
+						<p>We created three different checkout experiences branded differently (Generic Store vs Citibank vs Mastercard) to test how consumer perceptions change.</p>
+
+						<p>Our prototypes test 3 various checkout flows with UI widgets that show data collection is happening, to various degrees. We showed these in increasing order of invasiveness, displayed on the home page and would either disappear, or change to a smaller icon when the user began scrolling/browsing the website. We then probed users on their feelings regarding data collection.</p>
+
+						<!-- <h2>Photos and Protos Links</h2> -->
+						<!-- <p style="color:red; font-weight: 900;">[Pictures of 3 versions] </p> -->
+						<hr id="findings">
+						<h2>Findings</h2>
+
+						<h3><span class="h3-num">01.</span>Version 2 was the preferred experience for users. Version 1 was the least liked. </h3>
+
+						<h3><span class="h3-num">02.</span>Show all background information during on-boarding, but none for normal checkout</h3>
+						<blockquote>"I like to see permission and I like to know what it's collecting"
+							<br><br>
+						"I'd find it strange if it's collecting data in the background. I won't sign up unless I knew how it was working…"</blockquote>
+
+
+						<h3><span class="h3-num">03.</span>People don't trust small merchants with their information.</h3>
+						<blockquote>"I trust my bank, or Mastercard, but not third parties for payment."</blockquote>
+
+						<h3><span class="h3-num">04.</span>Social factors encourage adoption</h3>
+						<blockquote>"If everyone is using it, I'll use it. Because it's indicative of trustworthiness."</blockquote>
+
+						<h3><span class="h3-num">05.</span>Friction in the payment process may be preferable</h3>
+						<blockquote>"The fact that it took some time to validate gives me confidence"
+							<br>
+							<br>"I prefer a little bit of friction. Self control is a huge pain."></blockquote>
+
+						<h3><span class="h3-num">06.</span>Users have multiple cards and have trouble differentiating them</h3>
+						<blockquote>"If you could show a little flag beside the visual of the card, it will help international [citizens] because the last 4-digits [of the credit card number] are very hard to remember"</blockquote>
+
+						<h3><span class="h3-num">07.</span>Users share devices and Continuous Authentication systems need to account for that</h3>
+						<blockquote>"If it's a family computer, or multiple users, whose account is [the system] recognizing? Can you differentiate with a PIN or password?"</blockquote>
+
+
+						<h3><span class="h3-num">08.</span>People do not look at superfluous UI elements when focused on a task</h3>
+
+
+						<h3><span class="h3-num">09.</span>No one, except for one person looked at the pop up in the corner</h3>
+
+
+
+
+
+
+				</div>
+			</div>
+
+			<!-- Sidebar -->
+			<div id="sidebar">
+
+			</div>
+		</div>
+		</div>
+	</section>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+<script src="../assets/js/navbar.js"></script>
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/browser.min.js"></script>
+<script src="../assets/js/breakpoints.min.js"></script>
+<script src="../assets/js/util.js"></script>
+<script src="../assets/js/main.js"></script>
+
+<script type="text/javascript">
+
+
+
+
+</script>
+
+</body>
+</html>
+
+
+
+
+

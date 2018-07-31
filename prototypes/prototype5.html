@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+	<title>05 Physical Payment Experience</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/main_home.css" />
+	<link rel="stylesheet" href="../css/verticaltimeline.css" />
+</head>
+
+<style type="text/css">
+
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+	/* border-radius: 5px 5px 0 0;*/
+}
+
+h3 {
+    line-height: 1.45rem;
+}
+
+/* card */
+
+.card {
+	border: 2px solid #ffffff;
+	/*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);  horiz vert blur*/
+	transition: 0.3s;
+	/* border-radius: 5px;*/
+}
+
+
+
+.card:hover {
+	box-shadow: 10px 10px 0px 0 rgba(247,159,26,1);
+	border: 2px solid #000000;
+
+    /*-moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;*/
+}
+
+
+
+
+
+
+
+</style>
+
+<body>
+
+		<div class="topnav" id="myTopnav">
+
+				<a href="../blog.html" class="hoveractive">Blog</a>
+				<a href="../team.html" class="hoveractive">Team</a>
+				<a href="all-prototypes.html" class="hoveractive">
+					<span class="navactive">Design Prototypes</span>
+				</a>
+				<a href="../index.html" class="hoveractive">Why Continuous Authentication</a>
+				<a href="../index.html" class="dont-activate" style="float: left; left: 0px;  position: absolute;">
+					<img style="width:50px;" ; src="../images/1200px-Mastercard-logo.png">
+		
+				</a>
+				<a href="../index.html" class="dont-activate" style=" float: left; left: 60px; margin-top: -5px; position: absolute;">
+					<img style="width:70px;" src="../images/hcilogo-nav.png">
+				</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
+		
+		
+			<div id="mySidenav" class="sidenav" style="width: 250px; margin-top: 5em;">
+				<a href="#main" class="sidenav-font" id="side_introduction">Concept</a>
+				<a href="#prototypes" class="sidenav-font" id="side_q1">Prototypes</a>
+				<a href="#research" class="sidenav-font" id="side_q2">Research Questions</a>
+				<a href="#methodology" class="sidenav-font" id="side_q3">Methodology</a>
+				<a href="#Findings" class="sidenav-font" id="side_q4">Findings</a>
+			</div>
+
+	<!-- Wrapper -->
+	<div id="wrapper" style="margin-top: 6em;">
+			<section class="wrapper style1 align-left">
+					<div class="inner medium">
+			<div class="content">
+
+
+				<!-- Main -->
+	<div id="main">
+		<div class="inner" style="margin-top: 1em;">
+
+			<button onclick="topFunction()" id="scroll-to-top" style="">Top&uarr;</button>
+			<a href="all-prototypes.html"><button class="backbutton" class="protobutton">&larr; Back to all prototypes</button></a>
+
+			<h1>Lemonade Stand</h1>
+			<div class="table-content"><p><b><!-- Content --></b></p>
+				<ol>
+					<li><a href="prototype5.html#concept">Concept</a></li>
+					<li><a href="prototype5.html#research">Research Questions</a></li>
+					<li><a href="prototype5.html#methodology">Methodology</a></li>
+					<li><a href="prototype3.html#findings">Findings</a></li>
+				</ol>
+			</div>
+			<video  controls  class="center-align-images" style="width: 100%;">
+				<source src="https://www.hamsterbard.com/images/w13_onstreet_video.mp4" type="video/mp4">
+					<source src="https://www.hamsterbard.com/images/w13_onstreet_video.mp4" type="video/ogg">
+						Your browser does not support HTML5 video.
+					</video>
+
+					<h2 id="concept">Concept</h2>
+
+					<p>Since the digital avatar and web store examples were more digitally focused, we wanted to interrogate the physical store and consumers level of comfort while having their face "scanned" or video recorded during check out in person. We knew we couldn't get authentic reactions from people just by showing them a storyboard, so we had to approximate the payment experience. We created a Lemonade Stand that people could walk up to and act out paying. A simple lemonade stand along a busy road was the quickest (and most fun) way to prototype a brick-and-mortar payment experience.</p>
+
+					<p>The prototype we developed used a tablet POS system as the format, and we developed UI elements continuing with our fictitious 'Mastercard Instant Checkout' branding to elicit trust. While we provided free lemonade, we asked 'shoppers' (anyone willing to talk to us on the street) to go through the payment process on the tablet. Once they selected "One glass of lemonade" from the menu there were three variations that we tested that users experienced:</p>
+					<hr id="prototypes">
+					<h2>Prototypes</h2>
+					<b>1. Live video feed - Successful authentication</b>
+					<p>Users see their face being recorded through live video on the merchant POS (an iPad tablet), and a confirmation animation plays letting the customer know that the payment was successful.</p>
+
+					<video  controls  class="left-align-images" style="width: 80%;">
+					<source src="https://www.hamsterbard.com/images/w13_Ipad_video_sucess_video.mov" type="video/mp4">
+					<source src="https://www.hamsterbard.com/images/w13_Ipad_video_sucess_video.ogg" type="video/ogg">
+								Your browser does not support HTML5 video.
+					</video>
+					<br>
+					<br>
+					<b>2. Live video feed - Failed authentication with phone push notification</b>
+					<p>Users see the same video recording but experience the failed state, where the trust score shows up low (~70%). We would then hand them a phone (they pretended it was their phone) that got a notification with a 4 digit passcode they had to enter on the merchant POS.</p>
+
+		<video  controls  class="left-align-images" style="width: 80%;">
+			<source src="https://www.hamsterbard.com/images/w13_Ipad_video_fail_video.mov" type="video/mp4">
+				<source src="https://www.hamsterbard.com/images/w13_Ipad_video_fail_video.ogg" type="video/ogg">
+					Your browser does not support HTML5 video.
+				</video>
+				<br>
+				<br>
+				<b>3. Live video feed on the customer's phone</b>
+				<p>Users received a notification on the phone we provided to enable facial capture. The front camera would turn on, and the user would see a similar animation to Option 1, confirming the user's authenticity. The hypothesis with this method is that people may be more comfortable.</p>
+
+				<video  controls  class="left-align-images" style="width: 100%;">
+					<source src="https://www.hamsterbard.com/images/phone_ipad.mp4" type="video/mp4">
+						<source src="https://www.hamsterbard.com/images/phone_ipad.ogg" type="video/ogg">
+							Your browser does not support HTML5 video.
+						</video>
+						<hr id="research">
+						<h2>Research Questions</h2>
+						<ul>
+							<li>How do people actually feel about their face being recorded in a physical store?</li>
+							<li>What should the recovery experience be at a physical POS?</li>
+						</ul>
+						<hr id="methodology">
+						<h2>Methodology</h2>
+
+						<p>Numbers of Users:<br>
+							90 minute user interviews (X number of people)<br>
+						Guerrilla research (18 passerbys asked on the street for feedback)</p>
+						<hr id="findings">
+						<h2>Findings</h2>
+						<p>Both methods provided some great findings from this prototype. Most people (8/13) has negative reactions to being video'd without their consent at the point of sale. Version 3, where it was recorded on their own phone, did assuage these discomforts. Many people seemed resigned and willing to provide their facial data to authenticate themselves if it becomes the new paradigm ("if I see other people doing it, I'll do it too"). Overall, it seems like video recording could work for customers that opt-in, and feel added value in the form of ease or time-savings from the get-go.</p>
+
+						<h3><span class="h3-num">01.</span>People feel uncomfortable using their facial data to pay</h3>
+						<p>Out of 14 passerby asked on the street: 8 had negative reactions, 6 had positive reactions</p>
+
+						<h3><span class="h3-num">02.</span>People feel more comfortable when facial data is captured on their own device, not a merchant's POS system due to having a sense of control over the data collection.</h3>
+						<blockquote>"If this was on my own device it would have been better"
+							<br><br>
+						"There's a degree of control, gives me a little more comfort"</blockquote>
+
+						<h3><span class="h3-num">03.</span>Data gathering without opting in is uncomfortable.</h3>
+						<blockquote>"This feels like something's wrong. This is so in my face."</blockquote>
+
+						<h3><span class="h3-num">04.</span>Falling back to an existing authentication method is comforting to users, and enhances the experience as it reinforces their current mental model</h3>
+						<blockquote>"It's reassuring if it (SMS 2FA) happens once in a while…."</blockquote>
+
+						<h3><span class="h3-num">05.</span>If a bad actor has access to one factor, they may have access to more</h3>
+						<blockquote>"If the trust score was very very low, I wouldn't want the 2nd factor to go through."</blockquote>
+
+						<h3><span class="h3-num">06.</span>Growing acceptance or indifference with data collection</h3>
+						<blockquote>"It's just facial recognition… Easier than Apple Pay."</blockquote>
+
+						<h3><span class="h3-num">07.</span>An extremely convenient experience will overcome user discomfort </h3>
+						<blockquote>"It's a little creepy but I'd use it. I forget my wallet all the time…"</blockquote>
+
+						<h3><span class="h3-num">08.</span>Despite discomfort with facial data being captured, a live video feed was preferred to an animated avatar </h3>
+						<blockquote>"I think it's more secure to actually see myself instead of an animated avatar…"
+							<br><br>
+						"It's cute but I don't trust it."</blockquote>
+
+						<h3><span class="h3-num">09.</span>Social factors encourage adoption </h3>
+						<blockquote>"If that was just the normal way people would pay at this place, I wouldn't feel weird using it".</blockquote>
+
+						<h3><span class="h3-num">10.</span>People are ok with providing facial data as long as we are satisfying a need. </h3>
+						<blockquote>"It's a little creepy but I'd use it. I forget my wallet all the time…"
+							<br><br>
+						"It's just facial recognition… Easier than Apple Pay."</blockquote>
+
+						<h3><span class="h3-num">11.</span>On capturing facial data on phone</h3>
+						<blockquote>"There's a degree of control, gives me a little more comfort"</blockquote>
+					</div>
+				</div>
+
+				<!-- Sidebar -->
+				<div id="sidebar">
+
+				</div>
+			</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- Scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+	<script src="../assets/js/navbar.js"></script>
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/browser.min.js"></script>
+	<script src="../assets/js/breakpoints.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/main.js"></script>
+
+	<script type="text/javascript">
+
+
+
+
+	</script>
+
+</body>
+</html>
+
+
+
+
+

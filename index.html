@@ -4,159 +4,222 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Team Mastercard - Home</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-	</head>
 
-	<style type="text/css">
+<head>
+	<title>Team Mastercard - Home</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
 
-.container {
-  overflow: hidden;
-}
+<style type="text/css">
+	.container {
+		overflow: hidden;
+	}
 
-.sliding-background {
-	background: linear-gradient(
-                     rgba(0,0,0, 0),
-                     rgba(0,0,0, 0)),
-                     url("images/scrolling-banner.jpg") repeat-x;
-  /*background: url("images/scrolling-banner.jpg") repeat-x;*/
-  height: 900px; /*1440 × 900*   10401 × 900 */
-  width: 31203px;
-  animation: slide 200s linear infinite;
-  overflow-y: hidden
+	.sliding-background {
+		background: linear-gradient( rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, 0)),
+		url("images/scrolling-banner.jpg") repeat-x;
+		/*background: url("images/scrolling-banner.jpg") repeat-x;*/
+		height: 900px;
+		/*1440 × 900*   10401 × 900 */
+		width: 31203px;
+		animation: slide 200s linear infinite;
+		overflow-y: hidden
+	}
 
-}
+	@keyframes slide {
+		0% {
+			transform: translate3d(0, 0, 0);
+		}
+		100% {
+			transform: translate3d(-10401px, 0, 0);
+		}
+	}
+</style>
 
-@keyframes slide{
-  0%{
-    transform: translate3d(0, 0, 0);
-  }
-  100%{
-    transform: translate3d(-10401px, 0, 0);
-  }
-}
-
-
-	</style>
-	<body>
+<body>
 
 	<div class="topnav" id="myTopnav">
 
 		<a href="blog.html" class="hoveractive">Blog</a>
-  		<a href="team.html" class="hoveractive">Team</a>
-  		<a href="prototypes.html" class="hoveractive">Design Prototypes</a>
-  		<a href="index.html" class="hoveractive"><span class="navactive">Why Continuous Authentication</span></a>
-  		<a href="index.html" class="dont-activate" style="float: left; left: 0px;  position: absolute;">
-			<img style="width:50px;";  src="images/1200px-Mastercard-logo.png">
+		<a href="team.html" class="hoveractive">Team</a>
+		<a href="prototypes/all-prototypes.html" class="hoveractive">Design Prototypes</a>
+		<a href="index.html" class="hoveractive">
+			<span class="navactive">Why Continuous Authentication</span>
+		</a>
+		<a href="index.html" class="dont-activate" style="float: left; left: 0px;  position: absolute;">
+			<img style="width:50px;" ; src="images/1200px-Mastercard-logo.png">
 
 		</a>
 		<a href="index.html" class="dont-activate" style=" float: left; left: 60px; margin-top: -5px; position: absolute;">
 			<img style="width:70px;" src="images/hcilogo-nav.png">
 		</a>
-  		<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
 	</div>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
+	<!-- Wrapper -->
+	<div id="wrapper" class="divided">
 
-				<!-- MC Splash -->
-					<section class="banner style5 orient-left content-align-left image-position-right fullscreen ">
-						<div class="content" style="width: 60rem;">
-							<h1 ><b style="font-weight: 600;" class="mc">Team HamsterBard</b></h1>
-							<p class="major " style="color:white;"><a href="https://www.hcii.cmu.edu/" style="text-decoration: none;">CMU MHCI</a> capstone project sponsored by Mastercard</p>
-							<p class="major"  style="color:white; margin-top: -20px;"><b style="color: white;">Year of 2018</b></p>
-							<ul class="actions vertical">
-								<li><a href="#first" class="button big wide smooth-scroll-middle mc" style="    color: #f79f1a !important; background-color: #0000002b;">Read More
-									<i class="fa fa-arrow-down"></i>
-									</a></li> 
-							</ul>
-						</div>
+		<!-- MC Splash -->
+		<section class="banner style5 orient-left content-align-left image-position-right fullscreen ">
+			<div class="content" style="width: 60rem;">
+				<h1>
+					<b style="font-weight: 600;" class="mc">Team HamsterBard</b>
+				</h1>
+				<p class="major " style="color:white;">
+					<a href="https://www.hcii.cmu.edu/" style="text-decoration: none;">CMU MHCI</a> capstone project sponsored by Mastercard</p>
+				<p class="major" style="color:white; margin-top: -20px;">
+					<b style="color: white;">Year of 2018</b>
+				</p>
+				<ul class="actions vertical">
+					<li>
+						<a href="#first" class="button big wide smooth-scroll-middle mc" style="    color: #f79f1a !important; background-color: #0000002b;">Read More
+							<i class="fa fa-arrow-down"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
 
-						<div class="image" style="opacity: 0.9; overflow: hidden; background-color: black;">
+			<div class="image" style="opacity: 0.9; overflow: hidden; background-color: black;">
 
-							<!-- Swiper Silder
-    ================================================== --> 
-<!-- Slider main container -->
-<div class="swiper-container main-slider" id="myCarousel">
-  <div class="swiper-wrapper">
+				<!-- Swiper Silder
+    ================================================== -->
+				<!-- Slider main container -->
+				<div class="swiper-container main-slider" id="myCarousel">
+					<div class="swiper-wrapper">
 
-    <div class="swiper-slide slider-bg-position" style="background:linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5), transparent),url('images/test.jpg')" data-hash="slide1"></div>
-    <div class="swiper-slide slider-bg-position" style="background:linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5), transparent),url('images/usertest.jpg')" data-hash="slide2"></div>
-    <div class="swiper-slide slider-bg-position" style="background:linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5), transparent),url('images/w02_kickoff_discussion.jpg')" data-hash="slide2"></div>
-    <div class="swiper-slide slider-bg-position" style="background:linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5), transparent),url('images/w05_scrum_board_02.JPG')" data-hash="slide2"></div>
-    <div class="swiper-slide slider-bg-position" style="background:linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5), transparent),url('images/w08_MCatSXSW_banner.jpg')" data-hash="slide2"></div>
-    <div class="swiper-slide slider-bg-position" style="background:linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5), transparent),url('images/w13_Lemonade.JPG')" data-hash="slide2"></div>
-    <div class="swiper-slide slider-bg-position" style="background:linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5), transparent),url('images/wedsketch.jpg')" data-hash="slide2"></div>
+						<div class="swiper-slide slider-bg-position" style="background:linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5), transparent),url('images/test.jpg')"
+						 data-hash="slide1"></div>
+						<div class="swiper-slide slider-bg-position" style="background:linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5), transparent),url('images/usertest.jpg')"
+						 data-hash="slide2"></div>
+						<div class="swiper-slide slider-bg-position" style="background:linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5), transparent),url('images/w02_kickoff_discussion.jpg')"
+						 data-hash="slide2"></div>
+						<div class="swiper-slide slider-bg-position" style="background:linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5), transparent),url('images/w05_scrum_board_02.JPG')"
+						 data-hash="slide2"></div>
+						<div class="swiper-slide slider-bg-position" style="background:linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5), transparent),url('images/w08_MCatSXSW_banner.jpg')"
+						 data-hash="slide2"></div>
+						<div class="swiper-slide slider-bg-position" style="background:linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5), transparent),url('images/w13_Lemonade.JPG')"
+						 data-hash="slide2"></div>
+						<div class="swiper-slide slider-bg-position" style="background:linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5), transparent),url('images/wedsketch.jpg')"
+						 data-hash="slide2"></div>
 
 
 
-  </div>
-  <!-- Add Pagination -->
-  <div class="swiper-pagination"></div>
-  <!-- Add Navigation -->
-  <div class="swiper-button-prev" style="color:#F79F1A;"><i class="fa fa-chevron-left"></i></div>
-  <div class="swiper-button-next" style="color:#F79F1A;"><i class="fa fa-chevron-right"></i></div>
-</div>
-						</div>
-					</section>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+					<!-- Add Navigation -->
+					<div class="swiper-button-prev" style="color:#F79F1A;">
+						<i class="fa fa-chevron-left"></i>
+					</div>
+					<div class="swiper-button-next" style="color:#F79F1A;">
+						<i class="fa fa-chevron-right"></i>
+					</div>
+				</div>
+			</div>
+		</section>
 
-					<section  class="spotlight style1 orient-center content-align-left image-position-right" style="height: 100%; overflow: hidden;">
-						<div class="content" >
-							<header id="first"><h2 onclick="toggleDisplay('our-task-content');"><b>Our task</b></h2></header>
-							<p class="major" id="our-task-content" style="display: block;">Explore an ecosystem of payment authentication experiences.</p>
+		<section class="spotlight style1 orient-center content-align-left image-position-right" style="height: 100%; overflow: hidden;">
+			<div class="content">
+				<header id="first">
+					<h2 onclick="toggleDisplay('our-task-content');">
+						<b>Our task</b>
+					</h2>
+				</header>
+				<p class="major" id="our-task-content" style="display: block;">Explore an ecosystem of payment authentication experiences.</p>
 
-							<br><br><br>
+				<br>
+				<br>
+				<br>
 
-							<header><h2><b>Current challenges in payment</b></h2></header>
-							<br><br>
-							<img src="images/ecosystem.png" style="width:60%;" class="center-align-images" style="" alt="" />
+				<header>
+					<h2>
+						<b>Current challenges in payment</b>
+					</h2>
+				</header>
+				<br>
+				<br>
+				<img src="images/ecosystem.png" style="width:60%;" class="center-align-images" style="" alt="" />
 
-							<p><br><br>In the large space of digital payments we narrowed down to consumers and merchants. During our discovery phase, we explored a wide range of topics related to authentication in digital payments. Some topics we explored laterally in this space:<br><br>
-							<span>- Payments in a social context;</span> <br>
-							<span>- Merchant inertia, and getting merchants to adopt new technology;</span> <br>
-							<span>- Using multiple identities in different contexts;</span> <br>
-							<span>- How consumers feel about new authentication methods,</span><br><br>
-							<span>And a new authentication paradigm that ties these all together called Continuous Authentication</p>
-							<br><br><br>
+				<p>
+					<br>
+					<br>In the large space of digital payments we narrowed down to consumers and merchants. During our discovery phase, we explored
+					a wide range of topics related to authentication in digital payments. Some topics we explored laterally in this space:
+					<br>
+					<br>
+					<span>- Payments in a social context;</span>
+					<br>
+					<span>- Merchant inertia, and getting merchants to adopt new technology;</span>
+					<br>
+					<span>- Using multiple identities in different contexts;</span>
+					<br>
+					<span>- How consumers feel about new authentication methods,</span>
+					<br>
+					<br>
+					<span>And a new authentication paradigm that ties these all together called Continuous Authentication</p>
+				<br>
+				<br>
+				<br>
 
-							<header><h2><b>Solve these challenges with <br>Continuous Authentication</b></h2></header>
-							<br><br>
-							<img src="images/contauth1.png" style="width: 60%;" class="center-align-images"  alt="" />
+				<header>
+					<h2>
+						<b>Solve these challenges with
+							<br>Continuous Authentication</b>
+					</h2>
+				</header>
+				<br>
+				<br>
+				<img src="images/contauth1.png" style="width: 60%;" class="center-align-images" alt="" />
 
-							<br><br><br>
+				<br>
+				<br>
+				<br>
 
-							<!-- <h3><b>Continuous Authentication?</b></h3>
+				<!-- <h3><b>Continuous Authentication?</b></h3>
 							<br>
 							<h3><b>&emsp;&emsp;A system that verifies</b></h2>
 							<h3><b>&emsp;&emsp;<span style="color:#FF9301;">who</span> you are,</b></h3>
 							<h3><b>&emsp;&emsp;<span style="color:#FF9301;">whenever</span> you need it,</b></h3>
 							<h3><b>&emsp;&emsp;<span style="color:#FF9301;">without</span> you thinking about it.</b></h3> -->
 
-							<br><br><br>
+				<br>
+				<br>
+				<br>
 
-							<header><h2><b>A new system with <br>Continuous Authentication</b></h2></header>
+				<header>
+					<h2>
+						<b>A new system with
+							<br>Continuous Authentication</b>
+					</h2>
+				</header>
 
-							<div id="before_mc" style="display: block;">
-							<img src="images/before_mc.png" style="width: 80%;" class="center-align-images" alt="" />
-							</div>
+				<div id="before_mc" style="display: block;">
+					<img src="images/before_mc.png" style="width: 80%;" class="center-align-images" alt="" />
+				</div>
 
-							<div id="after_mc" style="display: none;">
-							<img src="images/after_mc.png" style="width: 80%;" class="center-align-images" alt="" />
-							</div>
+				<div id="after_mc" style="display: none;">
+					<img src="images/after_mc.png" style="width: 80%;" class="center-align-images" alt="" />
+				</div>
 
-							<a style="text-align: center; cursor: pointer;" onclick="transitionToNewState()" class="center-align-images" id="click-text">With Continuous Authentication &rarr;</a>
+				<a style="text-align: center; cursor: pointer;" onclick="transitionToNewState()" class="center-align-images" id="click-text">With Continuous Authentication &rarr;</a>
 
-							<br>
+				<br>
 
-							<p>Continuous Authentication is an idea that has been bouncing around the digital payments space for the past few years but will little implementation to show for it. With Continuous Authentication we can eliminate a lot of the waiting and touchpoints in this diagram above, showing checkout sequences in both physical stores and online shops. Continuous Authentication removes the hassle of juggling multiple cards and passwords, as well as reducing false declines.</p>
+				<p>Continuous Authentication is an idea that has been bouncing around the digital payments space for the past few years
+					but will little implementation to show for it. With Continuous Authentication we can eliminate a lot of the waiting
+					and touchpoints in this diagram above, showing checkout sequences in both physical stores and online shops. Continuous
+					Authentication removes the hassle of juggling multiple cards and passwords, as well as reducing false declines.</p>
 
-							<br><br><br>
+				<br>
+				<br>
+				<br>
 
-							<!-- <header><h2><b>Research through design</b></h2></header>
+				<!-- <header><h2><b>Research through design</b></h2></header>
 
 
 
@@ -177,7 +240,7 @@
 
 							<br><br><br> -->
 
-							<!-- <header><h2><b><a href="prototypes.html">Tackling design challenges</a></b></h2></header>
+				<!-- <header><h2><b><a href="prototypes.html">Tackling design challenges</a></b></h2></header>
 
 							<div class="row center-align-images">
 							  <div class="column" style="width: 40%">
@@ -217,24 +280,35 @@
 
 
 
-							<header ><h2><b>Proof of Concept: A Face<br>Recognition Demo</b></h2></header>
-							<br>
-							<p>We developed a proof of concept for a facial recognition authentication experience. This is a slow burn project replicating some of the features of Project Abacus’ demo in the studio that shows a certainty rating for a user in the camera. Here’s a demo video of it working on some of our teammates.</p>
-							<br>
-							<video class="center-align-images" style="width: 40%;" controls  >
-							  <source src="images/avatar_demo.mp4" type="video/mp4">
-							  <source src="images/avatar_demo.ogg" type="video/ogg">
-							  Your browser does not support HTML5 video.
-							</video>
+				<header>
+					<h2>
+						<b>Proof of Concept: A Face
+							<br>Recognition Demo</b>
+					</h2>
+				</header>
+				<br>
+				<p>We developed a proof of concept for a facial recognition authentication experience. This is a slow burn project replicating
+					some of the features of Project Abacus’ demo in the studio that shows a certainty rating for a user in the camera. Here’s
+					a demo video of it working on some of our teammates.</p>
+				<br>
+				<video class="center-align-images" style="width: 40%;" controls>
+					<source src="images/avatar_demo.mp4" type="video/mp4">
+					<source src="images/avatar_demo.ogg" type="video/ogg"> Your browser does not support HTML5 video.
+				</video>
 
-							<br><br>
+				<br>
+				<br>
 
-							<ul class="actions vertical align-center">
-								<li><a href="prototypes.html" class="button big wide smooth-scroll-middle">Design Prototypes &rarr;</a></li>
-							</ul>
-							<!-- <br><br><br>
+				<ul class="actions vertical align-center">
+					<li>
+						<a href="prototypes.html" class="button big wide smooth-scroll-middle">Design Prototypes &rarr;</a>
+					</li>
+				</ul>
+				<!-- <br><br><br>
 							<a href="prototypes.html">Continue reading: Design Prototypes</a> -->
-							<br><br><br>
+				<br>
+				<br>
+				<br>
 
 
 
@@ -247,79 +321,80 @@
 
 
 
-						<!-- <div class="image " style="background-color: white;">
+				<!-- <div class="image " style="background-color: white;">
 							<img src="" alt="" />
 						</div> -->
 
-						</div>
-					</section>
+			</div>
+		</section>
 
 
 
 
 
-				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-							<!-- <ul class="icons">
+		<!-- Footer -->
+		<footer class="wrapper style1 align-center">
+			<div class="inner">
+				<!-- <ul class="icons">
 								<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
 								<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
 								<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
 								<li><a href="#" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
 								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
 							</ul> -->
-							<p>&copy; Team Mastercard, CMU.</p>
-						</div>
-					</footer>
-
+				<p>&copy; Team Mastercard, CMU.</p>
 			</div>
+		</footer>
+
+	</div>
 
 
 
-		<!-- Scripts -->
+	<!-- Scripts -->
 
 
 
-			<script type="text/javascript">
+	<script type="text/javascript">
 
-				function transitionToNewState() {
+		function transitionToNewState() {
 
-					before = document.getElementById('before_mc');
-					after = document.getElementById('after_mc');
+			before = document.getElementById('before_mc');
+			after = document.getElementById('after_mc');
 
-					clickText = document.getElementById('click-text');
+			clickText = document.getElementById('click-text');
 
-					before_visibilityStatus = before.style.display;
-					after_visibilityStatus = after.style.display;
+			before_visibilityStatus = before.style.display;
+			after_visibilityStatus = after.style.display;
 
-					if(before_visibilityStatus === "block") {
-						before.style.display = "none";
-						after.style.display = "block";
-						clickText.innerHTML = "Without Continuous Authentication &rarr;";
-					}
-					else if(after_visibilityStatus === "block") {
-						before.style.display = "block";
-						after.style.display = "none";
-						clickText.innerHTML = "With Continuous Authentication &rarr;";
-					}
-				}
+			if (before_visibilityStatus === "block") {
+				before.style.display = "none";
+				after.style.display = "block";
+				clickText.innerHTML = "Without Continuous Authentication &rarr;";
+			}
+			else if (after_visibilityStatus === "block") {
+				before.style.display = "block";
+				after.style.display = "none";
+				clickText.innerHTML = "With Continuous Authentication &rarr;";
+			}
+		}
 
-			</script>
+	</script>
 
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-			<script src="assets/js/navbar.js"></script>
-			<script src="assets/js/carousel.js"></script>
-			<script src="assets/js/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="assets/js/navbar.js"></script>
+	<script src="assets/js/carousel.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
 
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
 
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
 
-	</body>
+
+
+</body>
+
 </html>

@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>01 Avatar Game</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/main_home.css" />
+	<link rel="stylesheet" href="../css/verticaltimeline.css" />
+</head>
+
+<style type="text/css">
+	/* Add rounded corners to the top left and the top right corner of the image */
+
+	img {
+		/* border-radius: 5px 5px 0 0;*/
+	}
+
+	/* card */
+
+	.card {
+		border: 2px solid #ffffff;
+		/*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);  horiz vert blur*/
+		transition: 0.3s;
+		/* border-radius: 5px;*/
+	}
+
+
+
+	.card:hover {
+		box-shadow: 10px 10px 0px 0 rgba(247, 159, 26, 1);
+		border: 2px solid #000000;
+
+		/*-moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;*/
+	}
+</style>
+
+<body>
+
+
+	<div class="topnav" id="myTopnav">
+
+		<a href="../blog.html" class="hoveractive">Blog</a>
+		<a href="../team.html" class="hoveractive">Team</a>
+		<a href="all-prototypes.html" class="hoveractive">
+			<span class="navactive">Design Prototypes</span>
+		</a>
+		<a href="../index.html" class="hoveractive">Why Continuous Authentication</a>
+		<a href="../index.html" class="dont-activate" style="float: left; left: 0px;  position: absolute;">
+			<img style="width:50px;" ; src="../images/1200px-Mastercard-logo.png">
+
+		</a>
+		<a href="../index.html" class="dont-activate" style=" float: left; left: 60px; margin-top: -5px; position: absolute;">
+			<img style="width:70px;" src="../images/hcilogo-nav.png">
+		</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+
+
+	<div id="mySidenav" class="sidenav" style="width: 250px; margin-top: 5em;">
+		<a href="#main" class="sidenav-font" id="side_introduction">Concept</a>
+		<a href="#prototypes" class="sidenav-font" id="side_q1">Prototypes</a>
+		<a href="#research" class="sidenav-font" id="side_q2">Research Questions</a>
+		<a href="#methodology" class="sidenav-font" id="side_q3">Methodology</a>
+		<a href="#Findings" class="sidenav-font" id="side_q4">Findings</a>
+	</div>
+
+	<!-- Wrapper -->
+	<div id="wrapper" style="margin-top: 6em;">
+		<section class="wrapper style1 align-left">
+			<div class="inner medium">
+				<div class="content">
+
+
+					<!-- Main -->
+					<div id="main">
+						<div class="inner" style="margin-top: 1em;">
+
+							<button onclick="topFunction()" id="scroll-to-top" style="">Top&uarr;</button>
+							<a href="all-prototypes.html">
+								<button class="backbutton" class="protobutton">&larr; Back to all prototypes</button>
+							</a>
+
+							<h1>Avatar Game</h1>
+							<div class="table-content">
+								<p>
+									<b>
+										<!-- Content -->
+									</b>
+								</p>
+								<ol>
+									<li>
+										<a href="prototype1.html#concept">Concept</a>
+									</li>
+									<li>
+										<a href="prototype1.html#prototypes">Prototypes</a>
+									</li>
+									<li>
+										<a href="prototype1.html#research">Research Questions</a>
+									</li>
+									<li>
+										<a href="prototype1.html#methodology">Methodology</a>
+									</li>
+									<li>
+										<a href="prototype1.html#findings">Findings</a>
+									</li>
+								</ol>
+							</div>
+							<h2 id="concept">Concept</h2>
+
+							<p>Continuous authentication requires a wide array of data, and could benefit from different types of data that may not
+								be typical data points users are used to providing currently. This prototype investigates consumers' sentiments on
+								alternative methods of personal data collection and consent.</p>
+
+							<p>We designed and prototyped a convenient experience that encourages users to provide their biometric information like
+								facial data, typing patterns, location data, and others, which can be used to continuously authenticate them. It
+								uses various types of personalised avatars to provide a secure, fun, and familiar way to collect a user's biometric
+								information.
+							</p>
+							<hr id="prototypes">
+							<h2>Prototypes</h2>
+							<div class="example">
+								<div>
+									<img class="image example-img" src="https://www.hamsterbard.com/images/w10_Onboarding_DataCollection.png">
+								</div>
+							</div>
+							<div class="example">
+								<div>
+									<img class="image example-img" src="https://www.hamsterbard.com/images/w10_Onboarding_CharacterCreation.png">
+								</div>
+							</div>
+							<div class="example">
+								<div>
+									<img class="image example-img" src="https://www.hamsterbard.com/images/w10_Payment_GroceryStore.png">
+								</div>
+							</div>
+
+							<hr id="research">
+							<h2>Research Questions</h2>
+							<ul>
+								<li>How do people respond to being asked to provide their personal data?</li>
+								<li>How can we succinctly convey the value of Continuous Authentication to the average Person?</li>
+								<li>Can "logging in" be playful or fun?</li>
+							</ul>
+							<hr id="methodology">
+							<h2 id="think-aloud-method">Methodology</h2>
+							<h4>Number of User Tests: 4</h4>
+							<p>We interviewed users on their thoughts on the concept and validated needs. Conducted a
+								<span class="mc tooltip-r">Think Aloud
+									<span class="tooltiptext">Think-Aloud testing, or lab usability testing using the think-aloud protocol, is a common technique for testing
+										an interface with a user. During a lab test, a researcher will directly observe while they try to accomplish a
+										task. As the user ...
+										<a href="http://practicaluxmethods.com/product/think-aloud-testing/">Think Aloud Testing</a>
+									</span>
+								</span> while users went through our paper prototypes.</p>
+							<hr id="findings">
+							<h2>Findings</h2>
+							<ol>
+								<li>We found that language was the most important attribute when user testing.</li>
+								<li>Terms such as "accelerometer" mean nothing to non-tech people - and it can create confusion or misunderstanding.
+									In fact, one user ended up selecting items such as Camera and Location, two things which people are generally more
+									hesitant to share, only because those were the ones they understood.</li>
+								<li>Even having the term 'Accuracy' isn't consumer-centric enough. Users asked what 'Accuracy' meant and we needed to
+									explain it to them.</li>
+								<li>People preferred the Weak - Medium - Strong scale when choosing what sensor data to share with the app. It reinforces
+									their mental model during password creation.</li>
+								<li>Showing the percentage was a lot more confusing.</li>
+								<li>As for the character, users thought it was a fun, and interesting idea. Some users expressed concerns like, "what
+									does this have to do with my finances?", and "why do I want something cutesy during authentication?"</li>
+
+								<li>We also asked which data users feel least comfortable sharing. Amongst the five, 'Screen' and 'Camera' seem to be
+									the most personal, and most sensitive.</li>
+							</ol>
+
+							<h3>
+								<span class="h3-num">08.</span>Giving Permissions</h3>
+							<h4 class="after-h3">Collecting permissions by making an avatar happier is coercive and easily slips into dark pattern</h4>
+							<blockquote>"A child could do this by accident, as if they're playing a game."</blockquote>
+
+							The section where the app asks for permissions, using a greyed-out figure that brightens up as permissions are granted (by
+							tapping on hands, for granting typing pattern data, or the face, for facial data) was universally praised, though
+							we did receive valuable feedback that it might be coercive, and we should be careful when incentivising data sharing
+							like that.
+
+
+						</div>
+					</div>
+
+					<!-- Sidebar -->
+					<div id="sidebar">
+
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- Scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+	<script src="../assets/js/navbar.js"></script>
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/browser.min.js"></script>
+	<script src="../assets/js/breakpoints.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/main.js"></script>
+
+	<script type="text/javascript">
+
+
+
+
+	</script>
+
+</body>
+
+</html>

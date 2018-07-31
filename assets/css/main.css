@@ -8464,6 +8464,8 @@
     float: right;
     display: block;
   }
+  .protothumb{width: 90%;}
+
 }
 
 @media screen and (max-width: 600px) {
@@ -8654,7 +8656,9 @@ content: "\2014 \2009";
 .action-sec{width:100%; float:left; background:#222}
 .action-box{float:left; width:100%; text-align:center;}
 .action-box h2{color:#fff; font-size:20px;}
-
+.protobutton {margin-left: 0;}
+.protothumb{max-width: 500px; padding-bottom: 20px;}
+.backbutton{margin-bottom: 40px;margin-left:0px;} 
 
 /**
  * Swiper 3.4.0

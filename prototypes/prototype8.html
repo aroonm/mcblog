@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>08 Mobile Checkout</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/main_home.css" />
+	<link rel="stylesheet" href="../css/verticaltimeline.css" />
+</head>
+
+<style type="text/css">
+	h3 {
+		line-height: 1.45rem;
+	}
+
+	/* Add rounded corners to the top left and the top right corner of the image */
+
+	img {
+		/* border-radius: 5px 5px 0 0;*/
+	}
+
+	/* card */
+
+	.card {
+		border: 2px solid #ffffff;
+		/*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);  horiz vert blur*/
+		transition: 0.3s;
+		/* border-radius: 5px;*/
+	}
+
+
+
+	.card:hover {
+		box-shadow: 10px 10px 0px 0 rgba(247, 159, 26, 1);
+		border: 2px solid #000000;
+
+		/*-moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;*/
+	}
+</style>
+
+<body>
+
+	<div class="topnav" id="myTopnav">
+
+		<a href="../blog.html" class="hoveractive">Blog</a>
+		<a href="../team.html" class="hoveractive">Team</a>
+		<a href="all-prototypes.html" class="hoveractive">
+			<span class="navactive">Design Prototypes</span>
+		</a>
+		<a href="../index.html" class="hoveractive">Why Continuous Authentication</a>
+		<a href="../index.html" class="dont-activate" style="float: left; left: 0px;  position: absolute;">
+			<img style="width:50px;" ; src="../images/1200px-Mastercard-logo.png">
+
+		</a>
+		<a href="../index.html" class="dont-activate" style=" float: left; left: 60px; margin-top: -5px; position: absolute;">
+			<img style="width:70px;" src="../images/hcilogo-nav.png">
+		</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+
+
+	<div id="mySidenav" class="sidenav" style="width: 250px; margin-top: 5em;">
+		<a href="#main" class="sidenav-font" id="side_introduction">Concept</a>
+		<a href="#prototypes" class="sidenav-font" id="side_q1">Prototypes</a>
+		<a href="#research" class="sidenav-font" id="side_q2">Research Questions</a>
+		<a href="#methodology" class="sidenav-font" id="side_q3">Methodology</a>
+		<a href="#Findings" class="sidenav-font" id="side_q4">Findings</a>
+	</div>
+
+	<!-- Wrapper -->
+	<div id="wrapper" style="margin-top: 6em;">
+		<section class="wrapper style1 align-left">
+			<div class="inner medium">
+				<div class="content">
+
+
+					<!-- Main -->
+					<div id="main">
+						<div class="inner" style="margin-top: 1em;">
+
+							<button onclick="topFunction()" id="scroll-to-top" style="">Top&uarr;</button>
+							<a href="all-prototypes.html">
+								<button class="backbutton" class="protobutton">&larr; Back to all prototypes</button>
+							</a>
+							<h1>Mobile Checkout</h1>
+							<div class="table-content">
+								<p>
+									<b>
+										<!-- Content -->
+									</b>
+								</p>
+								<ol>
+									<li>
+										<a href="prototype8.html#concept">Concept</a>
+									</li>
+									<li>
+										<a href="prototype8.html#research">Research Questions</a>
+									</li>
+									<li>
+										<a href="prototype8.html#methodology">Methodology</a>
+									</li>
+									<li>
+										<a href="prototype8.html#prototypes">Prototypes</a>
+									</li>
+									<li>
+										<a href="prototype8.html#findings">Findings</a>
+									</li>
+								</ol>
+							</div>
+							<h2 id="concept">Concept</h2>
+
+							<p>One smaller prototype for a merchant checkout implementation we made was for ordering via a mobile browser or native
+								app for a Pizza Hut order. This primarily was to see how people could be introduced to a Continuous Authentication
+								service from Mastercard or their issuer on merchant sites. We tested a variety of messaging, sequence flows, and
+								UI designs to try and get people to learn about and opt-in to the service. </p>
+							<hr id="research">
+							<h2>Research Questions</h2>
+							<ul>
+								<li>Are merchant sites a reasonable context to opt-in interested customers?</li>
+								<li>Which do customers respond best to - convenience or security?</li>
+								<li>Which types of UI elements seem to convey security the most?</li>
+								<li>Where in a checkout flow is a reasonable spot to advertise this new service?</li>
+							</ul>
+							<hr id="methodology">
+							<h2>Methodology</h2>
+							<h4>Number of Users: </h4>
+							<hr id="prototypes">
+							<h2>Prototypes</h2>
+							<div class="example">
+								<div>
+									<p>1. Basic flow, no different to current checkout experience</p>
+									<img class="image example-img" src="../images/pizzahut-MC-flow-no-change.png">
+								</div>
+								<div>
+									<p>2. Onboarding to a Continuous Authentication system via Pizza Hut, redirected to the
+										<a href="prototype7.html">Citibank onboarding</a>
+									</p>
+									<img class="image example-img" src="../images/pizzahut-what-is-it.png">
+								</div>
+							</div>
+							<b>3. Pay using Mastercard Secure</b>
+							<br>
+							<video controls class="left-align-images" style="width: 45%;">
+								<source src="https://www.hamsterbard.com/images/F -MC secure flow.mp4" type="video/mp4">
+								<source src="https://www.hamsterbard.com/images/F -MC secure flow.ogg" type="video/ogg"> Your browser does not support HTML5 video.
+							</video>
+							<hr id="Findings">
+							<h2>Findings</h2>
+							<p>We found users were not at all interested in learning about anything new while trying to buy a separate product. Users
+								did not read any messaging or clicked out of it immediately. </p>
+
+							<h3>
+								<span class="h3-num">01.</span>Users will not go out of their way to 'learn more' about a product or service. </h3>
+
+							<h3>
+								<span class="h3-num">02.</span>Out of 5 users, not a single one clicked on the "What is it?" link</h3>
+
+							<h3>
+								<span class="h3-num">03.</span>Customers don't want to leave the checkout payment flow to go to the bank app (would just cancel out)</h3>
+							<blockquote>"I closed it because I wanted to continue with the order"</blockquote>
+
+							<h3>
+								<span class="h3-num">04.</span>Rules of thumb, or heuristics, are powerful ways to make users feel more secure </h3>
+							<blockquote>"The green check make me feel happy. It told me I'm verified. It reassures me that everything is working great."
+								<br>
+								<br> "The 2nd one is my fave because it's more like Paypal." </blockquote>
+
+						</div>
+					</div>
+
+					<!-- Sidebar -->
+					<div id="sidebar">
+
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- Scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+	<script src="../assets/js/navbar.js"></script>
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/browser.min.js"></script>
+	<script src="../assets/js/breakpoints.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/main.js"></script>
+
+	<script type="text/javascript">
+
+
+
+
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>06 Coffee Shop </title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/main_home.css" />
+	<link rel="stylesheet" href="../css/verticaltimeline.css" />
+</head>
+
+<style type="text/css">
+	/* Add rounded corners to the top left and the top right corner of the image */
+
+	img {
+		/* border-radius: 5px 5px 0 0;*/
+	}
+
+	/* card */
+
+	.card {
+		border: 2px solid #ffffff;
+		/*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);  horiz vert blur*/
+		transition: 0.3s;
+		/* border-radius: 5px;*/
+	}
+
+
+
+	.card:hover {
+		box-shadow: 10px 10px 0px 0 rgba(247, 159, 26, 1);
+		border: 2px solid #000000;
+
+		/*-moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;*/
+	}
+</style>
+
+<body>
+
+	<div class="topnav" id="myTopnav">
+
+		<a href="../blog.html" class="hoveractive">Blog</a>
+		<a href="../team.html" class="hoveractive">Team</a>
+		<a href="all-prototypes.html" class="hoveractive">
+			<span class="navactive">Design Prototypes</span>
+		</a>
+		<a href="../index.html" class="hoveractive">Why Continuous Authentication</a>
+		<a href="../index.html" class="dont-activate" style="float: left; left: 0px;  position: absolute;">
+			<img style="width:50px;" ; src="../images/1200px-Mastercard-logo.png">
+
+		</a>
+		<a href="../index.html" class="dont-activate" style=" float: left; left: 60px; margin-top: -5px; position: absolute;">
+			<img style="width:70px;" src="../images/hcilogo-nav.png">
+		</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+
+
+	<div id="mySidenav" class="sidenav" style="width: 250px; margin-top: 5em;">
+		<a href="#main" class="sidenav-font" id="side_introduction">Concept</a>
+		<!-- <a href="#prototypes" class="sidenav-font" id="side_q1">Prototypes</a> -->
+		<a href="#research" class="sidenav-font" id="side_q2">Research Questions</a>
+		<a href="#methodology" class="sidenav-font" id="side_q3">Methodology</a>
+		<a href="#Findings" class="sidenav-font" id="side_q4">Findings</a>
+	</div>
+
+	<!-- Wrapper -->
+	<div id="wrapper" style="margin-top: 6em;">
+		<section class="wrapper style1 align-left">
+			<div class="inner medium">
+				<div class="content">
+
+
+					<!-- Main -->
+					<div id="main">
+						<div class="inner" style="margin-top: 1em;">
+
+							<button onclick="topFunction()" id="scroll-to-top" style="">Top&uarr;</button>
+							<a href="all-prototypes.html">
+								<button class="backbutton" class="protobutton">&larr; Back to all prototypes</button>
+							</a>
+
+							<h1>Coffee Shop</h1>
+
+							<div class="table-content">
+								<p>
+									<b>
+										<!-- Content -->
+									</b>
+								</p>
+								<ol>
+									<li>
+										<a href="prototype6.html#c1">Concept</a>
+									</li>
+									<li>
+										<a href="prototype6.html#c5">Research Questions</a>
+									</li>
+									<li>
+										<a href="prototype6.html#c6">Methodology</a>
+									</li>
+									<li>
+										<a href="prototype6.html#c8">Findings</a>
+									</li>
+								</ol>
+							</div>
+
+							<h2 id="c1">Concept</h2>
+
+							<p>Continuing the investigation into physical stores and POS experiences, we spent a sprint or two on high volume commodity
+								purchases in grocery stores and fast food restaurants. We kicked off the sprint with an observational study of 15
+								different cafes around Pittsburgh and interviewed cashiers and managers. We then prototyped a number of different
+								interactions for how a customer could authenticate at the point-of-sale. These methods included saying your name,
+								taping the phone like NFC, typing in a PIN, or using facial recognition with various styles to authenticate at the
+								point-of-sale. </p>
+
+							<p>However, we maintained the constraint that the merchant should not have to buy new hardware, and stuck to a tablet
+								at the technology available at the counter. The general finding overall was that credit cards work very well as an
+								identifier and authenticator in stores, and Continuous Authentication will almost certainly be more practical online
+								for a number of years before it makes sense in a physical store.
+							</p>
+
+							<h4>3 attributes</h4>
+
+							<b id="c2">Business value to Mastercard</b>
+							<p>We chose high-volume commodity purchases, "top-of-wallet" buys. People have to buy boring things all the time: gas,
+								toilet paper, fast food. And when they do, they use the first card in their wallet without thinking about it. Since
+								a significant portion of Mastercard's revenue is from transaction fees, this is a meaty area for them.</p>
+
+							<b id="c3">Opportunity for Continuous Authentication (CA) to enhance the Customer Experience</b>
+							<p>Some of the benefits Continuous Authentication can provide are reduced fraud, potential for higher volume, speed of
+								transaction increase, better UX, increased brand loyalty, etc.</p>
+
+							<b id="c4">Social friction</b>
+							<p>As mentioned earlier, we want to have a cohesive experience for both customers that are using a CA system, and 'legacy'
+								customers. Our design should reduce awkwardness, hassle and a sense of division between people, either cashiers and
+								customers, or peer-to-peer.</p>
+							<p>We began thinking of the experience a regular customer of an establishment has, let's use a bar as an example. Once
+								finished with their food or drink, they turn to the bartender, say "put this on my tab", and leave. The payment is
+								handled by the establishment. It's an elegant and hassle-free experience. Can Continuous Authentication bring that
+								kind of experience to anyone?</p>
+
+							<hr id="research">
+
+							<h2>Research Questions</h2>
+							<ul>
+								<li>In a brick-and-mortar store, how can you identify the next customer in queue?</li>
+								<li>What's the preferred step-up experience in a physical store?</li>
+								<li>Can Continuous Authentication work currently without buying new POS hardware?</li>
+								<li>Who can loyalty and pre-order apps (Starbucks) but used with Continuous Authentication?</li>
+								<li>With Continuous Authentication, how can the payment experience disappear without startling customers?</li>
+							</ul>
+
+							<hr id="methodology">
+
+							<h2>Methodology</h2>
+							<p>Users were primed on the concept of Continuous Authentication by reading a fake TechCrunch article we provided to
+								them beforehand.</p>
+							<p style="color: red; font-weight: 900;">[ link to fake Tech Crunch page ] </p>
+
+							<h4 id="c7">Experience Trumps Speed</h4>
+							<p>In physical spaces, Continuous Authentication is not necessarily faster, but it can make the payment experience disappear</p>
+
+							<b>1. Onboarding </b>
+							<p>How does the person get in the system/sign up for the service? (Bank app, Apple Pay, Mastercard app) </p>
+
+							<b>2. Enter store </b>
+							<p>How does the merchant know you are inside the store?</p>
+
+							<b>3. Item Order </b>
+							<p>How is this assigned to your account? </p>
+
+							<b>4. Checkout </b>
+							<p>How does the merchant know your identity to make sure your order is charged to your account?</p>
+
+							<!-- <p>Numbers of Users: </p> -->
+
+							<hr id="Findings">
+
+							<h2>Findings</h2>
+							<h3 id="c9">
+								<span class="h3-num">01.</span>Users share devices and Continuous Authentication systems need to account for that</h3>
+							<blockquote>"The app would be cool with a family account… I give her a maximum [budget], and it's secure. And if it had a receipt,
+								I could monitor my daughter's buys at Starbucks"</blockquote>
+
+							<h3 id="c10">
+								<span class="h3-num">02.</span>Users feel secure for different reasons</h3>
+							<blockquote>"I liked PIN and phone tap because it's more like how it works today."
+								<br>
+								<br> "Phone tap is the most invasive since it might collect a lot of information without my awareness"</blockquote>
+
+							<h3 id="c11">
+								<span class="h3-num">03.</span>Falling back to an existing authentication method is comforting to users, and enhances the experience as
+								it reinforces their current mental model</h3>
+							<blockquote>"I liked PIN and phone tap because it's more like how it works today."</blockquote>
+
+							<h3 id="c12">
+								<span class="h3-num">04.</span>Mixed reactions to facial data being collected</h3>
+							<blockquote>"Weird to have the store take a photo of me."
+								<br>
+								<br> "It scares me when I see my face on screen."</blockquote>
+
+							<h3 id="c13">
+								<span class="h3-num">05.</span>Merchants will require significant investment in POS technology to make Continuous Authentication in stores
+								a reality</h3>
+
+							<hr>
+
+
+
+							<h2>Observational study findings</h2>
+							<p>1. Speed is a priority for merchants</p>
+							<p>2. Speed is the only/main hindrance during the payment process.</p>
+							<p>3. Cashiers don't have a preference over cash, cards or apple pay</p>
+							<p>4. Thinking about what to order takes the longest in the whole checkout process. </p>
+
+						</div>
+					</div>
+
+					<!-- Sidebar -->
+					<div id="sidebar">
+
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- Scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+	<script src="../assets/js/navbar.js"></script>
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/browser.min.js"></script>
+	<script src="../assets/js/breakpoints.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/main.js"></script>
+
+	<script type="text/javascript">
+
+
+
+
+	</script>
+
+</body>
+
+</html>

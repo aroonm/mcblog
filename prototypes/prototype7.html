@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>07 Bank App Onboarding</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/main_home.css" />
+	<link rel="stylesheet" href="../css/verticaltimeline.css" />
+</head>
+
+<style type="text/css">
+	/* Add rounded corners to the top left and the top right corner of the image */
+
+	img {
+		/* border-radius: 5px 5px 0 0;*/
+	}
+
+	/* card */
+
+	.card {
+		border: 2px solid #ffffff;
+		/*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);  horiz vert blur*/
+		transition: 0.3s;
+		/* border-radius: 5px;*/
+	}
+
+
+
+	.card:hover {
+		box-shadow: 10px 10px 0px 0 rgba(247, 159, 26, 1);
+		border: 2px solid #000000;
+
+		/*-moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;*/
+	}
+</style>
+
+<body>
+
+	<div class="topnav" id="myTopnav">
+
+		<a href="../blog.html" class="hoveractive">Blog</a>
+		<a href="../team.html" class="hoveractive">Team</a>
+		<a href="all-prototypes.html" class="hoveractive">
+			<span class="navactive">Design Prototypes</span>
+		</a>
+		<a href="../index.html" class="hoveractive">Why Continuous Authentication</a>
+		<a href="../index.html" class="dont-activate" style="float: left; left: 0px;  position: absolute;">
+			<img style="width:50px;" ; src="../images/1200px-Mastercard-logo.png">
+
+		</a>
+		<a href="../index.html" class="dont-activate" style=" float: left; left: 60px; margin-top: -5px; position: absolute;">
+			<img style="width:70px;" src="../images/hcilogo-nav.png">
+		</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+
+
+	<div id="mySidenav" class="sidenav" style="width: 250px; margin-top: 5em;">
+		<a href="#main" class="sidenav-font" id="side_introduction">Concept</a>
+		<a href="#prototypes" class="sidenav-font" id="side_q1">Prototypes</a>
+		<a href="#research" class="sidenav-font" id="side_q2">Research Questions</a>
+		<a href="#methodology" class="sidenav-font" id="side_q3">Methodology</a>
+		<a href="#Findings" class="sidenav-font" id="side_q4">Findings</a>
+	</div>
+
+	<!-- Wrapper -->
+	<div id="wrapper" style="margin-top: 6em;">
+		<section class="wrapper style1 align-left">
+			<div class="inner medium">
+				<div class="content">
+
+
+					<!-- Main -->
+					<div id="main">
+						<div class="inner" style="margin-top: 1em;">
+
+							<button onclick="topFunction()" id="scroll-to-top" style="">Top&uarr;</button>
+							<a href="all-prototypes.html">
+								<button class="backbutton" class="protobutton">&larr; Back to all prototypes</button>
+							</a>
+
+							<h1>Bank App Onboarding</h1>
+							<div class="table-content">
+								<p>
+									<b>
+										<!-- Content -->
+									</b>
+								</p>
+								<ol>
+									<li>
+										<a href="prototype7.html#concept">Concept</a>
+									</li>
+									<li>
+										<a href="prototype7.html#research">Research Questions</a>
+									</li>
+									<li>
+										<a href="prototype7.html#methodology">Methodology</a>
+									</li>
+									<li>
+										<a href="prototype7.html#prototypes">Prototypes</a>
+									</li>
+									<li>
+										<a href="prototype7.html#findings">Findings</a>
+									</li>
+								</ol>
+							</div>
+
+							<h2 id="concept">Concept</h2>
+
+							<p>Over a few of these other prototypes, we started to create a couple different versions of an onboarding UI in different
+								contexts (bank app, checkout, standalone app). We quickly narrowed down the context - users don't want to sign up
+								for a service via their bank or credit card company while shopping online (checkout) and users don't want to download
+								another app just to authenticate. So we ran with a mobile bank app, which many people already use to check their
+								credit card balance on their phone, and started to test the messaging.</p>
+
+							<p>One question specifically here is how much do people actually want to hear about the ins-and-outs of the data collection?
+								Or would they rather just sign up for something that will be more secure and more convenient overall?</p>
+							<p>So we tested three options:</p>
+							<ol>
+								<li>
+									<strong>Ultra basic - </strong>Only one sign up option. Are you in? Yes or no.</li>
+								<br>
+								<li>
+									<strong>Four data type options </strong>- You get to toggle to opt in to NuData's 4 "layers"</li>
+								<ul>
+									<li>Device Intelligence</li>
+									<li>Behavioral Analytics</li>
+									<li>Passive Biometric Verification</li>
+									<li>Behavioral Trust Consortium (this is a NuData term)</li>
+								</ul>
+								<li>
+									<strong>Four data types plus more options -</strong> The above four options with even more granular toggles for specific
+									parts of each.</li>
+							</ol>
+							<hr id="research">
+							<h2>Research Questions</h2>
+
+							<ul>
+								<li>How do we communicate what Continuous Authentication is, how it works, and what value it provides? </li>
+								<li>What level of control fidelity do people want to see while onboarding?</li>
+								<li>Is security or convenience more valuable to customers while learning about it?</li>
+							</ul>
+							<hr id="methodology">
+							<h2>Methodology</h2>
+							<p>In the past, we would show users all of our prototypes in the same order. We got great feedback, but we never thought
+								about how the feedback might be affected by rearranging the order in which people interact with our prototypes. This
+								time, we decided to show different users different prototypes first.</p>
+							<h4>Number of Users: </h4>
+
+							<p>We had a great range of people we user tested with this week: an undergrad in their early 20s, an unemployed person
+								in their 30s, a older lady in her 60s, and a young professional in their late 20s. We decided to take our user test
+								participants through different sequences. Some saw the video first, others onboarded through the Citibank prototypes
+								first and saw the video last, and others went through the Pizza Hut checkout flow first, using Continuous Authentication
+								to pay before they really knew what it was.</p>
+
+							<hr id="prototypes">
+							<h2>Prototypes</h2>
+							<h4>Video</h4>
+							<p>We created a video to better explain Continuous Authentication, and the value of it from both a convenience and security
+								standpoint. This helped us get better data from users since in the past, some users did not understand why they were
+								providing data. </p>
+
+							<video controls class="center-align-images" style="width: 100%;">
+								<source src="https://www.hamsterbard.com/images/Draft_v2.mp4" type="video/mp4">
+								<source src="https://www.hamsterbard.com/images/Draft_v2.mp4" type="video/ogg"> Your browser does not support HTML5 video.
+							</video>
+
+							<p>We created a video to illustrate the concept in plain language. We tested comprehension by asking users to explain
+								back various points to us around security and convenience. Before we had been trying to emphasize the convenience
+								aspect of the technology, but this week it seemed people responded more positively to the security benefits of it,
+								and convenience was more of an added bonus. </p>
+							<br>
+							<h4>Bank App Onboarding</h4>
+							<div class="example">
+								<div>
+									<p>1. Only 1 checkbox to sign up, with a terms and conditions link</p>
+									<img class="image example-img" src="images/citi-ui-no-choice-orig.png">
+								</div>
+								<div>
+									<p>2. Many granular choices</p>
+									<img class="image example-img" src="images/citi-ui-many-choice-orig.png">
+								</div>
+							</div>
+							<b>3. Four sections with separate permissions</b>
+							<br>
+							<video controls class="left-align-images" style="width: 45%;">
+								<source src="https://www.hamsterbard.com/images/B-four choice.mp4" type="video/mp4">
+								<source src="https://www.hamsterbard.com/images/B-four choice.ogg" type="video/ogg"> Your browser does not support HTML5 video.
+							</video>
+
+							<hr id="Findings">
+							<h2>Findings</h2>
+							<p>All our participants were positive towards the technology - we didn't find users being creeped out as they have been
+								in the past (for example while interacting with our Lemonade Stand prototype). </p>
+
+							<p>This was due to these users understanding how the technology works much better than past participants.
+							</p>
+
+							<h3>
+								<span class="h3-num">01.</span>Convenience vs. Security</h3>
+							<p>People were split over ranking security vs convenience, but it seems like security was the most focused on (this could
+								be because of messaging in the app - we tacked back more towards security for this prototype).</p>
+							<p>Passivity is a bonus for security because people don't want to think about it</p>
+							<p>People saw security first, then convenience as value adds.</p>
+
+							<h3>
+								<span class="h3-num">02.</span>Control</h3>
+							<p>Preferred version was C, but it was commonly compared to an options or preferences menu, and B was appreciated for
+								its speed.</p>
+							<p>Prototype A was too vague and people wanted control earlier in the screen progress.</p>
+							<p>Settings control makes users feel in control</p>
+							<blockquote>"I like B, because there's only one choice on every screen, I think about them a bit more. [On C:] This is more like
+								a setting screen"</blockquote>
+
+							<h3>
+								<span class="h3-num">03.</span>Progress Bar </h3>
+							<p>The progress bar helps people both feel more secure and not skip over parts.</p>
+							<blockquote>"[The progress bar] showed me that by adding more options, my account gets more secure. It's just a bar, but it provides
+								a sense of trust"</blockquote>
+
+							<h3>
+								<span class="h3-num">04.</span>Video</h3>
+							<p>We created a video to explain the concept of Continuous Authentication and users understood the security benefits
+								of CA after watching the video. </p>
+							<blockquote>"If service offered for free or [for a] low cost, suspicious about companies looking to sell my information"</blockquote>
+
+						</div>
+					</div>
+
+					<!-- Sidebar -->
+					<div id="sidebar">
+
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- Scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+	<script src="../assets/js/navbar.js"></script>
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/browser.min.js"></script>
+	<script src="../assets/js/breakpoints.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/main.js"></script>
+
+	<script type="text/javascript">
+
+
+
+
+	</script>
+
+</body>
+
+</html>

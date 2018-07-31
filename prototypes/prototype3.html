@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>03 Online Onboarding Experience</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/main_home.css" />
+	<link rel="stylesheet" href="../css/verticaltimeline.css" />
+</head>
+
+<style type="text/css">
+	/* Add rounded corners to the top left and the top right corner of the image */
+
+	img {
+		/* border-radius: 5px 5px 0 0;*/
+	}
+
+	/* card */
+
+	.card {
+		border: 2px solid #ffffff;
+		/*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);  horiz vert blur*/
+		transition: 0.3s;
+		/* border-radius: 5px;*/
+	}
+
+
+
+	.card:hover {
+		box-shadow: 10px 10px 0px 0 rgba(247, 159, 26, 1);
+		border: 2px solid #000000;
+
+		/*-moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;*/
+	}
+</style>
+
+<body class="is-preload">
+
+	<div class="topnav" id="myTopnav">
+
+		<a href="../blog.html" class="hoveractive">Blog</a>
+		<a href="../team.html" class="hoveractive">Team</a>
+		<a href="all-prototypes.html" class="hoveractive">
+			<span class="navactive">Design Prototypes</span>
+		</a>
+		<a href="../index.html" class="hoveractive">Why Continuous Authentication</a>
+		<a href="../index.html" class="dont-activate" style="float: left; left: 0px;  position: absolute;">
+			<img style="width:50px;" ; src="../images/1200px-Mastercard-logo.png">
+
+		</a>
+		<a href="../index.html" class="dont-activate" style=" float: left; left: 60px; margin-top: -5px; position: absolute;">
+			<img style="width:70px;" src="../images/hcilogo-nav.png">
+		</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+
+
+	<div id="mySidenav" class="sidenav" style="width: 250px; margin-top: 5em;">
+		<a href="#main" class="sidenav-font" id="side_introduction">Concept</a>
+		<a href="#prototypes" class="sidenav-font" id="side_q1">Prototypes</a>
+		<a href="#research" class="sidenav-font" id="side_q2">Research Questions</a>
+		<a href="#methodology" class="sidenav-font" id="side_q3">Methodology</a>
+		<a href="#Findings" class="sidenav-font" id="side_q4">Findings</a>
+	</div>
+
+	<!-- Wrapper -->
+	<div id="wrapper" style="margin-top: 6em;">
+			<section class="wrapper style1 align-left">
+					<div class="inner medium">
+			<div class="content">
+
+
+				<!-- Main -->
+				<div id="main">
+					<div class="inner" style="margin-top: 1em;">
+
+						<button onclick="topFunction()" id="scroll-to-top" style="">Top&uarr;</button>
+						<a href="all-prototypes.html"><button class="backbutton" class="protobutton">&larr; Back to all prototypes</button></a>
+						<h1>Mastercard Instant Onboarding</h1>
+						<div class="table-content">
+							<p>
+								<b>
+									<!-- Content -->
+								</b>
+							</p>
+							<ol>
+								<li>
+									<a href="prototype3.html#concept">Concept</a>
+								</li>
+								<li>
+									<a href="prototype3.html#research">Research Questions</a>
+								</li>
+								<li>
+									<a href="prototype3.html#methodology">Methodology</a>
+								</li>
+								<li>
+									<a href="prototype3.html#prototypes">Prototypes and Testing</a>
+								</li>
+								<li>
+									<a href="prototype3.html#findings">Findings</a>
+								</li>
+							</ol>
+						</div>
+
+						<h2 id="concept">Concept</h2>
+
+						<p>Over the course of a number of sprints, we tested various types of onboarding methods and locations. Where does it
+							make the most sense? Where would prospective users be most receptive to hearing about Continuous Authentication and
+							opting in to a service for it? We used a small business website, using a
+							<span class="mc tooltip-l">Payment Service Providers (PSPs)
+								<span class="tooltiptext">Over the course of a number of sprints, we tested various types of onboarding methods and locations. Where does it
+									make the most sense? Where would prospective users be most receptive to hearing about Continuous Authentication
+									and opting in to a service for it? We used a small business website, using a Payment Service Providers (PSPs) [define]
+									like Shopify, as the target vessel and integrated a number of different introductions in a checkout flow.</span>
+							</span>
+							like Shopify, as the target vessel and integrated a number of different introductions in a checkout flow.</p>
+						<div class="example">
+							<div>
+								<img class="image example-img" style="" src="https://www.hamsterbard.com/images/w10_ExperienceMap.png">
+							</div>
+						</div>
+						<hr id="research">
+						<h2>Research Questions</h2>
+						<ul>
+							<li>How do we demonstrate how Continuous Authentication works?</li>
+							<li>How do people respond to being asked to provide their personal data?</li>
+							<li>How much do people want to see the details of background data collection?</li>
+							<li>Do they perceive background data collection as creepy? Trustworthy? Transparent?</li>
+							<li>Is transparency a requirement for trusting the system?</li>
+						</ul>
+						<hr id="methodology">
+						<h2>Methodology</h2>
+						<h4>Number of Users: 9 </h4>
+						<p>To test these prototypes, we conducted a 60 minute interview and Think Aloud, where we asked users to first go through
+							different onboarding scenarios before we asked them to shop online on a small merchant website (Haptic Lab).</p>
+						<hr id="prototypes">
+						<h2>Prototypes and Testing</h2>
+						<p>The onboarding experience, and the experience of a user's first purchase in a Continuous Authentication paradigm is
+							critical. A big part of that is clear and concise language explaining exactly how the process works, what the value
+							is to the user, and why it is worth giving up all their identifiable data.</p>
+						<h4>Invision Prototypes</h4>
+						<a href="https://projects.invisionapp.com/share/UTGPLNBWKZ5">First Purchase</a>
+						<br>
+						<a href="https://invis.io/6CGTAGSDVMH#/290786293_Artboard_Copy_9">Onboarding v2-1</a>
+						<br>
+						<a href="https://invis.io/KQGTAG9R8P6#/290788621_Artboard_Copy_20">Onboarding v2-2</a>
+
+						<hr id="findings">
+						<h2>Findings</h2>
+						<h3>
+							<span class="h3-num">01.</span>Show context of use and data collection in action</h3>
+						<blockquote>"I'd like it to show me what Continuous Authentication is while I'm doing it"
+							<br>
+							<br> "Check boxes help me know that I have to acknowledge and accept what I'm agreeing to…"</blockquote>
+
+						<h3>
+							<span class="h3-num">02.</span>Fear of detailed data being constantly tracked</h3>
+						<p>Growing acceptance or indifference with data collection</p>
+						<blockquote>"I feel fine, companies are doing all this stuff (collecting location, device etc data) for marketing, it's common."</blockquote>
+
+						<p>No one wants to use camera in browser.</p>
+						<blockquote>"Probably wouldn't use camera ever"</blockquote>
+
+						<!-- <p>Onboarding is critical to both EXPLAIN what CA is and OPT IN.</p> -->
+
+						<!-- <p>Onboarding is important, need to make user understand the value, tech and build trust.</p> -->
+
+						<!-- <p>Must ask permission clearly.</p> -->
+						<!-- <blockquote>"Is it ok to collect X data points?"</blockquote> -->
+
+						<!-- <p>Permission can't be buried in a EULA</p> -->
+
+						<!-- <p>"chain" visual of various factors connecting… if one fails, another must fill in to connect "securely"</p> -->
+
+						<p>Showing too much information makes the user more concerned about privacy and security.</p>
+						<blockquote>"Don't need to remind me how potentially invasive it is"</blockquote>
+
+						<p>Skepticism, and lack of clarity with how it works</p>
+						<blockquote>"How can they promise security?"
+							<br>
+							<br> "What if someone mimics my behavior?"
+							<br>
+							<br> "What if I use two computers with different layouts? Some computers don't have a numpad. Will it still work?"</blockquote>
+
+						<p>Difficult to understand multi-factor authentication</p>
+						<blockquote>"For example, if I'm eating [and] typing slowly [different to how they would normally type], how does it work then?"</blockquote>
+
+						<h3>
+							<span class="h3-num">03.</span>The first version was more preferable.</h3>
+
+						<h3>
+							<span class="h3-num">04.</span>The visual in the 2nd version was liked by users.</h3>
+						<blockquote>"Liked the visual of the second one, but preferred the first version, more clear, more control"
+							<br>
+							<br> "I liked the 1st, it took [the opt-in process] step by step, asking for consent at each step. With the second [version]
+							it was more 'yes' or 'no'" [not as flexible]</blockquote>
+
+						<h3>
+							<span class="h3-num">05.</span>Don't show what exactly is being collected at the moment.</h3>
+						<blockquote>"There's no need to remind me how potentially invasive it is"</blockquote>
+
+					</div>
+				</div>
+
+				<!-- Sidebar -->
+				<div id="sidebar">
+
+				</div>
+			</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- Scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+	<script src="../assets/js/navbar.js"></script>
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/browser.min.js"></script>
+	<script src="../assets/js/breakpoints.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/main.js"></script>
+
+	<script type="text/javascript">
+
+
+
+
+	</script>
+
+</body>
+
+</html>
