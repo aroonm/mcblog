@@ -69,7 +69,7 @@
 				<!-- MC Splash -->
 					<section class="banner style5 orient-left content-align-left image-position-right fullscreen ">
 						<div class="content" style="width: 60rem;">
-							<h1 ><b style="font-weight: 600;" class="mc">Team HamsterBard</b></h1>
+							<h1 ><b style="font-weight: 600;" class="mc">Design for Continuous Authentication</b></h1>
 							<p class="major " style="color:white;"><a href="https://www.hcii.cmu.edu/" style="text-decoration: none;">CMU MHCI</a> capstone project sponsored by Mastercard</p>
 							<p class="major"  style="color:white; margin-top: -20px;"><b style="color: white;">Year of 2018</b></p>
 							<ul class="actions vertical">
@@ -108,7 +108,7 @@
 					</section>
 
 					<section  class="spotlight style1 orient-center content-align-left image-position-right" style="height: 100%; overflow: hidden;">
-						<div class="content" >
+						<div class="centerheader content" >
 
               <header ><h2><b>What is Continuous Authentication?</b></h2><br></header>
 
@@ -119,186 +119,77 @@
               </video>
 
               <br><br>
-              <header ><h2><b style="font-weight: 600;" class="mc"><a href="https://aroonm.github.io/MCUXG/index.html">Final Deliverable: Guidelines for Mastercard</a></b></h2></header>
+              <h2><b style="font-weight: 600;" class="mc"><a href="https://aroonm.github.io/MCUXG/index.html"><button>Final Deliverable: Guidelines for Mastercard</button></a></b></h2>
 
 
               <br><br>
               <header><h2><b>The Five W's of Continuous Authentication</b></h2></header>
 
-              <h3>Who</h3>
+							<h3>Who</h3>
+							<div class="imgbox"><img class="indeximg" src="images/stakeholder.png"></div>
+							
+
         			<p>Continuous authentication is a large topic than involves many different stakeholders, but in a variety of ways. Authentication has many uses and touch points and shows itself in different ways to these parties. </p>
 
-              <h3>What</h3>
+							<h3>What</h3>
+							<div class="imgbox"><img class="indeximg" src="images/mary-factors.png"></div>
         			<p>We define Continuous Authentication as "a system that verifies who you are, whenever you need it, without you thinking about it." Behind this idea is a large technology piece pushing authentication beyond usernames, card numbers, and passwords. Instead of using two-factor authentication, Continuous Authentication uses machine learning and massive amounts of data, to notice patterns in card use in aggregate as well as behaviors unique to individuals. </p>
-
+							<div class="imgbox"><img class="indeximg-med" src="images/factors.png"></div>
               <p>From device and location information, to biometrics and behaviours, as well as trends across all users, Continuous Authentication uses on the order of 40 or 50 factors instead of merely one, two, or three. Instead of a binary (logged in, logged out) paradigm, authentication becomes a gradient, and individuals get a 'trust score' instead of merely being logged in. This 'trust score' is variable based on the cardholders behaviour and patterns at any given time, and can be polled by a merchant at checkout. Overall Continuous Authentication is a new, more robust alternative to the traditional username and password model, that can make the checkout experience faster as well as much more secure.</p>
 
-              <h3>When</h3>
+							<h3>When</h3>
+							<div class="imgbox"><img class="indeximg-med" src="images/emoji-graph.png"></div>
               <p>One of the key benefits of Continuous Authentication is the continuous aspect of it. This however seems to make it difficult to understand for many users because it is so different from a typical password authentication. Because the system is always monitoring a variety of data sources, it provides a "trust score" at any given time based on the combination of all those factors. For the end user, it means they can be authenticated in the moment, whenever they need it. </p>
 
               <p>From a product standpoint, it is harder to say where the data aspects of Continuous Authentication happen. The data pathways and storage components are still open questions. The data itself is likely to be stored by Mastercard with merchants pulling a trust score and possibly other data from an API at time of purchase. However, a technical sequence of exact events will likely vary by the product and implementation.
               </p>
 
-              <h3 id="header-where">Where</h3>
+							<h3 id="header-where">Where</h3>
+							<div class="imgbox"><img class="indeximg" src="images/ca-autofill.png"></div>
               <p>Continuous authentication works better today in digital shopping contexts, and will be adopted for customers online likely well before brick-and-mortar stores. Physical store points-of-sale will require a significant capital cost that only large corporate stores will be able to invest in at first: think <a href="https://www.nytimes.com/2018/01/21/technology/inside-amazon-go-a-store-of-the-future.html">Amazon Go</a>. Since it leverages many digital data points that are currently used to detect fraud.</p>
 
     					<h3 id="header-why">Why</h3>
 
-              <a href="javascript:unhide('5w_cons');"><b>Consumers</b></a>
-              <div id="5w_cons" class="hidden"><p> While consumers want to be safe, security is often something that takes a backseat to convenience. Continuous authentication has a two-fold benefit for cardholders, the potential for a quicker checkout, while also more layers of protection against identity theft, and fraud.</p></div>
-              <br />
-              <a href="javascript:unhide('5w_merch');"><b>Merchants</b></a>
-              <div id="5w_merch" class="hidden"><p> Merchants stand to gain through reduced cart abandonments online, and overall smoother checkouts. The fraud side helps them as well through a possible liability shift. In short, the liability shift means exactly what it says. It is the change in financial responsibility, to either a merchant, bank or credit card company, should a fraudulent transaction take place. Liability will shift back to the processor or issuer, and fraud reduction overall will drop.</p></div>
-              <br />
-              <a href="javascript:unhide('5w_CI');"><b>Card Issuers</b></a>
-              <div id="5w_CI" class="hidden"><p> Much like merchants, issuers stand the most to gain on the fraud side as well, most likely from an overall better ability to recognize fraud in the moment, especially in card-not-present situations, and also reduce false declines across the board. Issuers could also use these technologies to gain insights on consumer behavioral trends as well.</p></div>
-              <br />
-              <a href="javascript:unhide('5w_MC');"><b>Mastercard</b></a>
-              <div id="5w_MC" class="hidden"><p> Mastercard is in a unique position to implement Continuous Authentication across a range of products from more cardholder experience applications to more B2B and back-of-house fraud reduction efforts. Beyond these immediate opportunities, one type of successful implementation could provide a new form of business in identification-as-a-service. This set of design guidelines is specifically for Mastercard designers, product managers, and technologists, as well as their partners, in an effort to better inform the discussion around this new paradigm. </p></div>
-
-
-
-
-							<header><h2><b>Current challenges in payment</b></h2></header>
-							<br><br>
-							<img src="images/ecosystem.png" style="width:60%;" class="center-align-images" style="" alt="" />
-
-							<p><br><br>In the large space of digital payments we narrowed down to consumers and merchants. During our discovery phase, we explored a wide range of topics related to authentication in digital payments. Some topics we explored laterally in this space:<br><br>
-							<span>- Payments in a social context;</span> <br>
-							<span>- Merchant inertia, and getting merchants to adopt new technology;</span> <br>
-							<span>- Using multiple identities in different contexts;</span> <br>
-							<span>- How consumers feel about new authentication methods,</span><br><br>
-							<span>And a new authentication paradigm that ties these all together called Continuous Authentication</p>
-							<br><br><br>
-
-							<header><h2><b>Solve these challenges with <br>Continuous Authentication</b></h2></header>
-							<br><br>
-							<img src="images/contauth1.png" style="width: 60%;" class="center-align-images"  alt="" />
-
-							<br><br><br>
-
-							<!-- <h3><b>Continuous Authentication?</b></h3>
-							<br>
-							<h3><b>&emsp;&emsp;A system that verifies</b></h2>
-							<h3><b>&emsp;&emsp;<span style="color:#FF9301;">who</span> you are,</b></h3>
-							<h3><b>&emsp;&emsp;<span style="color:#FF9301;">whenever</span> you need it,</b></h3>
-							<h3><b>&emsp;&emsp;<span style="color:#FF9301;">without</span> you thinking about it.</b></h3> -->
-
-				<br>
-				<br>
-				<br>
-
-				<header>
-					<h2>
-						<b>A new system with
-							<br>Continuous Authentication</b>
-					</h2>
-				</header>
-
-				<div id="before_mc" style="display: block;">
-					<img src="images/before_mc.png" style="width: 80%;" class="center-align-images" alt="" />
-				</div>
-
-				<div id="after_mc" style="display: none;">
-					<img src="images/after_mc.png" style="width: 80%;" class="center-align-images" alt="" />
-				</div>
-
-				<a style="text-align: center; cursor: pointer;" onclick="transitionToNewState()" class="center-align-images" id="click-text">With Continuous Authentication &rarr;</a>
-
-				<br>
-
-				<p>Continuous Authentication is an idea that has been bouncing around the digital payments space for the past few years
-					but will little implementation to show for it. With Continuous Authentication we can eliminate a lot of the waiting
-					and touchpoints in this diagram above, showing checkout sequences in both physical stores and online shops. Continuous
-					Authentication removes the hassle of juggling multiple cards and passwords, as well as reducing false declines.</p>
-
-				<br>
-				<br>
-				<br>
-
-				<!-- <header><h2><b>Research through design</b></h2></header>
-
-
-
-							<div class="row center-align-images">
-							  <div class="column" >
-							    <ul style="float: left; list-style-type: none;">
-									<li>Interview</li>
-									<li style="margin-top: 1em;">Think Aloud</li>
-									<li style="margin-top: 1em;">Speed Dating</li>
-									<li style="margin-top: 1em;">AB Testing</li>
-									<li style="margin-top: 1em;">Guerrilla Research</li>
-								</ul>
-							  </div>
-							  <div class="column" >
-							    <img src="images/usersnumber.png"  style="width: 160%;" alt="" />
-							  </div>
+              <div class="icon-stakeholder">
+									<img class="icon-stakeholder-img" src="images/customers.png">
+								<!-- <a href="javascript:unhide('5w_cons');"> -->
+									<h4>Consumers</h4>
+								<!-- </a> -->
 							</div>
-
-							<br><br><br> -->
-
-				<!-- <header><h2><b><a href="prototypes.html">Tackling design challenges</a></b></h2></header>
-
-							<div class="row center-align-images">
-							  <div class="column" style="width: 40%">
-							    	<img src="images/design_chal_1.png"  style="width: 60%;" alt="" />
-							  </div>
-							  <div class="column" style="width: 60%">
-							    <ul style="float: left; list-style-type: none;">
-									<li style="">How do we demonstrate how continuous authentication works?</li>
-									<li style="margin-top: 1em;">How do people feel about different types of data being collected?</li>
-								</ul>
-							  </div>
-							</div>
-
-							<div class="row center-align-images">
-							  <div class="column" style="width: 40%">
-							    	<img src="images/design_chal_2.png"  style="width: 60%;" alt="" />
-							  </div>
-							  <div class="column" style="width: 60%">
-							    <ul style="float: left; list-style-type: none;">
-									<li style="">How much background info should be shown during the checkout session?</li>
-									<li style="margin-top: 1em;">How do people feel about data being collected during checkout?</li>
-									<li style="margin-top: 1em;">How can we build trust in a continuous authentication interface?</li>
-								</ul>
-							  </div>
-							</div>
-
-							<div class="row center-align-images">
-							  <div class="column" style="width: 40%">
-							    	<img src="images/design_chal_3.png"  style="width: 60%;" alt="" />
-							  </div>
-							  <div class="column" style="width: 60%">
-							    <ul style="float: left; list-style-type: none;">
-									<li style="">What should the recovery experience be?</li>
-								</ul>
-							  </div>
-							</div> -->
+              <div id="5w_cons" class="hidden"><p class="why"> While consumers want to be safe, security is often something that takes a backseat to convenience. Continuous authentication has a two-fold benefit for cardholders, the potential for a quicker checkout, while also more layers of protection against identity theft, and fraud.</p></div>
+							<br />
+							<div class="icon-stakeholder">
+									<img class="icon-stakeholder-img" src="images/merchant.png">
+              <!-- <a href="javascript:unhide('5w_merch');"> -->
+								<h4>Merchants</h4>
+							<!-- </a> -->
+						</div>
+              <div id="5w_merch" class="hidden"><p class="why"> Merchants stand to gain through reduced cart abandonments online, and overall smoother checkouts. The fraud side helps them as well through a possible liability shift. In short, the liability shift means exactly what it says. It is the change in financial responsibility, to either a merchant, bank or credit card company, should a fraudulent transaction take place. Liability will shift back to the processor or issuer, and fraud reduction overall will drop.</p></div>
+							<br />
+							<div class="icon-stakeholder">
+									<img class="icon-stakeholder-img" src="images/banks.png">
+              <!-- <a href="javascript:unhide('5w_CI');"> -->
+								<h4>Card Issuers</h4>
+							<!-- </a> -->
+						</div>
+              <div id="5w_CI" class="hidden"><p class="why"> Much like merchants, issuers stand the most to gain on the fraud side as well, most likely from an overall better ability to recognize fraud in the moment, especially in card-not-present situations, and also reduce false declines across the board. Issuers could also use these technologies to gain insights on consumer behavioral trends as well.</p></div>
+							<br />
+							<div class="icon-stakeholder">
+									<img class="icon-stakeholder-img" src="images/mc.png">
+              <!-- <a href="javascript:unhide('5w_MC');"> -->
+								<h4>Mastercard</h4>
+							<!-- </a> -->
+						</div>
+              <div id="5w_MC" class="hidden"><p class="why"> Mastercard is in a unique position to implement Continuous Authentication across a range of products from more cardholder experience applications to more B2B and back-of-house fraud reduction efforts. Beyond these immediate opportunities, one type of successful implementation could provide a new form of business in identification-as-a-service. This set of design guidelines is specifically for Mastercard designers, product managers, and technologists, as well as their partners, in an effort to better inform the discussion around this new paradigm. </p></div>
 
 
 
-				<header>
-					<h2>
-						<b>Proof of Concept: A Face
-							<br>Recognition Demo</b>
-					</h2>
-				</header>
-				<br>
-				<p>We developed a proof of concept for a facial recognition authentication experience. This is a slow burn project replicating
-					some of the features of Project Abacus’ demo in the studio that shows a certainty rating for a user in the camera. Here’s
-					a demo video of it working on some of our teammates.</p>
-				<br>
-				<video class="center-align-images" style="width: 40%;" controls>
-					<source src="images/avatar_demo.mp4" type="video/mp4">
-					<source src="images/avatar_demo.ogg" type="video/ogg"> Your browser does not support HTML5 video.
-				</video>
 
-				<br>
-				<br>
+						
 
 				<ul class="actions vertical align-center">
 					<li>
-						<a href="prototypes.html" class="button big wide smooth-scroll-middle">Design Prototypes &rarr;</a>
+						<a href="prototypes/all-prototypes.html" class="button big wide smooth-scroll-middle hi">Design Prototypes &rarr;</a>
 					</li>
 				</ul>
 				<!-- <br><br><br>
